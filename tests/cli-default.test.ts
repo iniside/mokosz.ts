@@ -97,7 +97,7 @@ describe('the default commands pass the git toplevel, the settings and the optio
     const [root, settings, options] = onlyCall(vi.mocked(evalCommand).mock.calls)
     expect(root).toBe(ROOT)
     expect(settings).toMatchObject({ databaseUrl: DATABASE_URL })
-    expect(options).toEqual({ profile: 'x', set: 'qa', repeat: 3 })
+    expect(options).toEqual({ profile: 'x', repeat: 3 })
   })
 })
 

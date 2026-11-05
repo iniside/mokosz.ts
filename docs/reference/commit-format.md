@@ -34,6 +34,6 @@ Rejected: `update stuff`, `feat: add api` (no scope), `feat(api): ... (step 3)`
 - for every other committer, the git `commit-msg` hook checks the subject and
   the `Kind:` trailer. It lives in `.githooks/commit-msg` (executable, runs it with
   `node`); enable it once per clone with
-  `git config core.hooksPath .githooks` (`mokosz setup` does this).
+  `git config core.hooksPath .githooks`.
 
 Exempt subjects: `Merge `, `Revert "`, `fixup! `, `squash! `, `amend! `.

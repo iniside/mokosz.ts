@@ -392,6 +392,11 @@ describe('profiles', () => {
       'ollama_chat models only',
     ],
     [
+      'cloud-think',
+      'name: p\ntimeout_s: 1\nretrieval: {top_k: 8}\nnodes:\n  router: {model: anthropic/x, think: false}\n  answerer: {model: anthropic/x}',
+      'num_ctx, keep_alive and think apply to ollama_chat models only',
+    ],
+    [
       'no-prefix',
       'name: p\ntimeout_s: 1\nretrieval: {top_k: 8}\nnodes:\n  router: {model: qwen3.6:27b}\n  answerer: {model: anthropic/x}',
       'must start with',
@@ -834,8 +839,6 @@ describe('cloud models', () => {
   })
 
   test.for<[string, string, Record<string, unknown>]>([
-    ['think: false', 'think: false', { think: false }],
-    ['think: true', 'think: true', { think: true }],
     ['temperature 1', 'temperature: 1', { temperature: 1 }],
   ])('a cloud node with %s sends it as it is', async ([, option, fields], { anthropic, tmp }) => {
     const node = `\n    model: anthropic/claude-haiku-5-5\n    ${option}\n`

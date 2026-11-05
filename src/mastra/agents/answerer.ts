@@ -15,7 +15,6 @@ export const AnswerOutputSchema = z.strictObject({
   claims: z.array(AnswerClaimSchema),
   not_found: z.boolean(),
 })
-export type AnswerOutput = z.output<typeof AnswerOutputSchema>
 
 export function createAnswererAgent(): NodeAgent['agent'] {
   return nodeAgent('answerer', PROMPT).agent

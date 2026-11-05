@@ -53,4 +53,4 @@ Their tests are in `tests/hooks/`.
 - `plan-checklist.ts`: adds the plan checklist when leaving plan mode.
 
 The git side of the commit rule lives in `.githooks/commit-msg`; enable it once
-per clone with `git config core.hooksPath .githooks` (`mokosz setup` does this).
+per clone with `git config core.hooksPath .githooks`.

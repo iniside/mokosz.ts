@@ -30,7 +30,6 @@ export const AnswerSchema = z.strictObject({
 export type Answer = z.infer<typeof AnswerSchema>
 
 export const TurnInputSchema = z.strictObject({ conversation_id: z.string() })
-export type TurnInput = z.infer<typeof TurnInputSchema>
 
 export const RoutedSchema = z.strictObject({
   conversation_id: z.string(),

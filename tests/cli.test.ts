@@ -63,10 +63,6 @@ describe('each command receives its options and defaults', () => {
       ['serve', '--host', '0.0.0.0', '--port', '9000', '--reload'],
       ['serve', { host: '0.0.0.0', port: 9000, reload: true, timeoutGracefulShutdownMs: 5000 }],
     ],
-    [
-      ['serve', '--port=9001', '--reload', '--no-reload'],
-      ['serve', { host: '127.0.0.1', port: 9001, reload: false, timeoutGracefulShutdownMs: 5000 }],
-    ],
     [['setup'], ['setup', []]],
     [
       ['setup', '--profile', 'local-gemma', '--profile', 'cloud-claude'],
@@ -97,7 +93,7 @@ describe('each command receives its options and defaults', () => {
       ['screenshots', '--url', 'http://ui', '--conversation', UUID, '--question', 'Why?'],
       ['screenshots', { url: 'http://ui', conversation: UUID, question: 'Why?' }],
     ],
-    [['eval'], ['evaluate', { set: 'qa', repeat: 1 }]],
+    [['eval'], ['evaluate', { repeat: 1 }]],
   ])('mokosz %j', async ([args, call]) => {
     const { code, stderr, calls } = await invoke(args)
 

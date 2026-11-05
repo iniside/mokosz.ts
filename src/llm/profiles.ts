@@ -33,9 +33,9 @@ const NodeConfigSchema = z
       context.addIssue(`model must start with ${OLLAMA_PREFIX} or ${ANTHROPIC_PREFIX}`)
     } else if (
       !config.model.startsWith(OLLAMA_PREFIX) &&
-      (config.num_ctx !== null || config.keep_alive !== null)
+      (config.num_ctx !== null || config.keep_alive !== null || config.think !== null)
     ) {
-      context.addIssue('num_ctx and keep_alive apply to ollama_chat models only')
+      context.addIssue('num_ctx, keep_alive and think apply to ollama_chat models only')
     }
   })
 export type NodeConfig = z.output<typeof NodeConfigSchema>

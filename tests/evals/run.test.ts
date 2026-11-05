@@ -898,10 +898,10 @@ async function invoke(args: string[], evaluate?: Commands['evaluate']): Promise<
 
 describe('the mokosz eval command line', () => {
   test.for([
-    [[], { set: 'qa', repeat: 1 }],
-    [['--profile', 'local-gemma'], { profile: 'local-gemma', set: 'qa', repeat: 1 }],
-    [['--set', 'qa', '--repeat', '3'], { set: 'qa', repeat: 3 }],
-    [['--repeat=2', '--profile=cloud-claude'], { profile: 'cloud-claude', set: 'qa', repeat: 2 }],
+    [[], { repeat: 1 }],
+    [['--profile', 'local-gemma'], { profile: 'local-gemma', repeat: 1 }],
+    [['--repeat', '3'], { repeat: 3 }],
+    [['--repeat=2', '--profile=cloud-claude'], { profile: 'cloud-claude', repeat: 2 }],
   ] as const)('mokosz eval %j', async ([args, expected]) => {
     const { code, stderr, evaluated } = await invoke([...args])
 
@@ -910,7 +910,7 @@ describe('the mokosz eval command line', () => {
   })
 
   test.for([
-    [['--set', 'invoices'], "'--set <set>' argument 'invoices' is invalid"],
+    [['--set', 'qa'], "unknown option '--set'"],
     [['--repeat', '0'], "'--repeat <repeat>' argument '0' is invalid"],
     [['--repeat', '-2'], "'--repeat <repeat>' argument '-2' is invalid"],
     [['--repeat', 'two'], "'--repeat <repeat>' argument 'two' is invalid"],

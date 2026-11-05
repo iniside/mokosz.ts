@@ -86,11 +86,10 @@ function ollamaBody(config: NodeConfig): (body: JsonBody) => void {
   }
 }
 
-// The profile's temperature and think go into the Anthropic body as they are.
+// The profile's temperature goes into the Anthropic body as it is.
 function anthropicBody(config: NodeConfig): (body: JsonBody) => void {
   return (body) => {
     if (config.temperature !== null) body.temperature = config.temperature
-    if (config.think !== null) body.think = config.think
   }
 }
 

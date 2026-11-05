@@ -72,7 +72,6 @@ describe('mokosz setup with the default commands', () => {
     expect(commands.slice(1)).toEqual([
       ['docker', 'info'],
       ['docker', 'compose', 'up', '-d', '--wait', 'db'],
-      ['git', 'config', 'core.hooksPath', '.githooks'],
     ])
     for (const [, , options] of vi.mocked(spawnSync).mock.calls.slice(1)) {
       expect(resolve(String(Reflect.get(options ?? {}, 'cwd')))).toBe(ROOT)

@@ -7,7 +7,6 @@ export const EvidenceSchema = z.strictObject({
   key: z.string().min(1),
   quote: z.string().min(1),
 })
-export type Evidence = z.infer<typeof EvidenceSchema>
 
 export const EvalItemSchema = z
   .strictObject({

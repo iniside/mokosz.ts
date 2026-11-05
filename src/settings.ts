@@ -28,7 +28,6 @@ export interface Settings {
   ollamaBaseUrl: string
   defaultProfile: string
   anthropicApiKey: SecretStr | null
-  uploadsDir: string
   /** Read from the process environment only, never from the .env file. */
   anthropicApiBase: string
 }
@@ -37,19 +36,12 @@ const DEFAULTS = {
   databaseUrl: 'postgresql://mokosz:mokosz@localhost:5433/mokosz',
   ollamaBaseUrl: 'http://localhost:11434',
   defaultProfile: 'local-qwen',
-  uploadsDir: 'data/uploads',
   anthropicApiBase: 'https://api.anthropic.com',
 }
 
 type Source = Record<string, string | undefined>
 
-const NAMES = [
-  'DATABASE_URL',
-  'OLLAMA_BASE_URL',
-  'DEFAULT_PROFILE',
-  'ANTHROPIC_API_KEY',
-  'UPLOADS_DIR',
-] as const
+const NAMES = ['DATABASE_URL', 'OLLAMA_BASE_URL', 'DEFAULT_PROFILE', 'ANTHROPIC_API_KEY'] as const
 type Name = (typeof NAMES)[number]
 
 export class SettingsError extends Error {
@@ -88,7 +80,6 @@ export function loadSettings(options: { env?: Source; envFile?: string | null } 
     ollamaBaseUrl: value('OLLAMA_BASE_URL') ?? DEFAULTS.ollamaBaseUrl,
     defaultProfile: value('DEFAULT_PROFILE') ?? DEFAULTS.defaultProfile,
     anthropicApiKey: apiKey === undefined ? null : new SecretStr(apiKey),
-    uploadsDir: value('UPLOADS_DIR') ?? DEFAULTS.uploadsDir,
     anthropicApiBase: env.ANTHROPIC_API_BASE || env.ANTHROPIC_BASE_URL || DEFAULTS.anthropicApiBase,
   }
 }

@@ -4,14 +4,17 @@ An agent harness that runs fully on local models and answers questions about the
 AI Act and NIS2 with exact, verified citations. Every run is stored with its steps, tokens,
 cost and latency.
 
+> Mokosz is a research project, not legal advice. Answers can be wrong or incomplete even
+> when every citation checks out; read the cited article before relying on it.
+
 ![Asking a question in the chat](docs/img/chat.gif)
 
 ![An AI Act answer with verified citations](docs/img/chat.png)
 
 ## About
 
-Mokosz is a TypeScript and [Mastra](https://mastra.ai) port of the author's earlier Python
-implementation of the same app. It was built with coding agents under the process in
+Mokosz is a TypeScript and [Mastra](https://mastra.ai) port of the author's earlier, unpublished
+Python implementation of the same app. It was built with coding agents under the process in
 [`AGENTS.md`](AGENTS.md) and [`.claude/`](.claude/); the owner's decisions are recorded in
 [`docs/decisions/`](docs/decisions/). [`SPEC.md`](SPEC.md) describes what is built and what is
 not.
@@ -27,7 +30,7 @@ there is no extraction workflow, API or screen yet.
 - [Ollama](https://ollama.com)
 
 The default profile, `local-qwen`, runs `qwen3.6:27b` (see [`profiles/`](profiles/)) and needs
-a GPU with roughly 24 GB of memory. The alternative is the `cloud-claude` profile
+a GPU with roughly 24 GB of memory. `local-gemma` runs `gemma4:26b` instead. The other alternative is the `cloud-claude` profile
 (`claude-haiku-5-5` and `claude-sonnet-5-5`), which needs `ANTHROPIC_API_KEY`. Copy
 `.env.example` to `.env` and set `DEFAULT_PROFILE=cloud-claude` and the key there. Ollama is
 needed with either profile: questions are embedded locally with `bge-m3`.
@@ -43,8 +46,7 @@ npx mokosz serve
 ```
 
 `mokosz setup` checks Docker and Ollama, pulls the models of the default profile and `bge-m3`,
-starts Postgres, migrates and seeds the database, and enables the commit-msg hook. In the
-second terminal:
+starts Postgres, and migrates and seeds the database. In the second terminal:
 
 ```sh
 cd web
@@ -53,6 +55,10 @@ npm run dev
 ```
 
 The UI runs at <http://localhost:5173> and talks to the API on `127.0.0.1:8000`.
+
+The API has no authentication. It listens on loopback by default and then accepts only
+loopback `Host` headers; `npx mokosz serve --host 0.0.0.0` exposes it to the whole network
+and turns that check off.
 
 ## Development
 
@@ -67,8 +73,9 @@ cd web && npm run lint && npm run build
 
 - The tests create and drop their own database on that server. LLM calls use AI SDK mock
   models, so no model or network is needed.
-- Enable the commit-msg hook once per clone with `git config core.hooksPath .githooks`
-  (`mokosz setup` does it).
+- Contributors: enable the commit-msg hook, which checks the commit format in
+  [`docs/reference/commit-format.md`](docs/reference/commit-format.md), once per clone with
+  `git config core.hooksPath .githooks`.
 - `npm run mutation` runs StrykerJS over the pure modules; it is slow and not a gate.
 - `.env` is read from the working directory with Node's `util.parseEnv`. A value containing `#`
   must be quoted, otherwise the rest of the line is a comment. Names are exact and upper-case

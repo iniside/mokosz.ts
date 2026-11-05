@@ -2,7 +2,7 @@
 import { existsSync, realpathSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { Command, CommanderError, InvalidArgumentError, Option } from 'commander'
+import { Command, CommanderError, InvalidArgumentError } from 'commander'
 import { runServer, type ServeOptions } from './api/server.ts'
 import { CommandError, repoRoot } from './command.ts'
 import { evalCommand, type EvalCommandOptions } from './evals/run.ts'
@@ -104,16 +104,13 @@ function program(commands: Commands, exited: (code: number) => void): Command {
     .description('Run the API.')
     .option('--host <host>', '', '127.0.0.1')
     .option('--port <port>', '', integer, 8000)
-    .option('--reload', '', false)
-    .option('--no-reload', '')
+    .option('--reload', 'Restart the server when a source file changes.', false)
     .action((options: { host: string; port: number; reload: boolean }) =>
       act(() => commands.serve({ ...options, timeoutGracefulShutdownMs: GRACEFUL_SHUTDOWN_MS })),
     )
   mokosz
     .command('setup')
-    .description(
-      'Check Docker and Ollama, pull the models, migrate and seed the database, enable the hook.',
-    )
+    .description('Check Docker and Ollama, pull the models, migrate and seed the database.')
     .option(
       '--profile <profile>',
       'Profile whose Ollama models to pull; repeat for several.',
@@ -159,7 +156,6 @@ function program(commands: Commands, exited: (code: number) => void): Command {
     .command('eval')
     .description('Run the Q&A eval set and write the results to evals/results/.')
     .option('--profile <profile>', 'Profile to evaluate; default the settings default profile.')
-    .addOption(new Option('--set <set>', 'Eval set.').choices(['qa']).default('qa'))
     .option('--repeat <repeat>', 'Turns per item.', atLeastOne, 1)
     .action((options: EvalCommandOptions) => act(() => commands.evaluate(options)))
   return mokosz

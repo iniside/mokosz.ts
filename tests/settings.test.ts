@@ -17,7 +17,6 @@ const DEFAULTS = {
   databaseUrl: 'postgresql://mokosz:mokosz@localhost:5433/mokosz',
   ollamaBaseUrl: 'http://localhost:11434',
   defaultProfile: 'local-qwen',
-  uploadsDir: 'data/uploads',
 }
 
 function envFileWith(text: string): string {
@@ -31,12 +30,11 @@ const anthropicBase = (env: Record<string, string>): string =>
 
 /** The settings as plain values, with the API key revealed. */
 function plain(settings: Settings): Record<string, string | null> {
-  const { databaseUrl, ollamaBaseUrl, defaultProfile, uploadsDir, anthropicApiKey } = settings
+  const { databaseUrl, ollamaBaseUrl, defaultProfile, anthropicApiKey } = settings
   return {
     databaseUrl,
     ollamaBaseUrl,
     defaultProfile,
-    uploadsDir,
     anthropicApiKey: anthropicApiKey?.reveal() ?? null,
   }
 }
@@ -67,7 +65,6 @@ describe('settings', () => {
     ['DATABASE_URL', 'databaseUrl'],
     ['OLLAMA_BASE_URL', 'ollamaBaseUrl'],
     ['DEFAULT_PROFILE', 'defaultProfile'],
-    ['UPLOADS_DIR', 'uploadsDir'],
   ])('%s: the environment wins over .env, which wins over the default', ([name, field]) => {
     const envFile = envFileWith(`${name}=from-file\n`)
     const read = (env: Record<string, string>, file: string | null) =>
@@ -140,7 +137,7 @@ describe('settings', () => {
 
     expect(run).toThrow(SettingsError)
     expect(run).toThrow(
-      `${envFile}: ${message}DATABASE_URL, OLLAMA_BASE_URL, DEFAULT_PROFILE, ANTHROPIC_API_KEY, UPLOADS_DIR)`,
+      `${envFile}: ${message}DATABASE_URL, OLLAMA_BASE_URL, DEFAULT_PROFILE, ANTHROPIC_API_KEY)`,
     )
   })
 

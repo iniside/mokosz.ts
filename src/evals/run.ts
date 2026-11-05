@@ -387,7 +387,6 @@ export async function runQaEval(options: EvalOptions): Promise<EvalResult> {
 
 export interface EvalCommandOptions {
   profile?: string
-  set: string
   repeat: number
 }
 

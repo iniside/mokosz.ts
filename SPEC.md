@@ -260,13 +260,13 @@ None of these routes or events exists in the code; they are the contract for the
   - `invoices` (groundwork: `status`, `run_id`, `thread_id`, `pdf_path`, `extracted`, `failed_rules`, `final`, `decision`, `override`, `note`, `decided_at`, `created_at`).
 - Conversations are Memory threads, not a table of their own.
 - Eval results are files, not tables (see §6).
-- Settings come from the environment, then `.env` in the working directory, then defaults: `DATABASE_URL`, `OLLAMA_BASE_URL`, `DEFAULT_PROFILE`, `ANTHROPIC_API_KEY`, `UPLOADS_DIR` (reserved for invoice uploads; nothing uses it yet). Names are exact and upper-case; an unknown name in `.env` is an error; there is no `${VAR}` expansion. `ANTHROPIC_API_BASE`, or else `ANTHROPIC_BASE_URL` (default `https://api.anthropic.com`), is read from the process environment only, never from `.env`.
+- Settings come from the environment, then `.env` in the working directory, then defaults: `DATABASE_URL`, `OLLAMA_BASE_URL`, `DEFAULT_PROFILE`, `ANTHROPIC_API_KEY`. Names are exact and upper-case; an unknown name in `.env` is an error; there is no `${VAR}` expansion. `ANTHROPIC_API_BASE`, or else `ANTHROPIC_BASE_URL` (default `https://api.anthropic.com`), is read from the process environment only, never from `.env`.
 
 ### 6. Evals
 As implemented (decision 0015):
 - **Retrieval:** 20 EN/PL queries in `evals/retrieval/queries.json`; `mokosz embed` prints recall@5 per model.
 - **Q&A set** in `evals/qa/items.json`: 30 items, 15 EN and 15 PL, 5 of them unanswerable from the three acts (expected: `not_found`). Each answerable item has expected citation keys, a short reference answer, and evidence quotes; a test checks that every expected key exists and its chunk contains the quote. The set was written by a model from the regulation texts and is not reviewed by a lawyer.
-- **`mokosz eval [--profile <name>] [--set qa] [--repeat N]`** asks every item in a new conversation through the real executor and workflow, after one warm-up turn, and reports:
+- **`mokosz eval [--profile <name>] [--repeat N]`** asks every item in a new conversation through the real executor and workflow, after one warm-up turn, and reports:
   - citation precision and recall over citation keys, macro and micro, on answerable items; a key counts only when the answer is in the item's language;
   - correct abstentions (unanswerable → `not_found`), false abstentions (answerable → `not_found`), `not_found` accuracy and failed turns;
   - latency p50 and p95 (nearest rank) over the turns after the warm-up; the warm-up's latency is reported as the cold start.
@@ -306,13 +306,13 @@ In development, Vite proxies `/api` to `127.0.0.1:8000`.
 
   | Command | What it does |
   |---|---|
-  | `mokosz setup [--profile <name>]…` | checks Docker and Ollama, pulls the Ollama models of the given profiles (default: `DEFAULT_PROFILE`) plus `bge-m3`, starts `db` with `docker compose up -d --wait db`, migrates, seeds, and enables the commit-msg hook (`git config core.hooksPath .githooks`). An unreachable Ollama is a warning, and no models are pulled |
+  | `mokosz setup [--profile <name>]…` | checks Docker and Ollama, pulls the Ollama models of the given profiles (default: `DEFAULT_PROFILE`) plus `bge-m3`, starts `db` with `docker compose up -d --wait db`, migrates and seeds. An unreachable Ollama is a warning, and no models are pulled |
   | `mokosz fetch [--force]` | downloads the regulations into `data/raw/`; existing files are kept unless `--force` |
   | `mokosz embed [--model <name>]…` | embeds the chunks and the retrieval queries into `data/embeddings/{model}/` (default `bge-m3`) and prints recall@5 |
   | `mokosz seed` | loads chunks and their committed embeddings into Postgres (invoices enter only through the upload, decision 0009) |
   | `mokosz generate-invoices [--out <dir>] [--seed <n>]` | builds the invoice set; the defaults reproduce the committed `data/invoices/` |
   | `mokosz serve [--host 127.0.0.1] [--port 8000] [--reload]` | runs the API until Ctrl+C; `--reload` restarts it on file changes (`node --watch`) |
-  | `mokosz eval [--profile <name>] [--set qa] [--repeat N]` | runs the Q&A eval |
+  | `mokosz eval [--profile <name>] [--repeat N]` | runs the Q&A eval |
   | `mokosz screenshots [--url http://localhost:4173] [--conversation <uuid>] [--question <text>]` | captures the README images |
 
   A failed command exits 1; a usage error gets commander's message and a non-zero exit; `serve` exits 3 when the app cannot start (database or runtime), and 1 when it cannot bind the port.

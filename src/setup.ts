@@ -49,7 +49,7 @@ export async function setup(
   const models = await modelsToPull(profiles.length > 0 ? profiles : [settings.defaultProfile])
 
   if (deps.run(['docker', 'info'], root).status !== 0) {
-    throw new CommandError('Docker is not running: start Docker Desktop')
+    throw new CommandError('Docker is not running: start the Docker daemon')
   }
   process.stdout.write('Docker: ok\n')
 
@@ -70,8 +70,4 @@ export async function setup(
   process.stdout.write('Migrations: at head\n')
 
   await seedCommand(root, settings.databaseUrl, deps.seedDatabase)
-
-  const hooks = deps.run(['git', 'config', 'core.hooksPath', '.githooks'], root)
-  if (hooks.status !== 0) throw failed('Enabling the commit-msg hook failed', hooks)
-  process.stdout.write('Git hooks: core.hooksPath = .githooks\n')
 }

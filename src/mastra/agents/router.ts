@@ -31,7 +31,6 @@ export const RouterOutputSchema = z.strictObject({
   article_refs: z.array(RouterRefSchema),
   query: z.string().trim().min(1),
 })
-export type RouterOutput = z.output<typeof RouterOutputSchema>
 
 export interface Message {
   readonly role: 'user' | 'assistant'

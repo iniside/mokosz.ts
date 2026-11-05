@@ -21,7 +21,6 @@ const ROOT = resolve(import.meta.dirname, '..')
 
 const DOCKER_INFO = ['docker', 'info']
 const COMPOSE_UP = ['docker', 'compose', 'up', '-d', '--wait', 'db']
-const GIT_HOOKS = ['git', 'config', 'core.hooksPath', '.githooks']
 const SEED = ['seed']
 
 type Call = [string[], string | undefined]
@@ -222,7 +221,7 @@ describe('mokosz setup', () => {
     expect(result).toEqual({
       code: 1,
       stdout: '',
-      stderr: 'Docker is not running: start Docker Desktop\n',
+      stderr: 'Docker is not running: start the Docker daemon\n',
     })
     expect(ollama.hits).toEqual([])
     expect(runner.commands).toEqual([DOCKER_INFO])
@@ -244,7 +243,6 @@ describe('mokosz setup', () => {
       [DOCKER_INFO, '/fake/root'],
       [COMPOSE_UP, '/fake/root'],
       [SEED, '/fake/root'],
-      [GIT_HOOKS, '/fake/root'],
     ])
     const head = (await readdir(MIGRATIONS_DIR))
       .map((file) => file.replace(/\.sql$/, ''))
@@ -266,7 +264,6 @@ describe('mokosz setup', () => {
       'Database: up',
       'Migrations: at head',
       'Seed: 42 chunks',
-      'Git hooks: core.hooksPath = .githooks',
       '',
     ])
   })
@@ -283,7 +280,6 @@ describe('mokosz setup', () => {
 
     expect(result.code).toBe(1)
     expect(result.stderr).toBe('Seeding failed: chunks.json does not list the corpus keys\n')
-    expect(result.stdout).not.toContain('Git hooks')
     expect(runner.commands).toEqual([DOCKER_INFO, COMPOSE_UP, SEED])
   })
 
@@ -298,7 +294,7 @@ describe('mokosz setup', () => {
       `Warning: Ollama is not reachable at ${closed}; models not pulled\n`,
     )
     expect(result.stdout).not.toContain('Pulled')
-    expect(runner.commands).toEqual([DOCKER_INFO, COMPOSE_UP, SEED, GIT_HOOKS])
+    expect(runner.commands).toEqual([DOCKER_INFO, COMPOSE_UP, SEED])
     expect(await hasVector(url)).toBe(true)
   })
 
@@ -542,33 +538,6 @@ describe('mokosz setup', () => {
 
     expect(stdout).not.toContain('Migrations: at head')
     expect(stdout).not.toContain('Seed')
-    expect(stdout).not.toContain('Git hooks')
     expect(runner.commands).toEqual([DOCKER_INFO, COMPOSE_UP])
-  })
-
-  test('setup stops when enabling the hook fails', async ({ throwawayDatabaseUrl: url }) => {
-    const runner = new FakeRunner(
-      { [GIT_HOOKS.join(' ')]: 1 },
-      { [GIT_HOOKS.join(' ')]: 'fatal: bad config' },
-    )
-    const ollama = await startOllama()
-
-    const result = await runSetup(fakeSetup(runner).deps, url, ollama.url)
-
-    expect(result.code).toBe(1)
-    expect(result.stderr).toBe('Enabling the commit-msg hook failed\nfatal: bad config\n')
-    expect(result.stdout).toBe(
-      [
-        'Docker: ok',
-        `Ollama: ok (${ollama.url})`,
-        'Pulled qwen3.6:27b',
-        'Pulled bge-m3',
-        'Database: up',
-        'Migrations: at head',
-        'Seed: 42 chunks',
-        '',
-      ].join('\n'),
-    )
-    expect(runner.commands).toEqual([DOCKER_INFO, COMPOSE_UP, SEED, GIT_HOOKS])
   })
 })
