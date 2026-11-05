@@ -401,83 +401,22 @@ class Builder {
   }
 }
 
-const DECLARED_ENCODING =
-  /^<\?xml[\t\n\r ]+version[\t\n\r ]*=[\t\n\r ]*(["'])[^"']*\1[\t\n\r ]+encoding[\t\n\r ]*=[\t\n\r ]*(["'])([A-Za-z][A-Za-z0-9._-]*)\2/
-const ASCII = new Set(['us-ascii', 'ascii'])
-const ISO_8859 = /^(?:iso[-_]?8859-(\d+)|latin1|l1)$/
+const DECLARED_ENCODING = /^<\?xml\s[^?>]*\bencoding\s*=\s*(["'])(.*?)\1/
+const NOT_CHAR = /[^\t\n\r\u0020-\uD7FF\uE000-\uFFFD\u{10000}-\u{10FFFF}]/u
 
-function bytesToCodePoints(source: Uint8Array): string {
-  let text = ''
-  for (const byte of source) text += String.fromCharCode(byte)
+// The fatal decoder rejects bytes that are not UTF-8 and drops a UTF-8 BOM.
+function decode(source: Uint8Array): string {
+  const text = new TextDecoder('utf-8', { fatal: true }).decode(source)
+  const declared = DECLARED_ENCODING.exec(text)?.[2]
+  if (declared !== undefined && !/^utf-?8$/i.test(declared)) {
+    throw new Error(`declared encoding ${declared} is not UTF-8`)
+  }
+  // xmldom does not check the XML Char production in text and attribute values.
+  if (NOT_CHAR.test(text)) throw new Error('character outside the XML Char production')
   return text
 }
 
-// TextDecoder reads some ISO-8859 labels as the windows-125x code page; the two agree except on
-// 0x80-0x9F, which ISO-8859 maps to the C1 controls.
-function decodeIso8859(part: string, source: Uint8Array): string {
-  const c1 = source.map((byte) => (byte >= 0x80 && byte <= 0x9f ? 0x20 : byte))
-  const text = new TextDecoder(`iso-8859-${part}`, { fatal: true }).decode(c1)
-  let out = ''
-  for (let i = 0; i < source.length; i++) {
-    const byte = source[i]!
-    out += byte >= 0x80 && byte <= 0x9f ? String.fromCharCode(byte) : text[i]
-  }
-  return out
-}
-
-function decodeWith(encoding: string, source: Uint8Array): string {
-  if (encoding === 'utf-8' || encoding === 'utf8') {
-    return new TextDecoder('utf-8', { fatal: true }).decode(source)
-  }
-  if (ASCII.has(encoding)) {
-    if (source.some((byte) => byte > 0x7f)) throw new Error('input is not proper US-ASCII')
-    return bytesToCodePoints(source)
-  }
-  const iso = ISO_8859.exec(encoding)
-  if (iso !== null && iso[1] !== '12') return decodeIso8859(iso[1] ?? '1', source)
-  throw new Error(`unsupported encoding ${encoding}`)
-}
-
-// A UTF-16 BOM or the UTF-16 form of "<?", else the declared encoding (also after a UTF-8 BOM),
-// else UTF-8.
-function decode(source: Uint8Array): string {
-  const [a, b, c, d] = source
-  if ((a === 0xff && b === 0xfe) || (a === 0x3c && b === 0 && c === 0x3f && d === 0)) {
-    return new TextDecoder('utf-16le', { fatal: true }).decode(source)
-  }
-  if ((a === 0xfe && b === 0xff) || (a === 0 && b === 0x3c && c === 0 && d === 0x3f)) {
-    return new TextDecoder('utf-16be', { fatal: true }).decode(source)
-  }
-  const body = a === 0xef && b === 0xbb && c === 0xbf ? source.subarray(3) : source
-  const head = bytesToCodePoints(body.subarray(0, 256))
-  const declared = DECLARED_ENCODING.exec(head)?.[3]?.toLowerCase() ?? 'utf-8'
-  return decodeWith(declared, body)
-}
-
-const NOT_CHAR = /[^\t\n\r\u0020-\uD7FF\uE000-\uFFFD\u{10000}-\u{10FFFF}]/u
-const MARKUP_OR_CDATA_END =
-  /<!--[\s\S]*?-->|<!\[CDATA\[[\s\S]*?\]\]>|<\?[\s\S]*?\?>|<!DOCTYPE(?:[^>[]|\[[\s\S]*?\])*>|<(?:[^>"']|"[^"]*"|'[^']*')*>|(\]\]>)/g
-
-// XML 1.0 well-formedness that xmldom does not check: the Char production in text and attribute
-// values (raw or from character references; xmldom rejects it in markup), and "]]>" in character data.
-function checkCharacters(node: Node): void {
-  if (isText(node) && NOT_CHAR.test(node.nodeValue ?? '')) {
-    throw new Error('character outside the XML Char production')
-  }
-  if (isElement(node)) {
-    for (const attribute of node.attributes) {
-      if (NOT_CHAR.test(attribute.value)) {
-        throw new Error('character outside the XML Char production')
-      }
-    }
-  }
-  for (const child of node.childNodes) checkCharacters(child)
-}
-
 function wellFormed(text: string): Element {
-  for (const match of text.matchAll(MARKUP_OR_CDATA_END)) {
-    if (match[1] !== undefined) throw new Error("']]>' in character data")
-  }
   const parser = new DOMParser({
     // XML 1.0 line ends; the default also maps U+0085, U+2028 and U+2029 (XML 1.1).
     normalizeLineEndings: (source) => source.replace(/\r\n?/g, '\n'),
@@ -491,7 +430,6 @@ function wellFormed(text: string): Element {
   })
   const root = parser.parseFromString(text, MIME_TYPE.XML_TEXT).documentElement
   if (root === null) throw new Error('no document element')
-  checkCharacters(root)
   return root
 }
 

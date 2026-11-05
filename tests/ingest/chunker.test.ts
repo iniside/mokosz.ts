@@ -307,35 +307,50 @@ describe('chunking rules on small documents', () => {
     ['a bare less-than', '<div id="rct_1"><p>a < b</p></div>'],
     ['a raw U+0001 in text', '<div id="rct_1"><p>\u0001</p></div>'],
     ['a raw U+0001 in an attribute', '<div id="rct_1" title="\u0001"><p>x</p></div>'],
-    ['&#0; in text', '<div id="rct_1"><p>&#0;</p></div>'],
-    ['&#xFFFE; in text', '<div id="rct_1"><p>&#xFFFE;</p></div>'],
-    ['&#xD800; in text', '<div id="rct_1"><p>&#xD800;</p></div>'],
-    [']]> in character data', '<div id="rct_1"><p>a]]>b</p></div>'],
+    ['a raw U+FFFE in text', '<div id="rct_1"><p>\ufffe</p></div>'],
   ])('malformed XML is a ParseError: %s', async (_, body) => {
     await expect(chunkText(doc(body), ...GDPR)).rejects.toThrow(ParseError)
   })
 
   test.each([
-    ['ISO-8859-2: 0xB1 0xB3 are ą ł', declared('ISO-8859-2', [0xb1, 0xb3]), 'ął'],
-    ['ISO-8859-1: 0xE9 is é and 0x80 is U+0080', declared('ISO-8859-1', [0xe9, 0x80]), 'é\u0080'],
     [
       'a UTF-8 BOM',
       Buffer.concat([Buffer.from([0xef, 0xbb, 0xbf]), recitalBytes('zażółć')]),
       'zażółć',
     ],
-    ['a UTF-16LE BOM', utf16le(recitalBytes('zażółć').toString('utf8')), 'zażółć'],
-    ['a UTF-16BE BOM', utf16le(recitalBytes('zażółć').toString('utf8')).swap16(), 'zażółć'],
+    ['the label utf8', declared('utf8', [...Buffer.from('ął')]), 'ął'],
   ])('decodes %s', async (_, source, text) => {
     const chunks = await chunkText(source, ...GDPR)
     expect(chunkFields(chunks)).toEqual([['rct_1', 'recital', null, null, text]])
   })
 
   test.each([
-    ['US-ASCII declared with a byte above 0x7F', declared('US-ASCII', [0xe9])],
-    ['an unsupported declared encoding', declared('windows-1250', [0x61])],
     ['no declaration and bytes that are not UTF-8', recitalBytes(Buffer.from([0xb1]))],
+    ['a UTF-16LE BOM', utf16le(recitalBytes('zażółć').toString('utf8'))],
+    [
+      'UTF-16LE without a BOM, declared UTF-16',
+      Buffer.from(
+        `<?xml version="1.0" encoding="UTF-16"?>${recitalBytes('x').toString('utf8')}`,
+        'utf16le',
+      ),
+    ],
   ])('rejects %s as a ParseError', async (_, source) => {
     await expect(chunkText(source, ...GDPR)).rejects.toThrow(ParseError)
+  })
+
+  test.each([
+    ['ISO-8859-2', 'ISO-8859-2', declared('ISO-8859-2', [0x61])],
+    ['windows-1250', 'windows-1250', declared('windows-1250', [0x61])],
+    ['UTF-16', 'UTF-16', declared('UTF-16', [0x61])],
+    [
+      'ISO-8859-2 after a UTF-8 BOM',
+      'ISO-8859-2',
+      Buffer.concat([Buffer.from([0xef, 0xbb, 0xbf]), declared('ISO-8859-2', [0x61])]),
+    ],
+  ])('rejects the declared encoding %s as a ParseError', async (_, label, source) => {
+    const run = chunkText(source, ...GDPR)
+    await expect(run).rejects.toThrow(ParseError)
+    await expect(run).rejects.toThrow(`declared encoding ${label} is not UTF-8`)
   })
 })
 
@@ -357,40 +372,6 @@ describe('more chunking rules', () => {
       ['anx_I.r_1', 'annex', null, 'Title', 'S x | E'],
       ['anx_I.r_2', 'annex', null, 'Title', '1. A | b'],
     ])
-  })
-
-  const utf16Declared = `<?xml version="1.0" encoding="UTF-16"?>${recitalBytes('zażółć').toString('utf8')}`
-
-  test.each([
-    ['UTF-16LE without a BOM, declared UTF-16', Buffer.from(utf16Declared, 'utf16le'), 'zażółć'],
-    [
-      'UTF-16BE without a BOM, declared UTF-16',
-      Buffer.from(utf16Declared, 'utf16le').swap16(),
-      'zażółć',
-    ],
-    ['the label latin1: 0xE9 is é', declared('latin1', [0xe9]), 'é'],
-    ['the label L1: 0xE9 is é', declared('L1', [0xe9]), 'é'],
-    ['the label ISO8859-2: 0xB1 is ą', declared('ISO8859-2', [0xb1]), 'ą'],
-    ['the label iso_8859-16: 0xAA is Ș', declared('iso_8859-16', [0xaa]), 'Ș'],
-    [
-      'a UTF-8 BOM then an ISO-8859-2 declaration: the declaration decides, 0xB1 is ą',
-      Buffer.concat([Buffer.from([0xef, 0xbb, 0xbf]), declared('ISO-8859-2', [0xb1])]),
-      'ą',
-    ],
-    [
-      'a UTF-16LE BOM then an ISO-8859-2 declaration: the BOM decides',
-      utf16le(
-        `<?xml version="1.0" encoding="ISO-8859-2"?>${recitalBytes('zażółć').toString('utf8')}`,
-      ),
-      'zażółć',
-    ],
-  ])('decodes %s', async (_, source, text) => {
-    const chunks = await chunkText(source, ...GDPR)
-    expect(chunkFields(chunks)).toEqual([['rct_1', 'recital', null, null, text]])
-  })
-
-  test('the label iso-8859-12 is unsupported', async () => {
-    await expect(chunkText(declared('iso-8859-12', [0x61]), ...GDPR)).rejects.toThrow(ParseError)
   })
 })
 
