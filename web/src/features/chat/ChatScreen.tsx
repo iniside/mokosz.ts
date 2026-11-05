@@ -19,7 +19,11 @@ import { MessageList } from '@/features/chat/MessageList'
 import { setConversationId, useConversationId } from '@/features/chat/url'
 import { useRunStream } from '@/features/chat/useRunStream'
 
-type Loaded = { id: string; conversation: Conversation } | { id: string; error: ApiError }
+interface Loaded {
+  id: string
+  conversation: Conversation | null
+  error: ApiError | null
+}
 
 function asApiError(error: unknown): ApiError {
   if (error instanceof ApiError) return error
@@ -34,9 +38,15 @@ function useConversation(id: string | null) {
     if (!id) return
     const controller = new AbortController()
     getConversation(id, controller.signal).then(
-      (conversation) => setLoaded({ id, conversation }),
+      (conversation) => setLoaded({ id, conversation, error: null }),
       (error: unknown) => {
-        if (!controller.signal.aborted) setLoaded({ id, error: asApiError(error) })
+        if (controller.signal.aborted) return
+        const failure = asApiError(error)
+        setLoaded((prev) => ({
+          id,
+          conversation: prev?.id === id ? prev.conversation : null,
+          error: failure,
+        }))
       },
     )
     return () => controller.abort()
@@ -44,9 +54,12 @@ function useConversation(id: string | null) {
 
   const reload = useCallback(() => setVersion((v) => v + 1), [])
   const current = id && loaded?.id === id ? loaded : null
+  const conversation = current?.conversation ?? null
+  const failure = current?.error ?? null
   return {
-    conversation: current && 'conversation' in current ? current.conversation : null,
-    error: current && 'error' in current ? current.error : null,
+    conversation,
+    error: conversation ? null : failure,
+    reloadError: conversation ? failure : null,
     reload,
   }
 }
@@ -150,7 +163,7 @@ interface Pending {
 
 export function ChatScreen() {
   const id = useConversationId()
-  const { conversation, error, reload } = useConversation(id)
+  const { conversation, error, reloadError, reload } = useConversation(id)
   const turns = conversation?.turns ?? []
   const last = turns.at(-1)
   const activeRunId = last?.status === 'running' ? last.run_id : null
@@ -237,6 +250,22 @@ export function ChatScreen() {
         <div className="mx-auto w-full max-w-[56rem] px-8 pt-10 pb-12">
           {showEmpty && <EmptyState onAsk={(text) => void send(text)} disabled={busy} />}
           {id !== null && error && <LoadError error={error} onRetry={reload} />}
+          {id !== null && reloadError && (
+            <div
+              role="alert"
+              className="mb-6 flex items-center gap-3 border-l-2 border-destructive/70 py-1 pl-4 text-sm text-muted-foreground"
+            >
+              <span>
+                {reloadError.unreachable
+                  ? 'The API is unreachable.'
+                  : 'The conversation could not be refreshed.'}{' '}
+                Showing the last loaded version.
+              </span>
+              <Button variant="outline" size="sm" onClick={reload}>
+                Try again
+              </Button>
+            </div>
+          )}
           {id !== null && !conversation && !error && pendingShown === null && <LoadingTurns />}
           {!showEmpty && (conversation || pendingShown !== null) && !error && (
             <MessageList

@@ -65,8 +65,10 @@ export function useRunStream(
     }
     const fresh = (event: MessageEvent<string>) => {
       const seq = Number(event.lastEventId)
-      if (seq <= lastSeq.current.seq) return false
-      lastSeq.current.seq = seq
+      if (Number.isFinite(seq)) {
+        if (seq <= lastSeq.current.seq) return false
+        lastSeq.current.seq = seq
+      }
       if (reconnected) {
         reconnected = false
         attempts.current.n = 0
