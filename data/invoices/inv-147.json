@@ -1,0 +1,69 @@
+{
+  "invoice": {
+    "number": "RE-2026-0147",
+    "issue_date": "2026-01-18",
+    "sale_date": "2026-01-18",
+    "currency": "EUR",
+    "seller": {
+      "name": "Forst-Kleinsteuber",
+      "tax_id": "DE242254639",
+      "country": "DE",
+      "address": "Alte Heide 5, 95060 Süd Nadja"
+    },
+    "buyer": {
+      "name": "Madetzky OHG",
+      "tax_id": "DE443488750",
+      "country": "DE",
+      "address": "Raushofstr. 29c, 91431 Richarddorf"
+    },
+    "lines": [
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "48.5",
+        "unit_net": "185.63",
+        "vat_rate": "19",
+        "net": "9003.06"
+      },
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "4",
+        "unit_net": "1867.78",
+        "vat_rate": "19",
+        "net": "7471.12"
+      },
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "2",
+        "unit_net": "361.61",
+        "vat_rate": "19",
+        "net": "723.22"
+      },
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "46",
+        "unit_net": "117.30",
+        "vat_rate": "19",
+        "net": "5395.80"
+      },
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "10",
+        "unit_net": "37.90",
+        "vat_rate": "7",
+        "net": "379.00"
+      },
+      {
+        "description": "Tonerkartusche",
+        "quantity": "2",
+        "unit_net": "141.47",
+        "vat_rate": "19",
+        "net": "282.94"
+      }
+    ],
+    "total_net": "23255.14",
+    "total_vat": "4373.00",
+    "total_gross": "27628.14"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

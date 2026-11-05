@@ -1,0 +1,64 @@
+{
+  "invoice": {
+    "number": "FV/2026/01/074",
+    "issue_date": "2026-01-31",
+    "sale_date": "2026-01-31",
+    "currency": "PLN",
+    "seller": {
+      "name": "Michałek Sp. p.",
+      "tax_id": "5551839020",
+      "country": "PL",
+      "address": "park Morawski 238, 48-622 Nowe Skalmierzyce"
+    },
+    "buyer": {
+      "name": "Pawelec, Kozak and Kołodziejski",
+      "tax_id": "4247630504",
+      "country": "PL",
+      "address": "ul. Lewandowski 61c, 29-218 Lipsko"
+    },
+    "lines": [
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "10",
+        "unit_net": "1205.81",
+        "vat_rate": "0",
+        "net": "12058.10"
+      },
+      {
+        "description": "Usługa transportowa krajowa",
+        "quantity": "2",
+        "unit_net": "487.94",
+        "vat_rate": "23",
+        "net": "975.88"
+      },
+      {
+        "description": "Prenumerata czasopisma branżowego",
+        "quantity": "3",
+        "unit_net": "151.73",
+        "vat_rate": "5",
+        "net": "455.19"
+      },
+      {
+        "description": "Usługa programistyczna (godz.)",
+        "quantity": "41",
+        "unit_net": "211.25",
+        "vat_rate": "23",
+        "net": "8661.25"
+      },
+      {
+        "description": "Krzesło biurowe obrotowe",
+        "quantity": "10",
+        "unit_net": "1096.31",
+        "vat_rate": "23",
+        "net": "10963.10"
+      }
+    ],
+    "total_net": "33200.69",
+    "total_vat": "4760.81",
+    "total_gross": "37961.50"
+  },
+  "defect": 1,
+  "expected_failed_rules": [
+    "lines_total"
+  ]
+}

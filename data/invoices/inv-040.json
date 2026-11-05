@@ -1,0 +1,64 @@
+{
+  "invoice": {
+    "number": "RE-2026-0040",
+    "issue_date": "2026-03-08",
+    "sale_date": "2026-03-08",
+    "currency": "EUR",
+    "seller": {
+      "name": "Kral AG",
+      "tax_id": "DE469558823",
+      "country": "DE",
+      "address": "Uppersberg 4, 30297 Bad Francescaburg"
+    },
+    "buyer": {
+      "name": "Friedenberg Gruppe",
+      "tax_id": "DE765735527",
+      "country": "DE",
+      "address": "Ginsterweg 289, 56265 Smillaburg"
+    },
+    "lines": [
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "1",
+        "unit_net": "128.51",
+        "vat_rate": "7",
+        "net": "128.51"
+      },
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "59",
+        "unit_net": "123.34",
+        "vat_rate": "19",
+        "net": "7277.06"
+      },
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "46",
+        "unit_net": "104.10",
+        "vat_rate": "19",
+        "net": "4788.60"
+      },
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "1",
+        "unit_net": "60.57",
+        "vat_rate": "7",
+        "net": "60.57"
+      },
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "3",
+        "unit_net": "201.40",
+        "vat_rate": "19",
+        "net": "604.20"
+      }
+    ],
+    "total_net": "12611.88",
+    "total_vat": "2420.51",
+    "total_gross": "15032.39"
+  },
+  "defect": 1,
+  "expected_failed_rules": [
+    "lines_total"
+  ]
+}

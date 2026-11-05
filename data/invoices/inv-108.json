@@ -1,0 +1,64 @@
+{
+  "invoice": {
+    "number": "FV/2026/02/108",
+    "issue_date": "2026-02-09",
+    "sale_date": "2026-01-30",
+    "currency": "PLN",
+    "seller": {
+      "name": "Wąsik-Gutowski",
+      "tax_id": "5949479190",
+      "country": "PL",
+      "address": "szosa Dąbek 31c, 09-561 Leśna"
+    },
+    "buyer": {
+      "name": "Sławiński S.A.",
+      "tax_id": "3442560944",
+      "country": "PL",
+      "address": "ul. Marek 83a, 17-746 Grodków"
+    },
+    "lines": [
+      {
+        "description": "Hosting serwera VPS – 1 miesiąc",
+        "quantity": "10",
+        "unit_net": "293.10",
+        "vat_rate": "23",
+        "net": "2931.00"
+      },
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "61",
+        "unit_net": "232.44",
+        "vat_rate": "23",
+        "net": "14178.84"
+      },
+      {
+        "description": "Usługa doradcza świadczona za granicą",
+        "quantity": "10",
+        "unit_net": "5408.66",
+        "vat_rate": "np",
+        "net": "54086.60"
+      },
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "10",
+        "unit_net": "981.59",
+        "vat_rate": "8",
+        "net": "9815.90"
+      },
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "2",
+        "unit_net": "3948.00",
+        "vat_rate": "0",
+        "net": "7896.00"
+      }
+    ],
+    "total_net": "89275.85",
+    "total_vat": "4720.53",
+    "total_gross": "93996.38"
+  },
+  "defect": 1,
+  "expected_failed_rules": [
+    "lines_total"
+  ]
+}

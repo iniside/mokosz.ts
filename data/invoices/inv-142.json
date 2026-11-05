@@ -1,0 +1,43 @@
+{
+  "invoice": {
+    "number": "RE-2026-0142",
+    "issue_date": "2026-06-26",
+    "sale_date": "2026-06-25",
+    "currency": "EUR",
+    "seller": {
+      "name": "Schuldt, Brandenburg und Maak",
+      "tax_id": "DE921410037",
+      "country": "DE",
+      "address": "Friedrich-Naumann-Str. 8, 51889 Neu Emanuelland"
+    },
+    "buyer": {
+      "name": "Roloff-Wessinghage",
+      "tax_id": "DE547986146",
+      "country": "DE",
+      "address": "Röntgenstr. 88b, 87517 Worms"
+    },
+    "lines": [
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "10",
+        "unit_net": "239.24",
+        "vat_rate": "23",
+        "net": "2392.40"
+      },
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "1",
+        "unit_net": "247.71",
+        "vat_rate": "19",
+        "net": "247.71"
+      }
+    ],
+    "total_net": "2640.11",
+    "total_vat": "597.31",
+    "total_gross": "3237.42"
+  },
+  "defect": 5,
+  "expected_failed_rules": [
+    "vat_rate_country"
+  ]
+}

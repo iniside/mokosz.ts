@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "RE-2026-0079",
+    "issue_date": "2026-05-23",
+    "sale_date": "2026-05-22",
+    "currency": "EUR",
+    "seller": {
+      "name": "Hirt UG",
+      "tax_id": "DE417707550",
+      "country": "DE",
+      "address": "Am Sandberg 436, 70072 Bottrop"
+    },
+    "buyer": {
+      "name": "Best-Geisler",
+      "tax_id": "DE749496315",
+      "country": "DE",
+      "address": "Eschenallee 1, 12878 Bennoburg"
+    },
+    "lines": [
+      {
+        "description": "Fachbuch",
+        "quantity": "1",
+        "unit_net": "61.53",
+        "vat_rate": "7",
+        "net": "61.53"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "2",
+        "unit_net": "133.56",
+        "vat_rate": "19",
+        "net": "267.12"
+      },
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "1",
+        "unit_net": "2436.51",
+        "vat_rate": "19",
+        "net": "2436.51"
+      },
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "2",
+        "unit_net": "203.21",
+        "vat_rate": "0",
+        "net": "406.42"
+      },
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "31.5",
+        "unit_net": "129.16",
+        "vat_rate": "19",
+        "net": "4068.54"
+      }
+    ],
+    "total_net": "7240.12",
+    "total_vat": "1291.02",
+    "total_gross": "8531.14"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "RE-2026-0045",
+    "issue_date": "2026-07-11",
+    "sale_date": "2026-07-11",
+    "currency": "EUR",
+    "seller": {
+      "name": "Wolfarth, Fuchs und Steigauf",
+      "tax_id": "DE263821119",
+      "country": "DE",
+      "address": "Entenpfuhl 47b, 34518 Hamburg"
+    },
+    "buyer": {
+      "name": "Dauer GmbH & Co. KG",
+      "tax_id": "DE819036406",
+      "country": "DE",
+      "address": "Robert-Blum-Str. 806, 64583 Göttingen"
+    },
+    "lines": [
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "1",
+        "unit_net": "827.97",
+        "vat_rate": "19",
+        "net": "827.97"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "3",
+        "unit_net": "50.58",
+        "vat_rate": "19",
+        "net": "151.74"
+      },
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "1",
+        "unit_net": "300.03",
+        "vat_rate": "19",
+        "net": "300.03"
+      },
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "20",
+        "unit_net": "63.63",
+        "vat_rate": "7",
+        "net": "1272.60"
+      },
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "10",
+        "unit_net": "147.91",
+        "vat_rate": "19",
+        "net": "1479.10"
+      }
+    ],
+    "total_net": "4031.44",
+    "total_vat": "613.26",
+    "total_gross": "4644.70"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

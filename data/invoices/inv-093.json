@@ -1,0 +1,36 @@
+{
+  "invoice": {
+    "number": "RE-2026-0093",
+    "issue_date": "2026-10-03",
+    "sale_date": "2026-10-03",
+    "currency": "EUR",
+    "seller": {
+      "name": "Matula KG",
+      "tax_id": "DE828081414",
+      "country": "DE",
+      "address": "Auf dem Forst 5, 26004 Dessau-Roßlau"
+    },
+    "buyer": {
+      "name": "Büngener, Ahrenberg und Esenwein",
+      "tax_id": "DE805774148",
+      "country": "DE",
+      "address": "Blankenburg 952, 66924 Bad Stellascheid"
+    },
+    "lines": [
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "2",
+        "unit_net": "456.95",
+        "vat_rate": "19",
+        "net": "913.90"
+      }
+    ],
+    "total_net": "722.77",
+    "total_vat": "173.64",
+    "total_gross": "896.41"
+  },
+  "defect": 1,
+  "expected_failed_rules": [
+    "lines_total"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "invoice": {
+    "number": "FV/2026/06/056",
+    "issue_date": "2026-06-27",
+    "sale_date": "2026-06-22",
+    "currency": "PLN",
+    "seller": {
+      "name": "Furman-Zawadzki",
+      "tax_id": "9285493087",
+      "country": "PL",
+      "address": "wyspa Witek 86b, 62-269 Borne Sulinowo"
+    },
+    "buyer": {
+      "name": "Szafrański SKA",
+      "tax_id": "5530640738",
+      "country": "PL",
+      "address": "bulw. Skowron 3/4, 01-184 Kowary"
+    },
+    "lines": [
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "4",
+        "unit_net": "1572.08",
+        "vat_rate": "0",
+        "net": "6288.32"
+      },
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "1",
+        "unit_net": "1745.59",
+        "vat_rate": "8",
+        "net": "1745.59"
+      },
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "2",
+        "unit_net": "1427.90",
+        "vat_rate": "zw",
+        "net": "2855.80"
+      },
+      {
+        "description": "Usługa noclegowa (doba)",
+        "quantity": "1",
+        "unit_net": "378.94",
+        "vat_rate": "8",
+        "net": "378.94"
+      },
+      {
+        "description": "Monitor 27 cali",
+        "quantity": "4",
+        "unit_net": "1325.98",
+        "vat_rate": "23",
+        "net": "5303.92"
+      },
+      {
+        "description": "Papier biurowy A4, ryza 500 ark.",
+        "quantity": "2",
+        "unit_net": "29.52",
+        "vat_rate": "23",
+        "net": "59.04"
+      }
+    ],
+    "total_net": "16631.61",
+    "total_vat": "1443.25",
+    "total_gross": "18074.86"
+  },
+  "defect": 2,
+  "expected_failed_rules": [
+    "vat_total"
+  ]
+}

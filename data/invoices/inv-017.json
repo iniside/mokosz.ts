@@ -1,0 +1,69 @@
+{
+  "invoice": {
+    "number": "RE-2026-0017",
+    "issue_date": "2026-04-01",
+    "sale_date": "2026-04-01",
+    "currency": "EUR",
+    "seller": {
+      "name": "Haschke-Bremer",
+      "tax_id": "DE384215984",
+      "country": "DE",
+      "address": "Johannisburger Str. 65b, 72274 Ost Jaron"
+    },
+    "buyer": {
+      "name": "Frohn, Flore und Lott",
+      "tax_id": "DE997974833",
+      "country": "DE",
+      "address": "Torstr. 96b, 19041 West Katjastadt"
+    },
+    "lines": [
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "3",
+        "unit_net": "227.04",
+        "vat_rate": "7",
+        "net": "681.12"
+      },
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "10",
+        "unit_net": "1948.58",
+        "vat_rate": "19",
+        "net": "19485.80"
+      },
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "1",
+        "unit_net": "214.67",
+        "vat_rate": "0",
+        "net": "214.67"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "5",
+        "unit_net": "7.13",
+        "vat_rate": "19",
+        "net": "35.65"
+      },
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "20",
+        "unit_net": "49.17",
+        "vat_rate": "7",
+        "net": "983.40"
+      },
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "51",
+        "unit_net": "168.92",
+        "vat_rate": "19",
+        "net": "8614.92"
+      }
+    ],
+    "total_net": "30015.56",
+    "total_vat": "5462.43",
+    "total_gross": "35477.99"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

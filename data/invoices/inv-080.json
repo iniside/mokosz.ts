@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "RE-2026-0080",
+    "issue_date": "2026-02-11",
+    "sale_date": "2026-02-06",
+    "currency": "EUR",
+    "seller": {
+      "name": "Dombrowski Gruppe",
+      "tax_id": "DE905381227",
+      "country": "DE",
+      "address": "An der Steinrütsch 36a, 35088 Bad Klaas"
+    },
+    "buyer": {
+      "name": "Radtke-Kupprion",
+      "tax_id": "DE250779784",
+      "country": "DE",
+      "address": "Am Klösterchen 77c, 74208 Süd Eleonorascheid"
+    },
+    "lines": [
+      {
+        "description": "Tonerkartusche",
+        "quantity": "1",
+        "unit_net": "150.71",
+        "vat_rate": "19",
+        "net": "150.71"
+      },
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "29.5",
+        "unit_net": "190.11",
+        "vat_rate": "19",
+        "net": "5608.25"
+      },
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "12",
+        "unit_net": "394.53",
+        "vat_rate": "19",
+        "net": "4734.36"
+      }
+    ],
+    "total_net": "10493.32",
+    "total_vat": "1993.73",
+    "total_gross": "12487.05"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

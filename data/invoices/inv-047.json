@@ -1,0 +1,36 @@
+{
+  "invoice": {
+    "number": "FV/2026/04/047",
+    "issue_date": "2026-04-27",
+    "sale_date": "2026-04-25",
+    "currency": "PLN",
+    "seller": {
+      "name": "Wójcicki, Przybylski and Izdebski",
+      "tax_id": "1950164917",
+      "country": "PL",
+      "address": "ul. Wróblewski 19a, 91-418 Solec Kujawski"
+    },
+    "buyer": {
+      "name": "Makowski-Zdunek",
+      "tax_id": "4869208270",
+      "country": "PL",
+      "address": "bulw. Flak 35c, 45-731 Wolin"
+    },
+    "lines": [
+      {
+        "description": "Papier biurowy A4, ryza 500 ark.",
+        "quantity": "2",
+        "unit_net": "16.86",
+        "vat_rate": "23",
+        "net": "33.72"
+      }
+    ],
+    "total_net": "33.72",
+    "total_vat": "36.01",
+    "total_gross": "69.73"
+  },
+  "defect": 2,
+  "expected_failed_rules": [
+    "vat_total"
+  ]
+}

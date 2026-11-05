@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "FV/2026/10/032",
+    "issue_date": "2026-10-08",
+    "sale_date": "2026-10-08",
+    "currency": "PLN",
+    "seller": {
+      "name": "Janicki, Motyka and Sitek",
+      "tax_id": "7940291089",
+      "country": "PL",
+      "address": "droga Augustyn 57, 02-040 Lublin"
+    },
+    "buyer": {
+      "name": "Smoliński Sp. j.",
+      "tax_id": "9885632404",
+      "country": "PL",
+      "address": "os. Czaja 43a, 66-968 Skalbmierz"
+    },
+    "lines": [
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "3",
+        "unit_net": "4586.80",
+        "vat_rate": "0",
+        "net": "13760.40"
+      },
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "1",
+        "unit_net": "1987.76",
+        "vat_rate": "23",
+        "net": "1987.76"
+      },
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "1",
+        "unit_net": "3642.05",
+        "vat_rate": "zw",
+        "net": "3642.05"
+      },
+      {
+        "description": "Monitor 27 cali",
+        "quantity": "1",
+        "unit_net": "1195.43",
+        "vat_rate": "23",
+        "net": "1195.43"
+      },
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "51.5",
+        "unit_net": "221.39",
+        "vat_rate": "23",
+        "net": "11401.59"
+      }
+    ],
+    "total_net": "31987.23",
+    "total_vat": "3354.50",
+    "total_gross": "35341.73"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

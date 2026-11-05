@@ -1,0 +1,69 @@
+{
+  "invoice": {
+    "number": "FV/2026/07/015",
+    "issue_date": "2026-07-17",
+    "sale_date": "2026-07-17",
+    "currency": "PLN",
+    "seller": {
+      "name": "Cichocki, Lewandowski and Gawron",
+      "tax_id": "2423486181",
+      "country": "PL",
+      "address": "wyspa Kuś 11, 19-097 Głogówek"
+    },
+    "buyer": {
+      "name": "Wieczorek SKA",
+      "tax_id": "7243816840",
+      "country": "PL",
+      "address": "ul. Banach 70, 49-265 Węgliniec"
+    },
+    "lines": [
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "2",
+        "unit_net": "3485.20",
+        "vat_rate": "zw",
+        "net": "6970.40"
+      },
+      {
+        "description": "Monitor 27 cali",
+        "quantity": "2",
+        "unit_net": "1424.72",
+        "vat_rate": "23",
+        "net": "2849.44"
+      },
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "4",
+        "unit_net": "160.77",
+        "vat_rate": "23",
+        "net": "643.08"
+      },
+      {
+        "description": "Książka specjalistyczna",
+        "quantity": "12",
+        "unit_net": "108.42",
+        "vat_rate": "5",
+        "net": "1301.04"
+      },
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "5",
+        "unit_net": "326.69",
+        "vat_rate": "23",
+        "net": "1633.45"
+      },
+      {
+        "description": "Papier biurowy A4, ryza 500 ark.",
+        "quantity": "3",
+        "unit_net": "19.31",
+        "vat_rate": "23",
+        "net": "57.93"
+      }
+    ],
+    "total_net": "13455.34",
+    "total_vat": "1257.35",
+    "total_gross": "14712.69"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

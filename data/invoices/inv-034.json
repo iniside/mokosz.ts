@@ -1,0 +1,71 @@
+{
+  "invoice": {
+    "number": "RE-2026-0034",
+    "issue_date": "2026-01-08",
+    "sale_date": "2026-01-08",
+    "currency": "EUR",
+    "seller": {
+      "name": "Helm AG",
+      "tax_id": "DE766789350",
+      "country": "DE",
+      "address": "Lycker Str. 61c, 62699 Oliverburg"
+    },
+    "buyer": {
+      "name": "Kirch, Seelig und Richards",
+      "tax_id": "DE819161468",
+      "country": "DE",
+      "address": "Carl-Duisberg-Str. 50a, 11782 Drewsland"
+    },
+    "lines": [
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "20",
+        "unit_net": "1251.92",
+        "vat_rate": "19",
+        "net": "25038.40"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "3",
+        "unit_net": "4.76",
+        "vat_rate": "8",
+        "net": "14.28"
+      },
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "42.5",
+        "unit_net": "137.61",
+        "vat_rate": "19",
+        "net": "5848.43"
+      },
+      {
+        "description": "Tonerkartusche",
+        "quantity": "4",
+        "unit_net": "117.75",
+        "vat_rate": "19",
+        "net": "471.00"
+      },
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "1",
+        "unit_net": "329.30",
+        "vat_rate": "19",
+        "net": "329.30"
+      },
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "2",
+        "unit_net": "1845.83",
+        "vat_rate": "19",
+        "net": "3691.66"
+      }
+    ],
+    "total_net": "35393.07",
+    "total_vat": "6723.11",
+    "total_gross": "42116.18"
+  },
+  "defect": 5,
+  "expected_failed_rules": [
+    "vat_rate_country"
+  ]
+}

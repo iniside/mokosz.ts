@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "RE-2026-0096",
+    "issue_date": "2026-05-21",
+    "sale_date": "2026-05-21",
+    "currency": "EUR",
+    "seller": {
+      "name": "Jucken, Hirt und Kern",
+      "tax_id": "DE291223333",
+      "country": "DE",
+      "address": "Wupperstr. 199, 06928 Rianascheid"
+    },
+    "buyer": {
+      "name": "Schweisfurth, Galander und Holzdeppe",
+      "tax_id": "DE639458017",
+      "country": "DE",
+      "address": "Am Quettinger Feld 8, 84048 Ost Kiradorf"
+    },
+    "lines": [
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "26.5",
+        "unit_net": "123.65",
+        "vat_rate": "19",
+        "net": "3276.73"
+      },
+      {
+        "description": "Tonerkartusche",
+        "quantity": "4",
+        "unit_net": "63.27",
+        "vat_rate": "19",
+        "net": "253.08"
+      },
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "2",
+        "unit_net": "324.62",
+        "vat_rate": "19",
+        "net": "649.24"
+      }
+    ],
+    "total_net": "4179.05",
+    "total_vat": "794.02",
+    "total_gross": "4973.07"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

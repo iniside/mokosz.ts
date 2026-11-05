@@ -1,0 +1,71 @@
+{
+  "invoice": {
+    "number": "RE-2026-0051",
+    "issue_date": "2026-09-16",
+    "sale_date": "2026-09-14",
+    "currency": "EUR",
+    "seller": {
+      "name": "Osenberg KG",
+      "tax_id": "DE291366827",
+      "country": "DE",
+      "address": "Niederblecher 5, 52898 Süd Francesca"
+    },
+    "buyer": {
+      "name": "Wessel-Zekl",
+      "tax_id": "DE237594278",
+      "country": "DE",
+      "address": "Am Neuenhof 81, 36325 Abdulscheid"
+    },
+    "lines": [
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "20",
+        "unit_net": "1016.29",
+        "vat_rate": "19",
+        "net": "20325.80"
+      },
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "1",
+        "unit_net": "201.39",
+        "vat_rate": "19",
+        "net": "201.39"
+      },
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "2",
+        "unit_net": "125.25",
+        "vat_rate": "7",
+        "net": "250.50"
+      },
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "4",
+        "unit_net": "103.80",
+        "vat_rate": "7",
+        "net": "415.20"
+      },
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "24.5",
+        "unit_net": "101.91",
+        "vat_rate": "19",
+        "net": "2496.80"
+      },
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "2",
+        "unit_net": "101.03",
+        "vat_rate": "0",
+        "net": "202.06"
+      }
+    ],
+    "total_net": "23891.75",
+    "total_vat": "4469.62",
+    "total_gross": "28361.37"
+  },
+  "defect": 2,
+  "expected_failed_rules": [
+    "vat_total"
+  ]
+}

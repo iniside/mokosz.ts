@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "RE-2026-0131",
+    "issue_date": "2026-02-26",
+    "sale_date": "2026-02-25",
+    "currency": "EUR",
+    "seller": {
+      "name": "Renk, Thimm und Spielvogel",
+      "tax_id": "DE442701589",
+      "country": "DE",
+      "address": "Rolandstr. 681, 56921 Ost Abduldorf"
+    },
+    "buyer": {
+      "name": "Seibold-Norris",
+      "tax_id": "DE530334576",
+      "country": "DE",
+      "address": "Wiehbachtal 3, 17565 Alt Sanjaburg"
+    },
+    "lines": [
+      {
+        "description": "Fachbuch",
+        "quantity": "12",
+        "unit_net": "48.77",
+        "vat_rate": "7",
+        "net": "585.24"
+      },
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "3",
+        "unit_net": "76.41",
+        "vat_rate": "7",
+        "net": "229.23"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "2",
+        "unit_net": "84.60",
+        "vat_rate": "19",
+        "net": "169.20"
+      },
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "77",
+        "unit_net": "111.38",
+        "vat_rate": "19",
+        "net": "8576.26"
+      },
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "10",
+        "unit_net": "477.84",
+        "vat_rate": "19",
+        "net": "4778.40"
+      }
+    ],
+    "total_net": "14338.33",
+    "total_vat": "2626.54",
+    "total_gross": "16964.87"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

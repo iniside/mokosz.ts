@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "RE-2026-0013",
+    "issue_date": "2026-01-14",
+    "sale_date": "2026-01-09",
+    "currency": "EUR",
+    "seller": {
+      "name": "Böhm OHG",
+      "tax_id": "DE369222828",
+      "country": "DE",
+      "address": "Münsters Gäßchen 94, 20360 Alt Flora"
+    },
+    "buyer": {
+      "name": "Renk, Leist und Mensing",
+      "tax_id": "DE530720951",
+      "country": "DE",
+      "address": "Richard-Wagner-Str. 28c, 83300 Siegen"
+    },
+    "lines": [
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "1",
+        "unit_net": "105.99",
+        "vat_rate": "7",
+        "net": "105.99"
+      },
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "36.5",
+        "unit_net": "180.28",
+        "vat_rate": "19",
+        "net": "6580.22"
+      }
+    ],
+    "total_net": "6686.21",
+    "total_vat": "1257.66",
+    "total_gross": "7943.87"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

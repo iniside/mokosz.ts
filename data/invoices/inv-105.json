@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "FV/2026/07/105",
+    "issue_date": "2026-07-09",
+    "sale_date": "2026-07-08",
+    "currency": "PLN",
+    "seller": {
+      "name": "Gawroński z o.o",
+      "tax_id": "3229725518",
+      "country": "PL",
+      "address": "szosa Niedźwiecki 6/8, 48-608 Dąbrowa Górnicza"
+    },
+    "buyer": {
+      "name": "Popławski Sp. j.",
+      "tax_id": "9866691788",
+      "country": "PL",
+      "address": "rondo Szyszka 97b, 60-042 Sulechów"
+    },
+    "lines": [
+      {
+        "description": "Usługa transportowa krajowa",
+        "quantity": "2",
+        "unit_net": "1370.17",
+        "vat_rate": "23",
+        "net": "2740.34"
+      },
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "3",
+        "unit_net": "318.82",
+        "vat_rate": "23",
+        "net": "956.46"
+      },
+      {
+        "description": "Prenumerata czasopisma branżowego",
+        "quantity": "2",
+        "unit_net": "303.63",
+        "vat_rate": "5",
+        "net": "607.26"
+      }
+    ],
+    "total_net": "4304.06",
+    "total_vat": "880.62",
+    "total_gross": "5184.68"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

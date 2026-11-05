@@ -1,0 +1,9 @@
+name: cloud-claude
+timeout_s: 120
+retrieval:
+  top_k: 8
+nodes:
+  router:
+    model: anthropic/claude-haiku-5-5
+  answerer:
+    model: anthropic/claude-sonnet-5-5

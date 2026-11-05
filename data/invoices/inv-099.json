@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "FV/2026/03/099",
+    "issue_date": "2026-03-10",
+    "sale_date": "2026-03-10",
+    "currency": "PLN",
+    "seller": {
+      "name": "Jezierski, Lewicki and Herman",
+      "tax_id": "8922223043",
+      "country": "PL",
+      "address": "bulw. Bartosik 56a, 13-219 Gniezno"
+    },
+    "buyer": {
+      "name": "Bukowski-Sroka",
+      "tax_id": "6391572955",
+      "country": "PL",
+      "address": "wyspa Orzechowski 21c, 80-581 Nisko"
+    },
+    "lines": [
+      {
+        "description": "Usługa transportowa krajowa",
+        "quantity": "12",
+        "unit_net": "1226.52",
+        "vat_rate": "23",
+        "net": "14718.24"
+      },
+      {
+        "description": "Monitor 27 cali",
+        "quantity": "20",
+        "unit_net": "1855.94",
+        "vat_rate": "23",
+        "net": "37118.80"
+      },
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "3",
+        "unit_net": "171.65",
+        "vat_rate": "23",
+        "net": "514.95"
+      },
+      {
+        "description": "Krzesło biurowe obrotowe",
+        "quantity": "2",
+        "unit_net": "1151.78",
+        "vat_rate": "23",
+        "net": "2303.56"
+      },
+      {
+        "description": "Usługa programistyczna (godz.)",
+        "quantity": "39",
+        "unit_net": "157.90",
+        "vat_rate": "23",
+        "net": "6158.10"
+      }
+    ],
+    "total_net": "60813.65",
+    "total_vat": "13987.14",
+    "total_gross": "74800.79"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

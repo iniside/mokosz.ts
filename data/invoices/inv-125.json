@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "RE-2026-0125",
+    "issue_date": "2026-06-28",
+    "sale_date": "2026-06-27",
+    "currency": "EUR",
+    "seller": {
+      "name": "Kisabaka, Burmeister und Heuck",
+      "tax_id": "DE104405914",
+      "country": "DE",
+      "address": "Im Kalkfeld 42c, 04032 Nord Jonah"
+    },
+    "buyer": {
+      "name": "Hehl-Crews",
+      "tax_id": "DE441087598",
+      "country": "DE",
+      "address": "August-Kekulé-Str. 57a, 09100 Ost Christophland"
+    },
+    "lines": [
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "4",
+        "unit_net": "1272.91",
+        "vat_rate": "19",
+        "net": "5091.64"
+      },
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "1",
+        "unit_net": "1691.35",
+        "vat_rate": "19",
+        "net": "1691.35"
+      },
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "1",
+        "unit_net": "299.80",
+        "vat_rate": "19",
+        "net": "299.80"
+      }
+    ],
+    "total_net": "7082.79",
+    "total_vat": "1345.73",
+    "total_gross": "8428.52"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

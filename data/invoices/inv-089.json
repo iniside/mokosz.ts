@@ -1,0 +1,34 @@
+{
+  "invoice": {
+    "number": "RE-2026-0089",
+    "issue_date": "2026-03-15",
+    "sale_date": "2026-03-10",
+    "currency": "EUR",
+    "seller": {
+      "name": "Ritz GmbH",
+      "tax_id": "DE789005718",
+      "country": "DE",
+      "address": "Windthorststr. 47, 69352 Unna"
+    },
+    "buyer": {
+      "name": "Waibel-Theele",
+      "tax_id": "DE526260764",
+      "country": "DE",
+      "address": "Porschestr. 14, 88034 Koraystadt"
+    },
+    "lines": [
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "3",
+        "unit_net": "119.29",
+        "vat_rate": "7",
+        "net": "357.87"
+      }
+    ],
+    "total_net": "357.87",
+    "total_vat": "25.05",
+    "total_gross": "382.92"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

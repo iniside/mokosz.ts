@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "FV/2026/03/002",
+    "issue_date": "2026-03-05",
+    "sale_date": "2026-03-03",
+    "currency": "PLN",
+    "seller": {
+      "name": "Strzelczyk s.c.",
+      "tax_id": "2118260984",
+      "country": "PL",
+      "address": "szosa Niemiec 243, 58-697 Bełchatów"
+    },
+    "buyer": {
+      "name": "Domagała, Przybylski and Małecki",
+      "tax_id": "7843797068",
+      "country": "PL",
+      "address": "droga Tomys 59b, 92-669 Brusy"
+    },
+    "lines": [
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "10",
+        "unit_net": "3061.68",
+        "vat_rate": "zw",
+        "net": "30616.80"
+      },
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "4",
+        "unit_net": "350.73",
+        "vat_rate": "23",
+        "net": "1402.92"
+      },
+      {
+        "description": "Usługa doradcza świadczona za granicą",
+        "quantity": "3",
+        "unit_net": "1182.58",
+        "vat_rate": "np",
+        "net": "3547.74"
+      }
+    ],
+    "total_net": "35567.46",
+    "total_vat": "322.67",
+    "total_gross": "35890.13"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

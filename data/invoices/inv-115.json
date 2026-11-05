@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "FV/2026/10/115",
+    "issue_date": "2026-10-01",
+    "sale_date": "2026-09-21",
+    "currency": "PLN",
+    "seller": {
+      "name": "Modzelewski s.c.",
+      "tax_id": "5280568430",
+      "country": "PL",
+      "address": "bulw. Rosiak 97c, 69-854 Nowe Brzesko"
+    },
+    "buyer": {
+      "name": "Malicki, Pilarski and Kamiński",
+      "tax_id": "1994259667",
+      "country": "PL",
+      "address": "wyb. Kula 76b, 41-880 Węgrów"
+    },
+    "lines": [
+      {
+        "description": "Krzesło biurowe obrotowe",
+        "quantity": "3",
+        "unit_net": "1038.97",
+        "vat_rate": "23",
+        "net": "3116.91"
+      },
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "2",
+        "unit_net": "698.96",
+        "vat_rate": "8",
+        "net": "1397.92"
+      }
+    ],
+    "total_net": "4514.83",
+    "total_vat": "828.72",
+    "total_gross": "5343.55"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

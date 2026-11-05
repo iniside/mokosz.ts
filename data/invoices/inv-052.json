@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "FV/2026/05/052",
+    "issue_date": "2026-05-23",
+    "sale_date": "2026-05-23",
+    "currency": "PLN",
+    "seller": {
+      "name": "Misiak Sp. j.",
+      "tax_id": "5549281610",
+      "country": "PL",
+      "address": "wyspa Jaśkiewicz 45a, 72-641 Szczecinek"
+    },
+    "buyer": {
+      "name": "Kowalczyk SKA",
+      "tax_id": "7547341970",
+      "country": "PL",
+      "address": "ul. Żyła 12a, 70-499 Leśna"
+    },
+    "lines": [
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "4",
+        "unit_net": "582.95",
+        "vat_rate": "8",
+        "net": "2331.80"
+      },
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "1",
+        "unit_net": "978.28",
+        "vat_rate": "23",
+        "net": "978.28"
+      },
+      {
+        "description": "Usługa transportowa krajowa",
+        "quantity": "2",
+        "unit_net": "783.12",
+        "vat_rate": "23",
+        "net": "1566.24"
+      },
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "12.5",
+        "unit_net": "233.75",
+        "vat_rate": "23",
+        "net": "2921.88"
+      },
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "3",
+        "unit_net": "221.43",
+        "vat_rate": "23",
+        "net": "664.29"
+      }
+    ],
+    "total_net": "8462.49",
+    "total_vat": "1596.60",
+    "total_gross": "10059.09"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

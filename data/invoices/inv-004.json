@@ -1,0 +1,57 @@
+{
+  "invoice": {
+    "number": "FV/2026/10/004",
+    "issue_date": "2026-10-20",
+    "sale_date": "2026-10-10",
+    "currency": "PLN",
+    "seller": {
+      "name": "Chmura-Różycki",
+      "tax_id": "7927619727",
+      "country": "PL",
+      "address": "ul. Turek 56c, 08-916 Pisz"
+    },
+    "buyer": {
+      "name": "Orzechowski-Bartnik",
+      "tax_id": "6185620857",
+      "country": "PL",
+      "address": "ogród Żurek 75b, 31-339 Lipiany"
+    },
+    "lines": [
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "11.5",
+        "unit_net": "201.61",
+        "vat_rate": "23",
+        "net": "2318.52"
+      },
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "1",
+        "unit_net": "649.11",
+        "vat_rate": "8",
+        "net": "649.11"
+      },
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "10",
+        "unit_net": "661.37",
+        "vat_rate": "23",
+        "net": "6613.70"
+      },
+      {
+        "description": "Usługa noclegowa (doba)",
+        "quantity": "20",
+        "unit_net": "340.22",
+        "vat_rate": "8",
+        "net": "6804.40"
+      }
+    ],
+    "total_net": "16041.15",
+    "total_vat": "2650.69",
+    "total_gross": "18691.84"
+  },
+  "defect": 1,
+  "expected_failed_rules": [
+    "lines_total"
+  ]
+}

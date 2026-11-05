@@ -1,0 +1,55 @@
+{
+  "invoice": {
+    "number": "FV/2026/03/041",
+    "issue_date": "2026-03-20",
+    "sale_date": "2026-03-15",
+    "currency": "PLN",
+    "seller": {
+      "name": "Tomczak, Gołębiewski and Kos",
+      "tax_id": "4551325036",
+      "country": "PL",
+      "address": "os. Lenart 327, 96-127 Ryki"
+    },
+    "buyer": {
+      "name": "Borowski-Leszczyński",
+      "tax_id": "3334715048",
+      "country": "PL",
+      "address": "skwer Nawrot 70a, 44-568 Stronie Śląskie"
+    },
+    "lines": [
+      {
+        "description": "Usługa transportowa krajowa",
+        "quantity": "3",
+        "unit_net": "429.17",
+        "vat_rate": "23",
+        "net": "1287.51"
+      },
+      {
+        "description": "Książka specjalistyczna",
+        "quantity": "3",
+        "unit_net": "117.92",
+        "vat_rate": "5",
+        "net": "353.76"
+      },
+      {
+        "description": "Prenumerata czasopisma branżowego",
+        "quantity": "1",
+        "unit_net": "371.21",
+        "vat_rate": "5",
+        "net": "371.21"
+      },
+      {
+        "description": "Hosting serwera VPS – 1 miesiąc",
+        "quantity": "3",
+        "unit_net": "252.69",
+        "vat_rate": "23",
+        "net": "758.07"
+      }
+    ],
+    "total_net": "2770.55",
+    "total_vat": "506.73",
+    "total_gross": "3277.28"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

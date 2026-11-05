@@ -1,0 +1,55 @@
+{
+  "invoice": {
+    "number": "RE-2026-0145",
+    "issue_date": "2026-01-05",
+    "sale_date": "2026-01-05",
+    "currency": "EUR",
+    "seller": {
+      "name": "Danneberg, Riekmann und Humbert",
+      "tax_id": "DE415434683",
+      "country": "DE",
+      "address": "Torstr. 81b, 62776 West Sabrina"
+    },
+    "buyer": {
+      "name": "Engelen, Naumann und Thomas",
+      "tax_id": "DE354188715",
+      "country": "DE",
+      "address": "Karl-Wingchen-Str. 763, 65891 Kleissburg"
+    },
+    "lines": [
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "5",
+        "unit_net": "179.77",
+        "vat_rate": "0",
+        "net": "898.85"
+      },
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "20",
+        "unit_net": "660.34",
+        "vat_rate": "19",
+        "net": "13206.80"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "3",
+        "unit_net": "64.74",
+        "vat_rate": "19",
+        "net": "194.22"
+      },
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "2",
+        "unit_net": "118.26",
+        "vat_rate": "7",
+        "net": "236.52"
+      }
+    ],
+    "total_net": "14536.39",
+    "total_vat": "2562.75",
+    "total_gross": "17099.14"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

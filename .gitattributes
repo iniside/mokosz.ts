@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.bat eol=crlf
+*.ps1 eol=crlf
+*.pdf binary
+*.png binary
+*.gif binary
+data/raw/** -text linguist-generated=true
+data/embeddings/** binary
+data/invoices/** linguist-generated=true

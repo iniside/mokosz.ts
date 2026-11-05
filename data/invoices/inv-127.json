@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "FV/2026/08/127",
+    "issue_date": "2026-08-12",
+    "sale_date": "2026-08-12",
+    "currency": "PLN",
+    "seller": {
+      "name": "Węgrzyn SKA",
+      "tax_id": "2449122448",
+      "country": "PL",
+      "address": "park Jóźwiak 78, 38-807 Suchań"
+    },
+    "buyer": {
+      "name": "Stachowicz Sp. p.",
+      "tax_id": "7294052074",
+      "country": "PL",
+      "address": "wyb. Nowakowski 88a, 97-329 Wałbrzych"
+    },
+    "lines": [
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "1",
+        "unit_net": "232.88",
+        "vat_rate": "23",
+        "net": "232.88"
+      },
+      {
+        "description": "Prenumerata czasopisma branżowego",
+        "quantity": "5",
+        "unit_net": "124.24",
+        "vat_rate": "5",
+        "net": "621.20"
+      },
+      {
+        "description": "Usługa programistyczna (godz.)",
+        "quantity": "37",
+        "unit_net": "252.63",
+        "vat_rate": "23",
+        "net": "9347.31"
+      },
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "20",
+        "unit_net": "2450.66",
+        "vat_rate": "0",
+        "net": "49013.20"
+      },
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "1",
+        "unit_net": "2726.85",
+        "vat_rate": "zw",
+        "net": "2726.85"
+      }
+    ],
+    "total_net": "61941.44",
+    "total_vat": "2234.50",
+    "total_gross": "64175.94"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

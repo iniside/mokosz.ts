@@ -1,0 +1,546 @@
+[
+  {
+    "id": "en-gdpr-withdraw-consent",
+    "lang": "en",
+    "question": "I agreed to let an app use my data. Can I take that consent back later, and may they make withdrawing harder than signing up was?",
+    "expected": ["32016R0679#007.003"],
+    "evidence": [
+      {
+        "key": "32016R0679#007.003",
+        "quote": "The data subject shall have the right to withdraw his or her consent at any time."
+      },
+      {
+        "key": "32016R0679#007.003",
+        "quote": "It shall be as easy to withdraw as to give consent."
+      }
+    ],
+    "reference": "Yes, consent can be withdrawn at any time, and withdrawing must be as easy as giving it; processing done before the withdrawal stays lawful.",
+    "not_found": false
+  },
+  {
+    "id": "en-gdpr-object-direct-marketing",
+    "lang": "en",
+    "question": "An online shop profiles me to send me targeted marketing emails. Can I make them stop using my data for that?",
+    "expected": ["32016R0679#021.002", "32016R0679#021.003", "32016R0679#rct_70"],
+    "evidence": [
+      {
+        "key": "32016R0679#021.002",
+        "quote": "Where personal data are processed for direct marketing purposes, the data subject shall have the right to object at any time"
+      },
+      {
+        "key": "32016R0679#021.003",
+        "quote": "the personal data shall no longer be processed for such purposes."
+      },
+      {
+        "key": "32016R0679#rct_70",
+        "quote": "including profiling to the extent that it is related to such direct marketing, whether with regard to initial or further processing, at any time and free of charge."
+      }
+    ],
+    "reference": "Yes, you can object at any time and free of charge to processing for direct marketing, including related profiling, and the data may then no longer be used for that purpose.",
+    "not_found": false
+  },
+  {
+    "id": "en-gdpr-household-exemption",
+    "lang": "en",
+    "question": "Do the EU data protection rules apply when I keep my friends' addresses and photos purely for my own private use?",
+    "expected": ["32016R0679#002.002", "32016R0679#rct_18"],
+    "evidence": [
+      {
+        "key": "32016R0679#002.002",
+        "quote": "(c) by a natural person in the course of a purely personal or household activity;"
+      },
+      {
+        "key": "32016R0679#rct_18",
+        "quote": "Personal or household activities could include correspondence and the holding of addresses, or social networking and online activity undertaken within the context of such activities."
+      }
+    ],
+    "reference": "No, the GDPR does not apply to processing by a person in the course of a purely personal or household activity, such as keeping addresses or private correspondence.",
+    "not_found": false
+  },
+  {
+    "id": "en-gdpr-records-small-company",
+    "lang": "en",
+    "question": "We are a small business with about 40 staff. Do we still have to keep a written record of all our data processing?",
+    "expected": ["32016R0679#030.001", "32016R0679#030.005", "32016R0679#rct_13"],
+    "evidence": [
+      {
+        "key": "32016R0679#030.001",
+        "quote": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility."
+      },
+      {
+        "key": "32016R0679#030.005",
+        "quote": "shall not apply to an enterprise or an organisation employing fewer than 250 persons unless the processing it carries out is likely to result in a risk to the rights and freedoms of data subjects, the processing is not occasional, or the processing includes special categories of data"
+      },
+      {
+        "key": "32016R0679#rct_13",
+        "quote": "this Regulation includes a derogation for organisations with fewer than 250 employees with regard to record-keeping."
+      }
+    ],
+    "reference": "Usually not: organisations with fewer than 250 employees are exempt, unless the processing is likely to be risky, is not occasional, or includes special categories or criminal-offence data.",
+    "not_found": false
+  },
+  {
+    "id": "en-gdpr-breach-tell-individuals",
+    "lang": "en",
+    "question": "After a leak of customer data, when does a company have to warn the affected customers themselves?",
+    "expected": ["32016R0679#034.001", "32016R0679#rct_86"],
+    "evidence": [
+      {
+        "key": "32016R0679#034.001",
+        "quote": "When the personal data breach is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall communicate the personal data breach to the data subject without undue delay."
+      },
+      {
+        "key": "32016R0679#rct_86",
+        "quote": "The controller should communicate to the data subject a personal data breach, without undue delay, where that personal data breach is likely to result in a high risk"
+      }
+    ],
+    "reference": "When the breach is likely to result in a high risk to their rights and freedoms, the controller must tell the affected people without undue delay.",
+    "not_found": false
+  },
+  {
+    "id": "en-aiact-deepfake-disclosure",
+    "lang": "en",
+    "question": "I used an AI tool to make a realistic fake video of a well-known person. Do I have to tell viewers that it is not real?",
+    "expected": ["32024R1689#050.004", "32024R1689#rct_134"],
+    "evidence": [
+      {
+        "key": "32024R1689#050.004",
+        "quote": "Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated."
+      },
+      {
+        "key": "32024R1689#rct_134",
+        "quote": "should also clearly and distinguishably disclose that the content has been artificially created or manipulated by labelling the AI output accordingly and disclosing its artificial origin."
+      }
+    ],
+    "reference": "Yes, a deployer who generates a deep fake must disclose that the content is artificially generated or manipulated; for evidently artistic, satirical or fictional works the disclosure may be made in a way that does not spoil the work.",
+    "not_found": false
+  },
+  {
+    "id": "en-aiact-social-scoring",
+    "lang": "en",
+    "question": "Could a city use AI to give residents a score based on their social behaviour and then treat low scorers worse in unrelated areas of life?",
+    "expected": ["32024R1689#005.001", "32024R1689#rct_31"],
+    "evidence": [
+      {
+        "key": "32024R1689#005.001",
+        "quote": "the use of AI systems for the evaluation or classification of natural persons or groups of persons over a certain period of time based on their social behaviour"
+      },
+      {
+        "key": "32024R1689#rct_31",
+        "quote": "AI systems entailing such unacceptable scoring practices and leading to such detrimental or unfavourable outcomes should therefore be prohibited."
+      }
+    ],
+    "reference": "No, social scoring that leads to detrimental treatment in unrelated contexts, or treatment disproportionate to the behaviour, is a prohibited AI practice.",
+    "not_found": false
+  },
+  {
+    "id": "en-aiact-military-exclusion",
+    "lang": "en",
+    "question": "Does the EU artificial intelligence law cover AI systems developed only for the army and national defence?",
+    "expected": ["32024R1689#002.003", "32024R1689#rct_24"],
+    "evidence": [
+      {
+        "key": "32024R1689#002.003",
+        "quote": "This Regulation does not apply to AI systems where and in so far they are placed on the market, put into service, or used with or without modification exclusively for military, defence or national security purposes"
+      },
+      {
+        "key": "32024R1689#rct_24",
+        "quote": "those should be excluded from the scope of this Regulation regardless of which type of entity is carrying out those activities"
+      }
+    ],
+    "reference": "No, AI systems placed on the market, put into service or used exclusively for military, defence or national security purposes are outside its scope, whoever uses them.",
+    "not_found": false
+  },
+  {
+    "id": "en-aiact-face-scraping",
+    "lang": "en",
+    "question": "Is it allowed to build a face recognition database by collecting people's photos from websites and security camera recordings in bulk?",
+    "expected": ["32024R1689#005.001", "32024R1689#rct_43"],
+    "evidence": [
+      {
+        "key": "32024R1689#005.001",
+        "quote": "the use of AI systems that create or expand facial recognition databases through the untargeted scraping of facial images from the internet or CCTV footage;"
+      },
+      {
+        "key": "32024R1689#rct_43",
+        "quote": "that create or expand facial recognition databases through the untargeted scraping of facial images from the internet or CCTV footage, should be prohibited"
+      }
+    ],
+    "reference": "No, creating or expanding facial recognition databases through untargeted scraping of facial images from the internet or CCTV footage is a prohibited AI practice.",
+    "not_found": false
+  },
+  {
+    "id": "en-nis2-final-report",
+    "lang": "en",
+    "question": "We already filed the main notification about a serious cyber incident. By when do we have to send the final report, and what must it describe?",
+    "expected": ["32022L2555#023.004", "32022L2555#rct_102"],
+    "evidence": [
+      {
+        "key": "32022L2555#023.004",
+        "quote": "(d) a final report not later than one month after the submission of the incident notification under point (b), including the following:"
+      },
+      {
+        "key": "32022L2555#rct_102",
+        "quote": "A final report should be submitted not later than one month after the incident notification."
+      }
+    ],
+    "reference": "The final report is due no later than one month after the incident notification and must describe the incident and its severity and impact, the likely root cause, the mitigation measures and any cross-border impact; if the incident is still ongoing, a progress report is due instead and the final report within one month of handling it.",
+    "not_found": false
+  },
+  {
+    "id": "en-nis2-important-entity-fines",
+    "lang": "en",
+    "question": "How large can the fines be for an important entity that fails its cybersecurity risk-management or incident reporting obligations?",
+    "expected": ["32022L2555#034.005"],
+    "evidence": [
+      {
+        "key": "32022L2555#034.005",
+        "quote": "to administrative fines of a maximum of at least EUR 7 000 000 or of a maximum of at least 1,4 % of the total worldwide annual turnover in the preceding financial year"
+      }
+    ],
+    "reference": "Member States must provide maximum fines of at least EUR 7 000 000 or at least 1.4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher.",
+    "not_found": false
+  },
+  {
+    "id": "en-nis2-anonymous-vulnerability",
+    "lang": "en",
+    "question": "I found a security hole in a widely used software product. Can I report it to the national cybersecurity team without revealing who I am?",
+    "expected": ["32022L2555#012.001"],
+    "evidence": [
+      {
+        "key": "32022L2555#012.001",
+        "quote": "Member States shall ensure that natural or legal persons are able to report, anonymously where they so request, a vulnerability to the CSIRT designated as coordinator."
+      }
+    ],
+    "reference": "Yes, a vulnerability can be reported anonymously, on request, to the CSIRT designated as coordinator, which must keep the reporter anonymous and follow the report up.",
+    "not_found": false
+  },
+  {
+    "id": "en-nis2-repealed-directive",
+    "lang": "en",
+    "question": "Which earlier EU cybersecurity directive did NIS2 replace, and from what date was the old one repealed?",
+    "expected": ["32022L2555#art_44.p_1", "32022L2555#rct_5"],
+    "evidence": [
+      {
+        "key": "32022L2555#art_44.p_1",
+        "quote": "Directive (EU) 2016/1148 is repealed with effect from 18 October 2024."
+      },
+      {
+        "key": "32022L2555#rct_5",
+        "quote": "Therefore, Directive (EU) 2016/1148 should be repealed and replaced by this Directive."
+      }
+    ],
+    "reference": "NIS2 repealed Directive (EU) 2016/1148 with effect from 18 October 2024.",
+    "not_found": false
+  },
+  {
+    "id": "en-nf-vat-rate",
+    "lang": "en",
+    "question": "What is the minimum standard VAT rate that EU countries must apply?",
+    "expected": [],
+    "evidence": [],
+    "reference": "The GDPR, the AI Act and NIS2 do not deal with VAT rates, so the answer is not in these texts.",
+    "not_found": true
+  },
+  {
+    "id": "en-nf-pasta",
+    "lang": "en",
+    "question": "How long should I boil spaghetti to get it al dente?",
+    "expected": [],
+    "evidence": [],
+    "reference": "This is a cooking question, not a legal one, and none of the three acts answers it.",
+    "not_found": true
+  },
+  {
+    "id": "pl-gdpr-erasure",
+    "lang": "pl",
+    "question": "W jakich sytuacjach mogę zażądać od firmy, żeby skasowała wszystkie dane, które o mnie ma?",
+    "expected": ["32016R0679#017.001", "32016R0679#rct_65"],
+    "evidence": [
+      {
+        "key": "32016R0679#017.001",
+        "quote": "ma prawo żądania od administratora niezwłocznego usunięcia dotyczących jej danych osobowych"
+      },
+      {
+        "key": "32016R0679#017.001",
+        "quote": "a) dane osobowe nie są już niezbędne do celów, w których zostały zebrane lub w inny sposób przetwarzane;"
+      },
+      {
+        "key": "32016R0679#rct_65",
+        "quote": "powinna w szczególności mieć prawo do tego, by jej dane osobowe zostały usunięte i przestały być przetwarzane"
+      }
+    ],
+    "reference": "Można żądać usunięcia danych m.in. gdy nie są już potrzebne do celu, w którym je zebrano, gdy cofnięto zgodę lub wniesiono skuteczny sprzeciw, gdy były przetwarzane niezgodnie z prawem albo gdy wymaga tego obowiązek prawny.",
+    "not_found": false
+  },
+  {
+    "id": "pl-gdpr-portability",
+    "lang": "pl",
+    "question": "Zmieniam dostawcę usług. Czy mogę dostać swoje dane w formacie, który da się wczytać u nowego dostawcy, i przenieść je do niego?",
+    "expected": ["32016R0679#020.001", "32016R0679#020.002", "32016R0679#rct_68"],
+    "evidence": [
+      {
+        "key": "32016R0679#020.001",
+        "quote": "ma prawo otrzymać w ustrukturyzowanym, powszechnie używanym formacie nadającym się do odczytu maszynowego dane osobowe jej dotyczące, które dostarczyła administratorowi"
+      },
+      {
+        "key": "32016R0679#020.002",
+        "quote": "ma prawo żądania, by dane osobowe zostały przesłane przez administratora bezpośrednio innemu administratorowi, o ile jest to technicznie możliwe."
+      },
+      {
+        "key": "32016R0679#rct_68",
+        "quote": "Prawo to powinno mieć zastosowanie w przypadkach, gdy osoba, której dane dotyczą, dostarczyła danych osobowych za własną zgodą lub gdy przetwarzanie jest niezbędne do wykonania umowy."
+      }
+    ],
+    "reference": "Tak, dane dostarczone administratorowi można otrzymać w ustrukturyzowanym formacie nadającym się do odczytu maszynowego i przesłać innemu administratorowi, a gdy jest to technicznie możliwe, żądać ich przesłania bezpośrednio od starego do nowego administratora; dotyczy to przetwarzania opartego na zgodzie lub umowie i prowadzonego w sposób zautomatyzowany.",
+    "not_found": false
+  },
+  {
+    "id": "pl-gdpr-eu-representative",
+    "lang": "pl",
+    "question": "Sklep internetowy z siedzibą w USA sprzedaje towary klientom w Polsce. Czy musi wyznaczyć przedstawiciela w Unii?",
+    "expected": ["32016R0679#027.001", "32016R0679#027.002", "32016R0679#rct_80"],
+    "evidence": [
+      {
+        "key": "32016R0679#027.001",
+        "quote": "administrator lub podmiot przetwarzający na piśmie wyznacza swojego przedstawiciela w Unii."
+      },
+      {
+        "key": "32016R0679#027.002",
+        "quote": "a) przetwarzania, które ma charakter sporadyczny, nie obejmuje – na dużą skalę – przetwarzania szczególnych kategorii danych osobowych"
+      },
+      {
+        "key": "32016R0679#rct_80",
+        "quote": "to taki administrator lub podmiot przetwarzający powinien wyznaczyć przedstawiciela"
+      }
+    ],
+    "reference": "Co do zasady tak, musi na piśmie wyznaczyć przedstawiciela w Unii, chyba że przetwarzanie jest sporadyczne, nie obejmuje na dużą skalę danych szczególnych kategorii ani danych o wyrokach i raczej nie stwarza ryzyka, albo jest organem publicznym.",
+    "not_found": false
+  },
+  {
+    "id": "pl-gdpr-impact-assessment",
+    "lang": "pl",
+    "question": "Wprowadzamy nową technologię monitorowania klientów, która może być ryzykowna dla ich prywatności. Czy przed startem musimy coś przeanalizować?",
+    "expected": ["32016R0679#035.001", "32016R0679#rct_84", "32016R0679#rct_90"],
+    "evidence": [
+      {
+        "key": "32016R0679#035.001",
+        "quote": "administrator przed rozpoczęciem przetwarzania dokonuje oceny skutków planowanych operacji przetwarzania dla ochrony danych osobowych."
+      },
+      {
+        "key": "32016R0679#rct_84",
+        "quote": "należy zobowiązać administratora do dokonania oceny skutków dla ochrony danych w celu oszacowania w szczególności źródła, charakteru, specyfiki i powagi tego ryzyka."
+      },
+      {
+        "key": "32016R0679#rct_90",
+        "quote": "W takim przypadku administrator powinien przed przetwarzaniem dokonać oceny skutków dla ochrony danych"
+      }
+    ],
+    "reference": "Tak, jeśli przetwarzanie, zwłaszcza z użyciem nowych technologii, może powodować wysokie ryzyko dla praw lub wolności osób, administrator musi przed jego rozpoczęciem przeprowadzić ocenę skutków dla ochrony danych.",
+    "not_found": false
+  },
+  {
+    "id": "pl-gdpr-compensation",
+    "lang": "pl",
+    "question": "Przez to, że firma źle obchodziła się z moimi danymi, poniosłem szkodę. Czy mogę domagać się od niej pieniędzy?",
+    "expected": ["32016R0679#082.001", "32016R0679#rct_146"],
+    "evidence": [
+      {
+        "key": "32016R0679#082.001",
+        "quote": "Każda osoba, która poniosła szkodę majątkową lub niemajątkową w wyniku naruszenia niniejszego rozporządzenia, ma prawo uzyskać od administratora lub podmiotu przetwarzającego odszkodowanie za poniesioną szkodę."
+      },
+      {
+        "key": "32016R0679#rct_146",
+        "quote": "Osoby, których dane dotyczą, powinny uzyskać pełne i skuteczne odszkodowanie za poniesione szkody."
+      }
+    ],
+    "reference": "Tak, każda osoba, która poniosła szkodę majątkową lub niemajątkową wskutek naruszenia RODO, ma prawo do odszkodowania od administratora lub podmiotu przetwarzającego.",
+    "not_found": false
+  },
+  {
+    "id": "pl-aiact-sme-fines",
+    "lang": "pl",
+    "question": "Czy małe firmy i start-upy mogą liczyć na łagodniejsze kary pieniężne za łamanie unijnych przepisów o sztucznej inteligencji?",
+    "expected": ["32024R1689#099.001", "32024R1689#099.006", "32024R1689#rct_168"],
+    "evidence": [
+      {
+        "key": "32024R1689#rct_168",
+        "quote": "w szczególności faktu, czy dostawca jest MŚP, w tym przedsiębiorstwem typu start-up"
+      },
+      {
+        "key": "32024R1689#099.001",
+        "quote": "Uwzględniają one interesy MŚP, w tym przedsiębiorstw typu start-up, oraz ich sytuację ekonomiczną"
+      },
+      {
+        "key": "32024R1689#099.006",
+        "quote": "W przypadku MŚP, w tym przedsiębiorstw typu start-up, wysokość kary pieniężnej, o której mowa w niniejszym artykule, nie przekracza wartości procentowej lub kwoty"
+      },
+      {
+        "key": "32024R1689#099.006",
+        "quote": "w zależności od tego, która z tych kwot jest niższa."
+      }
+    ],
+    "reference": "Tak, dla MŚP, w tym start-upów, górną granicą kary jest niższa z dwóch wartości: kwota albo procent obrotu.",
+    "not_found": false
+  },
+  {
+    "id": "pl-aiact-gpai-copyright",
+    "lang": "pl",
+    "question": "Co twórca dużego modelu językowego udostępnianego w UE musi zrobić w sprawie praw autorskich do tekstów, na których trenuje model?",
+    "expected": ["32024R1689#053.001", "32024R1689#rct_106", "32024R1689#rct_107"],
+    "evidence": [
+      {
+        "key": "32024R1689#053.001",
+        "quote": "c) wprowadzają politykę służącą zapewnieniu zgodności z prawem Unii dotyczącym prawa autorskiego i praw pokrewnych"
+      },
+      {
+        "key": "32024R1689#053.001",
+        "quote": "d) sporządzają i podają do wiadomości publicznej wystarczająco szczegółowe streszczenie na temat treści wykorzystanych do trenowania danego modelu AI ogólnego przeznaczenia"
+      },
+      {
+        "key": "32024R1689#rct_106",
+        "quote": "dostawcy modeli AI ogólnego przeznaczenia powinni wprowadzić politykę w celu zapewnienia zgodności z prawem Unii dotyczącym prawa autorskiego i praw pokrewnych"
+      },
+      {
+        "key": "32024R1689#rct_107",
+        "quote": "aby dostawcy takich modeli sporządzali i udostępniali publicznie wystarczająco szczegółowe streszczenie na temat treści wykorzystywanych do trenowania modelu AI ogólnego przeznaczenia"
+      }
+    ],
+    "reference": "Dostawca modelu AI ogólnego przeznaczenia musi wprowadzić politykę zgodności z prawem autorskim, respektującą zastrzeżenia praw przez uprawnionych, i opublikować wystarczająco szczegółowe streszczenie treści użytych do trenowania.",
+    "not_found": false
+  },
+  {
+    "id": "pl-aiact-machine-readable-marking",
+    "lang": "pl",
+    "question": "Robimy apkę, która z pomocą AI tworzy zdjęcia nie do odróżnienia od prawdziwych. Czy w plikach musi siedzieć jakiś ukryty znacznik, po którym program pozna, że to fejk?",
+    "expected": ["32024R1689#050.002", "32024R1689#rct_133"],
+    "evidence": [
+      {
+        "key": "32024R1689#050.002",
+        "quote": "zapewniają, aby wyniki systemu AI zostały oznakowane w formacie nadającym się do odczytu maszynowego i były wykrywalne jako sztucznie wygenerowane lub zmanipulowane."
+      },
+      {
+        "key": "32024R1689#rct_133",
+        "quote": "należy zobowiązać dostawców tych systemów do wbudowania rozwiązań technicznych, które umożliwiają oznakowanie w formacie nadającym się do odczytu maszynowego"
+      }
+    ],
+    "reference": "Tak, dostawca systemu AI generującego syntetyczne obrazy musi zapewnić oznakowanie wyników w formacie nadającym się do odczytu maszynowego, tak by były wykrywalne jako sztucznie wygenerowane, chyba że system pełni tylko funkcję wspomagającą standardową edycję.",
+    "not_found": false
+  },
+  {
+    "id": "pl-aiact-fundamental-rights-assessment",
+    "lang": "pl",
+    "question": "Kto przed wdrożeniem systemu AI wysokiego ryzyka musi ocenić, jak wpłynie on na prawa podstawowe ludzi?",
+    "expected": ["32024R1689#027.001", "32024R1689#rct_96"],
+    "evidence": [
+      {
+        "key": "32024R1689#027.001",
+        "quote": "podmioty stosujące będące podmiotami prawa publicznego lub podmiotami prywatnymi świadczącymi usługi publiczne"
+      },
+      {
+        "key": "32024R1689#rct_96",
+        "quote": "tacy jak podmioty bankowe lub ubezpieczeniowe, powinni przed wprowadzeniem tych systemów do użytku przeprowadzić ocenę skutków dla praw podstawowych."
+      }
+    ],
+    "reference": "Przed wdrożeniem ocenę skutków dla praw podstawowych przeprowadzają podmioty stosujące będące podmiotami prawa publicznego lub podmiotami prywatnymi świadczącymi usługi publiczne, a także podmioty stosujące niektóre wymienione systemy AI wysokiego ryzyka, takie jak podmioty bankowe lub ubezpieczeniowe.",
+    "not_found": false
+  },
+  {
+    "id": "pl-nis2-management-approval",
+    "lang": "pl",
+    "question": "Czy szefowie firmy podlegającej NIS2 muszą sami klepnąć plan zabezpieczeń IT i czy oberwą, jeśli firma go nie dopilnuje?",
+    "expected": ["32022L2555#020.001", "32022L2555#rct_137"],
+    "evidence": [
+      {
+        "key": "32022L2555#020.001",
+        "quote": "aby organy zarządzające podmiotów kluczowych i ważnych zatwierdzały środki zarządzania ryzykiem w cyberbezpieczeństwie"
+      },
+      {
+        "key": "32022L2555#020.001",
+        "quote": "nadzorowały ich wdrażanie i mogły być pociągnięte do odpowiedzialności za naruszanie przez te podmioty tego artykułu."
+      },
+      {
+        "key": "32022L2555#rct_137",
+        "quote": "W związku z tym organy zarządzające podmiotów kluczowych i ważnych powinny zatwierdzić środki zarządzania ryzykiem w cyberbezpieczeństwie"
+      }
+    ],
+    "reference": "Organy zarządzające podmiotów kluczowych i ważnych zatwierdzają środki zarządzania ryzykiem w cyberbezpieczeństwie, nadzorują ich wdrażanie i mogą ponosić odpowiedzialność za naruszenia.",
+    "not_found": false
+  },
+  {
+    "id": "pl-nis2-ceo-ban",
+    "lang": "pl",
+    "question": "Duża spółka energetyczna od miesięcy olewa polecenia urzędu w sprawie cyberbezpieczeństwa. Czy prezes może za to choćby na jakiś czas stracić stołek?",
+    "expected": ["32022L2555#032.005", "32022L2555#rct_133"],
+    "evidence": [
+      {
+        "key": "32022L2555#032.005",
+        "quote": "o nałożenie tymczasowego zakazu pełnienia funkcji zarządczych w tym podmiocie kluczowym na osobę fizyczną wykonującą obowiązki zarządcze na poziomie dyrektora generalnego lub przedstawiciela prawnego w tym podmiocie."
+      },
+      {
+        "key": "32022L2555#rct_133",
+        "quote": "do żądania nałożenia tymczasowego zakazu sprawowania funkcji zarządczych przez osobę fizyczną wykonującą obowiązki zarządcze na poziomie dyrektora generalnego lub przedstawiciela prawnego."
+      }
+    ],
+    "reference": "Tak, jeśli inne środki okażą się nieskuteczne i termin na usunięcie uchybień minie, właściwy organ może zwrócić się o tymczasowy zakaz pełnienia funkcji zarządczych przez osobę na poziomie dyrektora generalnego lub przedstawiciela prawnego, do czasu usunięcia uchybień.",
+    "not_found": false
+  },
+  {
+    "id": "pl-nis2-domain-registration-data",
+    "lang": "pl",
+    "question": "Czy firma rejestrująca domeny internetowe musi zbierać i przechowywać dokładne dane o tym, kto zarejestrował daną domenę?",
+    "expected": [
+      "32022L2555#028.001",
+      "32022L2555#028.002",
+      "32022L2555#rct_109",
+      "32022L2555#rct_111"
+    ],
+    "evidence": [
+      {
+        "key": "32022L2555#028.001",
+        "quote": "gromadziły i zachowywały z należytą starannością w specjalnej bazie danych dokładne i kompletne dane dotyczące rejestracji nazw domen"
+      },
+      {
+        "key": "32022L2555#028.002",
+        "quote": "by baza danych dotycząca rejestracji nazw domen zawierała informacje kluczowe do zidentyfikowania posiadaczy nazw domen"
+      },
+      {
+        "key": "32022L2555#rct_109",
+        "quote": "Prowadzenie prawidłowych i kompletnych baz danych dotyczących rejestracji nazw domen (dane WHOIS)"
+      },
+      {
+        "key": "32022L2555#rct_111",
+        "quote": "rejestry nazw TLD i podmioty świadczące usługi rejestracji nazw domen powinny gromadzić dane dotyczące rejestracji nazw domen oraz zapewniać ich integralność i dostępność."
+      }
+    ],
+    "reference": "Tak, rejestry nazw TLD i podmioty świadczące usługi rejestracji domen muszą gromadzić i z należytą starannością przechowywać w specjalnej bazie dokładne i kompletne dane rejestracyjne, zgodnie z przepisami o ochronie danych.",
+    "not_found": false
+  },
+  {
+    "id": "pl-nf-online-returns",
+    "lang": "pl",
+    "question": "Ile dni mam na zwrot butów kupionych w sklepie internetowym bez podawania przyczyny?",
+    "expected": [],
+    "evidence": [],
+    "reference": "RODO, akt w sprawie sztucznej inteligencji i NIS2 nie regulują prawa odstąpienia od umowy zawartej na odległość, więc odpowiedzi nie ma w tych tekstach.",
+    "not_found": true
+  },
+  {
+    "id": "pl-nf-roaming",
+    "lang": "pl",
+    "question": "Czy dzwoniąc z polskiego numeru podczas urlopu w Hiszpanii płacę za rozmowy więcej niż w kraju?",
+    "expected": [],
+    "evidence": [],
+    "reference": "Opłaty roamingowe w UE regulują inne przepisy niż RODO, akt w sprawie sztucznej inteligencji i NIS2, więc odpowiedzi nie ma w tych tekstach.",
+    "not_found": true
+  },
+  {
+    "id": "pl-nf-weather",
+    "lang": "pl",
+    "question": "Jaka pogoda będzie jutro w Krakowie?",
+    "expected": [],
+    "evidence": [],
+    "reference": "To pytanie nie dotyczy prawa i żaden z trzech aktów na nie nie odpowiada.",
+    "not_found": true
+  }
+]

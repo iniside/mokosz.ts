@@ -1,0 +1,69 @@
+{
+  "invoice": {
+    "number": "FV/2026/06/098",
+    "issue_date": "2026-06-26",
+    "sale_date": "2026-06-25",
+    "currency": "PLN",
+    "seller": {
+      "name": "Misztal-Lipiński",
+      "tax_id": "9897462089",
+      "country": "PL",
+      "address": "skwer Wójcicki 10c, 25-005 Gryfów Śląski"
+    },
+    "buyer": {
+      "name": "Milczarek z o.o",
+      "tax_id": "7245582228",
+      "country": "PL",
+      "address": "os. Pałka 8/6, 85-562 Łuków"
+    },
+    "lines": [
+      {
+        "description": "Papier biurowy A4, ryza 500 ark.",
+        "quantity": "2",
+        "unit_net": "20.30",
+        "vat_rate": "23",
+        "net": "40.60"
+      },
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "2",
+        "unit_net": "2128.04",
+        "vat_rate": "zw",
+        "net": "4256.08"
+      },
+      {
+        "description": "Usługa programistyczna (godz.)",
+        "quantity": "62.5",
+        "unit_net": "144.55",
+        "vat_rate": "23",
+        "net": "9034.38"
+      },
+      {
+        "description": "Hosting serwera VPS – 1 miesiąc",
+        "quantity": "3",
+        "unit_net": "102.27",
+        "vat_rate": "23",
+        "net": "306.81"
+      },
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "3",
+        "unit_net": "364.01",
+        "vat_rate": "23",
+        "net": "1092.03"
+      },
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "13.5",
+        "unit_net": "161.73",
+        "vat_rate": "23",
+        "net": "2183.36"
+      }
+    ],
+    "total_net": "16913.26",
+    "total_vat": "2911.15",
+    "total_gross": "19824.41"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "RE-2026-0123",
+    "issue_date": "2026-04-19",
+    "sale_date": "2026-04-19",
+    "currency": "EUR",
+    "seller": {
+      "name": "Kawohl-Emmelmann",
+      "tax_id": "DE592893032",
+      "country": "DE",
+      "address": "Piet-Mondrian-Str. 9, 10355 Mehmetdorf"
+    },
+    "buyer": {
+      "name": "Wilts, Normann und Nicolay",
+      "tax_id": "DE659355276",
+      "country": "DE",
+      "address": "Sürderstr. 5, 77354 Neu-Ulm"
+    },
+    "lines": [
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "3",
+        "unit_net": "698.14",
+        "vat_rate": "19",
+        "net": "2094.42"
+      },
+      {
+        "description": "Fachbuch",
+        "quantity": "1",
+        "unit_net": "67.62",
+        "vat_rate": "7",
+        "net": "67.62"
+      },
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "2",
+        "unit_net": "946.71",
+        "vat_rate": "19",
+        "net": "1893.42"
+      }
+    ],
+    "total_net": "4055.46",
+    "total_vat": "762.42",
+    "total_gross": "4817.88"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

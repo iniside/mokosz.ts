@@ -1,0 +1,34 @@
+{
+  "invoice": {
+    "number": "RE-2026-0103",
+    "issue_date": "2026-04-14",
+    "sale_date": "2026-04-04",
+    "currency": "EUR",
+    "seller": {
+      "name": "Eckhardt, Steffen und Hess",
+      "tax_id": "DE583823310",
+      "country": "DE",
+      "address": "Helenenstr. 30c, 50836 Kuhleestadt"
+    },
+    "buyer": {
+      "name": "Keil GmbH",
+      "tax_id": "DE604402521",
+      "country": "DE",
+      "address": "Johannisburger Str. 66a, 73969 Alt Patrickdorf"
+    },
+    "lines": [
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "5",
+        "unit_net": "70.23",
+        "vat_rate": "19",
+        "net": "351.15"
+      }
+    ],
+    "total_net": "351.15",
+    "total_vat": "66.72",
+    "total_gross": "417.87"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

@@ -1,0 +1,43 @@
+{
+  "invoice": {
+    "number": "FV/2026/09/020",
+    "issue_date": "2026-09-27",
+    "sale_date": "2026-09-22",
+    "currency": "PLN",
+    "seller": {
+      "name": "Dębowski, Niemczyk and Stec",
+      "tax_id": "2963496165",
+      "country": "PL",
+      "address": "pl. Bagiński 24, 76-500 Luboń"
+    },
+    "buyer": {
+      "name": "Banasiak, Białas and Tkaczyk",
+      "tax_id": "6515515455",
+      "country": "PL",
+      "address": "ogród Ciszewski 6/2, 56-591 Bydgoszcz"
+    },
+    "lines": [
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "19",
+        "unit_net": "238.15",
+        "vat_rate": "23",
+        "net": "4524.85"
+      },
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "1",
+        "unit_net": "661.41",
+        "vat_rate": "8",
+        "net": "661.41"
+      }
+    ],
+    "total_net": "5186.26",
+    "total_vat": "1093.63",
+    "total_gross": "6279.89"
+  },
+  "defect": 3,
+  "expected_failed_rules": [
+    "tax_id"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "RE-2026-0117",
+    "issue_date": "2026-04-16",
+    "sale_date": "2026-04-16",
+    "currency": "EUR",
+    "seller": {
+      "name": "Niedermeier-Demut",
+      "tax_id": "DE697416150",
+      "country": "DE",
+      "address": "Völklinger Str. 929, 77889 Nord Catrinburg"
+    },
+    "buyer": {
+      "name": "Gelling OHG",
+      "tax_id": "DE151684326",
+      "country": "DE",
+      "address": "Entenpfuhl 90c, 06445 Nord Lorenzostadt"
+    },
+    "lines": [
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "1",
+        "unit_net": "206.56",
+        "vat_rate": "19",
+        "net": "206.56"
+      },
+      {
+        "description": "Fachbuch",
+        "quantity": "2",
+        "unit_net": "49.56",
+        "vat_rate": "7",
+        "net": "99.12"
+      }
+    ],
+    "total_net": "305.68",
+    "total_vat": "46.19",
+    "total_gross": "351.87"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

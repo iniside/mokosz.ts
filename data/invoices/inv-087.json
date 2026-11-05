@@ -1,0 +1,50 @@
+{
+  "invoice": {
+    "number": "RE-2026-0087",
+    "issue_date": null,
+    "sale_date": "2026-02-02",
+    "currency": "EUR",
+    "seller": {
+      "name": "Gunther GmbH & Co. KG",
+      "tax_id": "DE801951964",
+      "country": "DE",
+      "address": "Friedrich-Engels-Str. 62b, 30781 Renzstadt"
+    },
+    "buyer": {
+      "name": "Gotthardt, Baumann und Mathes",
+      "tax_id": "DE272493208",
+      "country": "DE",
+      "address": "Max-Horkheimer-Str. 36c, 04110 Janeland"
+    },
+    "lines": [
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "2",
+        "unit_net": "207.27",
+        "vat_rate": "7",
+        "net": "414.54"
+      },
+      {
+        "description": "Fachbuch",
+        "quantity": "1",
+        "unit_net": "86.68",
+        "vat_rate": "7",
+        "net": "86.68"
+      },
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "1",
+        "unit_net": "1926.00",
+        "vat_rate": "19",
+        "net": "1926.00"
+      }
+    ],
+    "total_net": "2427.22",
+    "total_vat": "401.03",
+    "total_gross": "2828.25"
+  },
+  "defect": 4,
+  "expected_failed_rules": [
+    "required_fields"
+  ]
+}

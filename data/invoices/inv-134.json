@@ -1,0 +1,50 @@
+{
+  "invoice": {
+    "number": "FV/2026/04/134",
+    "issue_date": "2026-04-28",
+    "sale_date": "2026-04-26",
+    "currency": "PLN",
+    "seller": {
+      "name": "Janiszewski S.A.",
+      "tax_id": "3833929678",
+      "country": "PL",
+      "address": "pl. Krakowiak 32, 44-610 Kędzierzyn-Koźle"
+    },
+    "buyer": {
+      "name": "Laskowski SKA",
+      "tax_id": "1191676340",
+      "country": "PL",
+      "address": "rondo Kalinowski 90a, 66-403 Brzostek"
+    },
+    "lines": [
+      {
+        "description": "Hosting serwera VPS – 1 miesiąc",
+        "quantity": "12",
+        "unit_net": "372.24",
+        "vat_rate": "23",
+        "net": "4466.88"
+      },
+      {
+        "description": "Monitor 27 cali",
+        "quantity": "4",
+        "unit_net": "1675.19",
+        "vat_rate": "23",
+        "net": "6700.76"
+      },
+      {
+        "description": "Papier biurowy A4, ryza 500 ark.",
+        "quantity": "1",
+        "unit_net": "22.01",
+        "vat_rate": "23",
+        "net": "22.01"
+      }
+    ],
+    "total_net": "11534.58",
+    "total_vat": "2573.62",
+    "total_gross": "14108.20"
+  },
+  "defect": 1,
+  "expected_failed_rules": [
+    "lines_total"
+  ]
+}

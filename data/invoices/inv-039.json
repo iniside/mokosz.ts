@@ -1,0 +1,64 @@
+{
+  "invoice": {
+    "number": "FV/2026/07/039",
+    "issue_date": null,
+    "sale_date": "2026-07-10",
+    "currency": "PLN",
+    "seller": {
+      "name": "Kowalik S.A.",
+      "tax_id": "5510088901",
+      "country": "PL",
+      "address": "al. Witczak 636, 42-909 Nowa Ruda"
+    },
+    "buyer": {
+      "name": "Stanisławski S.A.",
+      "tax_id": "7644006503",
+      "country": "PL",
+      "address": "rondo Kucharski 7/4, 07-459 Ruda Śląska"
+    },
+    "lines": [
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "12",
+        "unit_net": "409.16",
+        "vat_rate": "23",
+        "net": "4909.92"
+      },
+      {
+        "description": "Hosting serwera VPS – 1 miesiąc",
+        "quantity": "1",
+        "unit_net": "158.70",
+        "vat_rate": "23",
+        "net": "158.70"
+      },
+      {
+        "description": "Usługa noclegowa (doba)",
+        "quantity": "1",
+        "unit_net": "423.50",
+        "vat_rate": "8",
+        "net": "423.50"
+      },
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "5",
+        "unit_net": "1812.60",
+        "vat_rate": "zw",
+        "net": "9063.00"
+      },
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "35",
+        "unit_net": "303.84",
+        "vat_rate": "23",
+        "net": "10634.40"
+      }
+    ],
+    "total_net": "25189.52",
+    "total_vat": "3645.57",
+    "total_gross": "28835.09"
+  },
+  "defect": 4,
+  "expected_failed_rules": [
+    "required_fields"
+  ]
+}

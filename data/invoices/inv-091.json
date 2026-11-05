@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "FV/2026/02/091",
+    "issue_date": "2026-02-03",
+    "sale_date": "2026-02-02",
+    "currency": "PLN",
+    "seller": {
+      "name": "Surma Sp. k.",
+      "tax_id": "8952636620",
+      "country": "PL",
+      "address": "ul. Dobrowolski 65b, 19-040 Górowo Iławeckie"
+    },
+    "buyer": {
+      "name": "Krysiak-Bogucki",
+      "tax_id": "4971042606",
+      "country": "PL",
+      "address": "os. Kędziora 44a, 71-350 Brzesko"
+    },
+    "lines": [
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "10",
+        "unit_net": "264.41",
+        "vat_rate": "23",
+        "net": "2644.10"
+      },
+      {
+        "description": "Hosting serwera VPS – 1 miesiąc",
+        "quantity": "10",
+        "unit_net": "329.81",
+        "vat_rate": "23",
+        "net": "3298.10"
+      },
+      {
+        "description": "Usługa noclegowa (doba)",
+        "quantity": "5",
+        "unit_net": "295.73",
+        "vat_rate": "8",
+        "net": "1478.65"
+      }
+    ],
+    "total_net": "7420.85",
+    "total_vat": "1485.00",
+    "total_gross": "8905.85"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

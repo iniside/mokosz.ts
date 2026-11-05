@@ -1,0 +1,71 @@
+{
+  "invoice": {
+    "number": "RE-2026-0094",
+    "issue_date": "2026-05-13",
+    "sale_date": "2026-05-03",
+    "currency": "EUR",
+    "seller": {
+      "name": "Beckel-Gamper",
+      "tax_id": "DE447362895",
+      "country": "DE",
+      "address": "Höfer Mühle 43, 06327 Nord Kim"
+    },
+    "buyer": {
+      "name": "Kesselschläger, Giesche und Esenwein",
+      "tax_id": "DE774554430",
+      "country": "DE",
+      "address": "Muhrgasse 421, 30160 Augsburg"
+    },
+    "lines": [
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "57",
+        "unit_net": "124.07",
+        "vat_rate": "19",
+        "net": "7071.99"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "2",
+        "unit_net": "69.98",
+        "vat_rate": "19",
+        "net": "139.96"
+      },
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "1",
+        "unit_net": "24.34",
+        "vat_rate": "7",
+        "net": "24.34"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "4",
+        "unit_net": "6.51",
+        "vat_rate": "19",
+        "net": "26.04"
+      },
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "1",
+        "unit_net": "1504.46",
+        "vat_rate": "19",
+        "net": "1504.46"
+      },
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "3",
+        "unit_net": "189.47",
+        "vat_rate": "19",
+        "net": "568.41"
+      }
+    ],
+    "total_net": "9335.20",
+    "total_vat": "1770.76",
+    "total_gross": "11105.96"
+  },
+  "defect": 3,
+  "expected_failed_rules": [
+    "tax_id"
+  ]
+}

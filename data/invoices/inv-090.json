@@ -1,0 +1,64 @@
+{
+  "invoice": {
+    "number": "FV/2026/10/090",
+    "issue_date": "2026-10-13",
+    "sale_date": "2026-10-13",
+    "currency": "PLN",
+    "seller": {
+      "name": "Karpiński, Miller and Skowroński",
+      "tax_id": "3620251962",
+      "country": "PL",
+      "address": "bulw. Bednarczyk 88a, 49-806 Duszniki-Zdrój"
+    },
+    "buyer": {
+      "name": "Gruszczyński, Kot and Gawroński",
+      "tax_id": "7745152169",
+      "country": "PL",
+      "address": "ogród Bartkowiak 848, 71-741 Alwernia"
+    },
+    "lines": [
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "1",
+        "unit_net": "3457.93",
+        "vat_rate": "0",
+        "net": "3457.93"
+      },
+      {
+        "description": "Książka specjalistyczna",
+        "quantity": "2",
+        "unit_net": "111.18",
+        "vat_rate": "5",
+        "net": "222.36"
+      },
+      {
+        "description": "Hosting serwera VPS – 1 miesiąc",
+        "quantity": "12",
+        "unit_net": "357.42",
+        "vat_rate": "23",
+        "net": "4289.04"
+      },
+      {
+        "description": "Usługa programistyczna (godz.)",
+        "quantity": "65.5",
+        "unit_net": "226.63",
+        "vat_rate": "23",
+        "net": "14844.27"
+      },
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "2",
+        "unit_net": "1037.17",
+        "vat_rate": "23",
+        "net": "2074.34"
+      }
+    ],
+    "total_net": "24887.94",
+    "total_vat": "4923.40",
+    "total_gross": "29811.34"
+  },
+  "defect": 2,
+  "expected_failed_rules": [
+    "vat_total"
+  ]
+}

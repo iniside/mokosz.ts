@@ -1,0 +1,71 @@
+{
+  "invoice": {
+    "number": "RE-2026-0113",
+    "issue_date": "2026-05-29",
+    "sale_date": "2026-05-29",
+    "currency": "EUR",
+    "seller": {
+      "name": "Lammert, Giehl und Manns",
+      "tax_id": "DE983537198",
+      "country": "DE",
+      "address": "Am Nonnenbruch 56c, 97364 Nord Ginostadt"
+    },
+    "buyer": {
+      "name": "Moormann, Lewke und Meissner",
+      "tax_id": "DE355622216",
+      "country": "DE",
+      "address": "Otto-Grimm-Str. 26a, 08976 Sürthstadt"
+    },
+    "lines": [
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "12",
+        "unit_net": "244.26",
+        "vat_rate": "19",
+        "net": "2931.12"
+      },
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "36",
+        "unit_net": "88.83",
+        "vat_rate": "19",
+        "net": "3197.88"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "12",
+        "unit_net": "115.67",
+        "vat_rate": "19",
+        "net": "1388.04"
+      },
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "4",
+        "unit_net": "206.47",
+        "vat_rate": "7",
+        "net": "825.88"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "1",
+        "unit_net": "8.67",
+        "vat_rate": "8",
+        "net": "8.67"
+      },
+      {
+        "description": "Tonerkartusche",
+        "quantity": "5",
+        "unit_net": "82.21",
+        "vat_rate": "19",
+        "net": "411.05"
+      }
+    ],
+    "total_net": "8762.64",
+    "total_vat": "1564.84",
+    "total_gross": "10327.48"
+  },
+  "defect": 5,
+  "expected_failed_rules": [
+    "vat_rate_country"
+  ]
+}

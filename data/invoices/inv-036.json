@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "FV/2026/08/036",
+    "issue_date": "2026-08-17",
+    "sale_date": "2026-08-17",
+    "currency": "PLN",
+    "seller": {
+      "name": "Januszewski, Kawa and Marcinkowski",
+      "tax_id": "6622309791",
+      "country": "PL",
+      "address": "park Ciszewski 33, 25-380 Zgierz"
+    },
+    "buyer": {
+      "name": "Strzelecki, Przybyła and Kalinowski",
+      "tax_id": "2649801728",
+      "country": "PL",
+      "address": "pl. Lipka 98c, 72-225 Łomża"
+    },
+    "lines": [
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "1",
+        "unit_net": "4084.79",
+        "vat_rate": "0",
+        "net": "4084.79"
+      },
+      {
+        "description": "Prenumerata czasopisma branżowego",
+        "quantity": "5",
+        "unit_net": "143.17",
+        "vat_rate": "5",
+        "net": "715.85"
+      },
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "20",
+        "unit_net": "2211.56",
+        "vat_rate": "23",
+        "net": "44231.20"
+      }
+    ],
+    "total_net": "49031.84",
+    "total_vat": "10208.97",
+    "total_gross": "59240.81"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

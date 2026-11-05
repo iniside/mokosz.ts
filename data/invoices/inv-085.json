@@ -1,0 +1,64 @@
+{
+  "invoice": {
+    "number": "RE-2026-0085",
+    "issue_date": "2026-04-14",
+    "sale_date": "2026-04-09",
+    "currency": "EUR",
+    "seller": {
+      "name": "Wachenbrunner, Hofmann und Hering",
+      "tax_id": "DE690400730",
+      "country": "DE",
+      "address": "Dahlemer Str. 2, 59364 Vitoburg"
+    },
+    "buyer": {
+      "name": "Schwatlo-Merkel",
+      "tax_id": "DE534307123",
+      "country": "DE",
+      "address": "Graf-Galen-Platz 95, 39272 Schützdorf"
+    },
+    "lines": [
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "2",
+        "unit_net": "1770.07",
+        "vat_rate": "19",
+        "net": "3540.14"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "4",
+        "unit_net": "60.97",
+        "vat_rate": "19",
+        "net": "243.88"
+      },
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "2",
+        "unit_net": "156.40",
+        "vat_rate": "0",
+        "net": "312.80"
+      },
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "65",
+        "unit_net": "86.18",
+        "vat_rate": "19",
+        "net": "5601.70"
+      },
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "20",
+        "unit_net": "575.92",
+        "vat_rate": "19",
+        "net": "11518.40"
+      }
+    ],
+    "total_net": "21216.92",
+    "total_vat": "3971.78",
+    "total_gross": "25188.70"
+  },
+  "defect": 3,
+  "expected_failed_rules": [
+    "tax_id"
+  ]
+}

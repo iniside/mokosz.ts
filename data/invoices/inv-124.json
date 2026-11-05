@@ -1,0 +1,71 @@
+{
+  "invoice": {
+    "number": "RE-2026-0124",
+    "issue_date": null,
+    "sale_date": "2026-04-01",
+    "currency": "EUR",
+    "seller": {
+      "name": "Friedek AG",
+      "tax_id": "DE657875601",
+      "country": "DE",
+      "address": "Stettiner Str. 8, 12563 Eschweiler"
+    },
+    "buyer": {
+      "name": "Saflanis OHG",
+      "tax_id": "DE544745103",
+      "country": "DE",
+      "address": "Obere Lindenstr. 46a, 62621 Lippstadt"
+    },
+    "lines": [
+      {
+        "description": "Tonerkartusche",
+        "quantity": "3",
+        "unit_net": "135.22",
+        "vat_rate": "19",
+        "net": "405.66"
+      },
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "29",
+        "unit_net": "190.41",
+        "vat_rate": "19",
+        "net": "5521.89"
+      },
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "2",
+        "unit_net": "199.25",
+        "vat_rate": "0",
+        "net": "398.50"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "1",
+        "unit_net": "7.08",
+        "vat_rate": "19",
+        "net": "7.08"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "1",
+        "unit_net": "145.26",
+        "vat_rate": "19",
+        "net": "145.26"
+      },
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "20",
+        "unit_net": "118.18",
+        "vat_rate": "19",
+        "net": "2363.60"
+      }
+    ],
+    "total_net": "8841.99",
+    "total_vat": "1604.26",
+    "total_gross": "10446.25"
+  },
+  "defect": 4,
+  "expected_failed_rules": [
+    "required_fields"
+  ]
+}

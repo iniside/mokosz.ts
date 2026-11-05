@@ -1,0 +1,26 @@
+# Node
+node_modules/
+dist/
+.mastra/
+web/dist/
+coverage/
+
+# Uploaded invoices
+data/uploads/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# Claude Code local
+.claude/settings.local.json
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+reports/
+.stryker-tmp/

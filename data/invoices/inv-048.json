@@ -1,0 +1,36 @@
+{
+  "invoice": {
+    "number": "FV/2026/04/048",
+    "issue_date": "2026-04-04",
+    "sale_date": "2026-03-30",
+    "currency": "PLN",
+    "seller": {
+      "name": "Kuczyński, Kubik and Markowski",
+      "tax_id": "7180396189",
+      "country": "PL",
+      "address": "wyspa Jagodziński 60c, 04-331 Pszów"
+    },
+    "buyer": {
+      "name": "Gajda, Dziedzic and Siedlecki",
+      "tax_id": "6425198293",
+      "country": "PL",
+      "address": "rynek Szczepanik 9/2, 88-804 Grabów nad Prosną"
+    },
+    "lines": [
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "10",
+        "unit_net": "2148.99",
+        "vat_rate": "23",
+        "net": "21489.90"
+      }
+    ],
+    "total_net": "21441.85",
+    "total_vat": "4942.68",
+    "total_gross": "26384.53"
+  },
+  "defect": 1,
+  "expected_failed_rules": [
+    "lines_total"
+  ]
+}

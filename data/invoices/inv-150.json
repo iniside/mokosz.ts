@@ -1,0 +1,55 @@
+{
+  "invoice": {
+    "number": "FV/2026/02/150",
+    "issue_date": "2026-02-11",
+    "sale_date": "2026-02-09",
+    "currency": "PLN",
+    "seller": {
+      "name": "Grzybowski-Sołtysiak",
+      "tax_id": "2850740196",
+      "country": "PL",
+      "address": "rynek Kula 27b, 63-181 Nekla"
+    },
+    "buyer": {
+      "name": "Wyszyński, Michalak and Góral",
+      "tax_id": "8837724800",
+      "country": "PL",
+      "address": "rondo Szymański 7/1, 15-925 Biskupiec"
+    },
+    "lines": [
+      {
+        "description": "Usługa noclegowa (doba)",
+        "quantity": "2",
+        "unit_net": "357.32",
+        "vat_rate": "8",
+        "net": "714.64"
+      },
+      {
+        "description": "Hosting serwera VPS – 1 miesiąc",
+        "quantity": "1",
+        "unit_net": "320.56",
+        "vat_rate": "23",
+        "net": "320.56"
+      },
+      {
+        "description": "Usługa transportowa krajowa",
+        "quantity": "1",
+        "unit_net": "692.93",
+        "vat_rate": "23",
+        "net": "692.93"
+      },
+      {
+        "description": "Krzesło biurowe obrotowe",
+        "quantity": "1",
+        "unit_net": "730.98",
+        "vat_rate": "23",
+        "net": "730.98"
+      }
+    ],
+    "total_net": "2459.11",
+    "total_vat": "458.40",
+    "total_gross": "2917.51"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

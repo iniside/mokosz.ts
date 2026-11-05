@@ -1,0 +1,36 @@
+{
+  "invoice": {
+    "number": "FV/2026/06/018",
+    "issue_date": "2026-06-05",
+    "sale_date": "2026-06-03",
+    "currency": "PLN",
+    "seller": {
+      "name": "Paczkowski Sp. p.",
+      "tax_id": "3649087817",
+      "country": "PL",
+      "address": "park Lipka 97b, 96-005 Pasłęk"
+    },
+    "buyer": {
+      "name": "Piórkowski Sp. p.",
+      "tax_id": "5153944154",
+      "country": "PL",
+      "address": "ul. Bednarek 49, 25-020 Osieczna"
+    },
+    "lines": [
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "38.5",
+        "unit_net": "303.25",
+        "vat_rate": "7",
+        "net": "11675.13"
+      }
+    ],
+    "total_net": "11675.13",
+    "total_vat": "817.26",
+    "total_gross": "12492.39"
+  },
+  "defect": 5,
+  "expected_failed_rules": [
+    "vat_rate_country"
+  ]
+}

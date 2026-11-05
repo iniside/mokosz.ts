@@ -1,0 +1,50 @@
+{
+  "invoice": {
+    "number": "FV/2026/07/109",
+    "issue_date": "2026-07-05",
+    "sale_date": "2026-07-05",
+    "currency": "PLN",
+    "seller": {
+      "name": "Tomczyk-Siedlecki",
+      "tax_id": "1913130693",
+      "country": "PL",
+      "address": "rondo Kuc 818, 67-713 Kłecko"
+    },
+    "buyer": {
+      "name": "Paszkowski, Dróżdż and Puchalski",
+      "tax_id": "6419533195",
+      "country": "PL",
+      "address": "rondo Bartczak 53c, 64-016 Radzyń Chełmiński"
+    },
+    "lines": [
+      {
+        "description": "Książka specjalistyczna",
+        "quantity": "10",
+        "unit_net": "62.14",
+        "vat_rate": "5",
+        "net": "621.40"
+      },
+      {
+        "description": "Usługa programistyczna (godz.)",
+        "quantity": "49.5",
+        "unit_net": "177.18",
+        "vat_rate": "23",
+        "net": "8770.41"
+      },
+      {
+        "description": "Prenumerata czasopisma branżowego",
+        "quantity": "1",
+        "unit_net": "345.32",
+        "vat_rate": "5",
+        "net": "345.32"
+      }
+    ],
+    "total_net": "9737.13",
+    "total_vat": "2065.53",
+    "total_gross": "11802.66"
+  },
+  "defect": 3,
+  "expected_failed_rules": [
+    "tax_id"
+  ]
+}

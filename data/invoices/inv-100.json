@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "FV/2026/10/100",
+    "issue_date": "2026-10-10",
+    "sale_date": "2026-10-10",
+    "currency": "PLN",
+    "seller": {
+      "name": "Płonka z o.o",
+      "tax_id": "2966624523",
+      "country": "PL",
+      "address": "rondo Piechota 42, 79-393 Brzeziny"
+    },
+    "buyer": {
+      "name": "Wnuk s.c.",
+      "tax_id": "4546516466",
+      "country": "PL",
+      "address": "szosa Szczepaniak 390, 51-457 Gdańsk"
+    },
+    "lines": [
+      {
+        "description": "Usługa programistyczna (godz.)",
+        "quantity": "79.5",
+        "unit_net": "131.25",
+        "vat_rate": "23",
+        "net": "10434.38"
+      },
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "1",
+        "unit_net": "233.77",
+        "vat_rate": "23",
+        "net": "233.77"
+      }
+    ],
+    "total_net": "10668.15",
+    "total_vat": "2453.67",
+    "total_gross": "13121.82"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

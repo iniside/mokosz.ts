@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "FV/2026/08/065",
+    "issue_date": "2026-08-22",
+    "sale_date": "2026-08-17",
+    "currency": "PLN",
+    "seller": {
+      "name": "Sobolewski-Nawrot",
+      "tax_id": "3149035160",
+      "country": "PL",
+      "address": "wyb. Przybył 60a, 75-686 Piotrków Kujawski"
+    },
+    "buyer": {
+      "name": "Wiącek, Prokop and Żurek",
+      "tax_id": "4657843990",
+      "country": "PL",
+      "address": "ogród Węgrzyn 78a, 98-490 Drezdenko"
+    },
+    "lines": [
+      {
+        "description": "Książka specjalistyczna",
+        "quantity": "20",
+        "unit_net": "125.42",
+        "vat_rate": "5",
+        "net": "2508.40"
+      },
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "12",
+        "unit_net": "1426.72",
+        "vat_rate": "zw",
+        "net": "17120.64"
+      },
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "1",
+        "unit_net": "1345.80",
+        "vat_rate": "23",
+        "net": "1345.80"
+      },
+      {
+        "description": "Krzesło biurowe obrotowe",
+        "quantity": "2",
+        "unit_net": "817.17",
+        "vat_rate": "23",
+        "net": "1634.34"
+      },
+      {
+        "description": "Usługa noclegowa (doba)",
+        "quantity": "1",
+        "unit_net": "414.70",
+        "vat_rate": "8",
+        "net": "414.70"
+      }
+    ],
+    "total_net": "23023.88",
+    "total_vat": "844.03",
+    "total_gross": "23867.91"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

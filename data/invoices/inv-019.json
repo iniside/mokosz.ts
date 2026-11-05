@@ -1,0 +1,43 @@
+{
+  "invoice": {
+    "number": "FV/2026/02/019",
+    "issue_date": null,
+    "sale_date": "2026-02-21",
+    "currency": "PLN",
+    "seller": {
+      "name": "Jurkiewicz s.c.",
+      "tax_id": "8528917607",
+      "country": "PL",
+      "address": "wyspa Karpiński 85b, 91-667 Karpacz"
+    },
+    "buyer": {
+      "name": "Szczęsny-Górecki",
+      "tax_id": "3761336488",
+      "country": "PL",
+      "address": "park Kotowski 47, 63-171 Ujście"
+    },
+    "lines": [
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "5",
+        "unit_net": "2232.40",
+        "vat_rate": "23",
+        "net": "11162.00"
+      },
+      {
+        "description": "Hosting serwera VPS – 1 miesiąc",
+        "quantity": "20",
+        "unit_net": "367.69",
+        "vat_rate": "23",
+        "net": "7353.80"
+      }
+    ],
+    "total_net": "18515.80",
+    "total_vat": "4258.63",
+    "total_gross": "22774.43"
+  },
+  "defect": 4,
+  "expected_failed_rules": [
+    "required_fields"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "FV/2026/06/024",
+    "issue_date": "2026-06-14",
+    "sale_date": "2026-06-13",
+    "currency": "PLN",
+    "seller": {
+      "name": "Drozdowski-Jurkiewicz",
+      "tax_id": "2860113414",
+      "country": "PL",
+      "address": "pl. Lasota 16, 78-497 Szczytno"
+    },
+    "buyer": {
+      "name": "Owczarek, Kuczyński and Jagielski",
+      "tax_id": "7654733794",
+      "country": "PL",
+      "address": "wyb. Krupiński 90c, 21-696 Obrzycko"
+    },
+    "lines": [
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "2",
+        "unit_net": "4974.50",
+        "vat_rate": "0",
+        "net": "9949.00"
+      },
+      {
+        "description": "Książka specjalistyczna",
+        "quantity": "2",
+        "unit_net": "65.87",
+        "vat_rate": "5",
+        "net": "131.74"
+      },
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "12",
+        "unit_net": "960.41",
+        "vat_rate": "8",
+        "net": "11524.92"
+      },
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "3",
+        "unit_net": "282.35",
+        "vat_rate": "23",
+        "net": "847.05"
+      },
+      {
+        "description": "Usługa noclegowa (doba)",
+        "quantity": "1",
+        "unit_net": "350.99",
+        "vat_rate": "8",
+        "net": "350.99"
+      }
+    ],
+    "total_net": "22803.70",
+    "total_vat": "1151.48",
+    "total_gross": "23955.18"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

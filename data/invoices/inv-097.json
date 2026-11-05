@@ -1,0 +1,50 @@
+{
+  "invoice": {
+    "number": "RE-2026-0097",
+    "issue_date": "2026-08-15",
+    "sale_date": "2026-08-15",
+    "currency": "EUR",
+    "seller": {
+      "name": "Horn-Diedrich",
+      "tax_id": "DE209812795",
+      "country": "DE",
+      "address": "Starenweg 523, 09632 West Timonburg"
+    },
+    "buyer": {
+      "name": "Fenner GmbH",
+      "tax_id": "DE754888285",
+      "country": "DE",
+      "address": "Zündhütchenweg 84c, 55461 Heinzeland"
+    },
+    "lines": [
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "10",
+        "unit_net": "2426.37",
+        "vat_rate": "19",
+        "net": "24263.70"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "5",
+        "unit_net": "36.48",
+        "vat_rate": "19",
+        "net": "182.40"
+      },
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "17",
+        "unit_net": "171.49",
+        "vat_rate": "8",
+        "net": "2915.33"
+      }
+    ],
+    "total_net": "27361.43",
+    "total_vat": "4877.99",
+    "total_gross": "32239.42"
+  },
+  "defect": 5,
+  "expected_failed_rules": [
+    "vat_rate_country"
+  ]
+}

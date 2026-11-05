@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "RE-2026-0067",
+    "issue_date": "2026-09-26",
+    "sale_date": "2026-09-26",
+    "currency": "EUR",
+    "seller": {
+      "name": "Ekpo-Slotta",
+      "tax_id": "DE909467600",
+      "country": "DE",
+      "address": "Buchenweg 42b, 07937 West Asyastadt"
+    },
+    "buyer": {
+      "name": "Fehrig-Markowski",
+      "tax_id": "DE194083469",
+      "country": "DE",
+      "address": "Mozartstr. 86c, 60418 Neu Alena"
+    },
+    "lines": [
+      {
+        "description": "Tonerkartusche",
+        "quantity": "20",
+        "unit_net": "111.28",
+        "vat_rate": "19",
+        "net": "2225.60"
+      },
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "5",
+        "unit_net": "102.69",
+        "vat_rate": "7",
+        "net": "513.45"
+      },
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "3",
+        "unit_net": "1880.49",
+        "vat_rate": "19",
+        "net": "5641.47"
+      },
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "20",
+        "unit_net": "136.83",
+        "vat_rate": "0",
+        "net": "2736.60"
+      },
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "1",
+        "unit_net": "274.20",
+        "vat_rate": "19",
+        "net": "274.20"
+      }
+    ],
+    "total_net": "11391.32",
+    "total_vat": "1582.78",
+    "total_gross": "12974.10"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

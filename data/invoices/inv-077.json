@@ -1,0 +1,34 @@
+{
+  "invoice": {
+    "number": "RE-2026-0077",
+    "issue_date": "2026-05-01",
+    "sale_date": "2026-05-01",
+    "currency": "EUR",
+    "seller": {
+      "name": "Grosser-Schuldt",
+      "tax_id": "DE140452113",
+      "country": "DE",
+      "address": "Hitdorfer Str. 22c, 02098 Dombrowskidorf"
+    },
+    "buyer": {
+      "name": "Kúhn-Burmeister",
+      "tax_id": "DE794517082",
+      "country": "DE",
+      "address": "Henry-T.-v.-Böttinger-Str. 80, 33814 Kazmarekburg"
+    },
+    "lines": [
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "1",
+        "unit_net": "40.16",
+        "vat_rate": "19",
+        "net": "40.16"
+      }
+    ],
+    "total_net": "40.16",
+    "total_vat": "7.63",
+    "total_gross": "47.79"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

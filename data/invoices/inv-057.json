@@ -1,0 +1,64 @@
+{
+  "invoice": {
+    "number": "RE-2026-0057",
+    "issue_date": "2026-01-09",
+    "sale_date": "2025-12-30",
+    "currency": "EUR",
+    "seller": {
+      "name": "Smieja GmbH & Co. KG",
+      "tax_id": "DE118976713",
+      "country": "DE",
+      "address": "Stefan-Zweig-Str. 29c, 55639 Roggatzstadt"
+    },
+    "buyer": {
+      "name": "Hentschke, Harting und Tittman",
+      "tax_id": "DE925357485",
+      "country": "DE",
+      "address": "Burgloch 7, 98899 Troisdorf"
+    },
+    "lines": [
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "1",
+        "unit_net": "70.68",
+        "vat_rate": "7",
+        "net": "70.68"
+      },
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "2",
+        "unit_net": "512.96",
+        "vat_rate": "19",
+        "net": "1025.92"
+      },
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "32.5",
+        "unit_net": "135.68",
+        "vat_rate": "19",
+        "net": "4409.60"
+      },
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "1",
+        "unit_net": "146.65",
+        "vat_rate": "0",
+        "net": "146.65"
+      },
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "1",
+        "unit_net": "545.22",
+        "vat_rate": "19",
+        "net": "545.22"
+      }
+    ],
+    "total_net": "6198.07",
+    "total_vat": "1181.96",
+    "total_gross": "7380.03"
+  },
+  "defect": 2,
+  "expected_failed_rules": [
+    "vat_total"
+  ]
+}

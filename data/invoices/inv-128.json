@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "FV/2026/09/128",
+    "issue_date": "2026-09-17",
+    "sale_date": "2026-09-17",
+    "currency": "PLN",
+    "seller": {
+      "name": "Nawrot-Grzelak",
+      "tax_id": "6747270613",
+      "country": "PL",
+      "address": "droga Stanisławski 52, 03-474 Połaniec"
+    },
+    "buyer": {
+      "name": "Drzewiecki s.c.",
+      "tax_id": "5817058830",
+      "country": "PL",
+      "address": "rynek Kuś 828, 95-835 Międzyrzecz"
+    },
+    "lines": [
+      {
+        "description": "Usługa noclegowa (doba)",
+        "quantity": "1",
+        "unit_net": "417.79",
+        "vat_rate": "8",
+        "net": "417.79"
+      },
+      {
+        "description": "Papier biurowy A4, ryza 500 ark.",
+        "quantity": "10",
+        "unit_net": "27.03",
+        "vat_rate": "23",
+        "net": "270.30"
+      }
+    ],
+    "total_net": "688.09",
+    "total_vat": "95.59",
+    "total_gross": "783.68"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

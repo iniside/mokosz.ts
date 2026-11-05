@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "FV/2026/08/070",
+    "issue_date": "2026-08-26",
+    "sale_date": "2026-08-26",
+    "currency": "PLN",
+    "seller": {
+      "name": "Jędrzejczyk-Banaś",
+      "tax_id": "8199030486",
+      "country": "PL",
+      "address": "rondo Kopeć 84c, 08-237 Dębica"
+    },
+    "buyer": {
+      "name": "Wilczyński, Sławiński and Gruszczyński",
+      "tax_id": "3364777686",
+      "country": "PL",
+      "address": "pl. Sitek 1/5, 53-452 Ropczyce"
+    },
+    "lines": [
+      {
+        "description": "Hosting serwera VPS – 1 miesiąc",
+        "quantity": "1",
+        "unit_net": "91.36",
+        "vat_rate": "23",
+        "net": "91.36"
+      },
+      {
+        "description": "Usługa noclegowa (doba)",
+        "quantity": "4",
+        "unit_net": "252.00",
+        "vat_rate": "8",
+        "net": "1008.00"
+      },
+      {
+        "description": "Monitor 27 cali",
+        "quantity": "5",
+        "unit_net": "1719.07",
+        "vat_rate": "23",
+        "net": "8595.35"
+      }
+    ],
+    "total_net": "9694.71",
+    "total_vat": "2078.58",
+    "total_gross": "11773.29"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

@@ -1,0 +1,71 @@
+{
+  "invoice": {
+    "number": "RE-2026-0121",
+    "issue_date": null,
+    "sale_date": "2026-04-29",
+    "currency": "EUR",
+    "seller": {
+      "name": "Steidl, Lesch und Borgschulze",
+      "tax_id": "DE973462594",
+      "country": "DE",
+      "address": "Gluckstr. 62c, 98508 Ahlen"
+    },
+    "buyer": {
+      "name": "Dies, Schütz und Lutz",
+      "tax_id": "DE806682149",
+      "country": "DE",
+      "address": "Adalbertstr. 4, 70646 Ungerscheid"
+    },
+    "lines": [
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "5",
+        "unit_net": "543.07",
+        "vat_rate": "19",
+        "net": "2715.35"
+      },
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "20",
+        "unit_net": "185.73",
+        "vat_rate": "0",
+        "net": "3714.60"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "3",
+        "unit_net": "70.13",
+        "vat_rate": "19",
+        "net": "210.39"
+      },
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "1",
+        "unit_net": "2104.76",
+        "vat_rate": "19",
+        "net": "2104.76"
+      },
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "2",
+        "unit_net": "524.00",
+        "vat_rate": "19",
+        "net": "1048.00"
+      },
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "1",
+        "unit_net": "75.58",
+        "vat_rate": "7",
+        "net": "75.58"
+      }
+    ],
+    "total_net": "9868.68",
+    "total_vat": "1160.21",
+    "total_gross": "11028.89"
+  },
+  "defect": 4,
+  "expected_failed_rules": [
+    "required_fields"
+  ]
+}

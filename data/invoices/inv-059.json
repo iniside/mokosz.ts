@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "FV/2026/04/059",
+    "issue_date": "2026-04-19",
+    "sale_date": "2026-04-09",
+    "currency": "PLN",
+    "seller": {
+      "name": "Kotowski-Matuszak",
+      "tax_id": "6615630836",
+      "country": "PL",
+      "address": "skwer Kasprzyk 9/4, 90-792 Pionki"
+    },
+    "buyer": {
+      "name": "Marciniak s.c.",
+      "tax_id": "7245031184",
+      "country": "PL",
+      "address": "ogród Słowiński 25c, 93-971 Pisz"
+    },
+    "lines": [
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "10",
+        "unit_net": "785.68",
+        "vat_rate": "8",
+        "net": "7856.80"
+      },
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "2",
+        "unit_net": "3655.63",
+        "vat_rate": "0",
+        "net": "7311.26"
+      },
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "2",
+        "unit_net": "433.61",
+        "vat_rate": "23",
+        "net": "867.22"
+      }
+    ],
+    "total_net": "16035.28",
+    "total_vat": "828.00",
+    "total_gross": "16863.28"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

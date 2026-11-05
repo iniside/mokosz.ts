@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "FV/2026/07/092",
+    "issue_date": "2026-07-19",
+    "sale_date": "2026-07-09",
+    "currency": "PLN",
+    "seller": {
+      "name": "Czaja-Flis",
+      "tax_id": "4338002392",
+      "country": "PL",
+      "address": "wyb. Frątczak 72c, 56-467 Kleczew"
+    },
+    "buyer": {
+      "name": "Kostrzewa S.A.",
+      "tax_id": "7316402855",
+      "country": "PL",
+      "address": "rynek Książek 666, 35-032 Września"
+    },
+    "lines": [
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "10",
+        "unit_net": "4525.32",
+        "vat_rate": "0",
+        "net": "45253.20"
+      },
+      {
+        "description": "Usługa doradcza świadczona za granicą",
+        "quantity": "20",
+        "unit_net": "1263.71",
+        "vat_rate": "np",
+        "net": "25274.20"
+      },
+      {
+        "description": "Usługa programistyczna (godz.)",
+        "quantity": "2",
+        "unit_net": "127.54",
+        "vat_rate": "23",
+        "net": "255.08"
+      }
+    ],
+    "total_net": "70782.48",
+    "total_vat": "58.67",
+    "total_gross": "70841.15"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

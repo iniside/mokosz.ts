@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "RE-2026-0028",
+    "issue_date": "2026-04-07",
+    "sale_date": "2026-04-07",
+    "currency": "EUR",
+    "seller": {
+      "name": "Molitor, Kleiber und Spinner",
+      "tax_id": "DE410597480",
+      "country": "DE",
+      "address": "Schlebuschrath 23c, 73847 Umutland"
+    },
+    "buyer": {
+      "name": "Krueger-Löwa",
+      "tax_id": "DE860646879",
+      "country": "DE",
+      "address": "Am Kiesberg 66b, 90584 Nord Carmendorf"
+    },
+    "lines": [
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "1",
+        "unit_net": "529.83",
+        "vat_rate": "19",
+        "net": "529.83"
+      },
+      {
+        "description": "Fachbuch",
+        "quantity": "20",
+        "unit_net": "72.46",
+        "vat_rate": "7",
+        "net": "1449.20"
+      },
+      {
+        "description": "Tonerkartusche",
+        "quantity": "3",
+        "unit_net": "124.47",
+        "vat_rate": "19",
+        "net": "373.41"
+      }
+    ],
+    "total_net": "2352.44",
+    "total_vat": "273.06",
+    "total_gross": "2625.50"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

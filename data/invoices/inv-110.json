@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "RE-2026-0110",
+    "issue_date": "2026-04-12",
+    "sale_date": "2026-04-02",
+    "currency": "EUR",
+    "seller": {
+      "name": "Reinhardt, Rokossa und Gutschank",
+      "tax_id": "DE900596377",
+      "country": "DE",
+      "address": "Fridtjof-Nansen-Str. 60a, 27984 Alt Mattischeid"
+    },
+    "buyer": {
+      "name": "Sewald-Frauendorf",
+      "tax_id": "DE351382348",
+      "country": "DE",
+      "address": "Pastor-Scheibler-Str. 35, 94784 Bad Tjarkstadt"
+    },
+    "lines": [
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "1",
+        "unit_net": "142.83",
+        "vat_rate": "0",
+        "net": "142.83"
+      },
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "2",
+        "unit_net": "883.03",
+        "vat_rate": "19",
+        "net": "1766.06"
+      }
+    ],
+    "total_net": "1908.89",
+    "total_vat": "335.55",
+    "total_gross": "2244.44"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

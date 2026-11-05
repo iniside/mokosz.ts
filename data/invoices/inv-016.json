@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "RE-2026-0016",
+    "issue_date": "2026-09-28",
+    "sale_date": "2026-09-23",
+    "currency": "EUR",
+    "seller": {
+      "name": "Lausecker-Lohmann",
+      "tax_id": "DE213288921",
+      "country": "DE",
+      "address": "Uhlandstr. 2, 29599 Schellenbeckscheid"
+    },
+    "buyer": {
+      "name": "Mintzlaff, Pletsch und Ganzmann",
+      "tax_id": "DE989592800",
+      "country": "DE",
+      "address": "Feuerbachstr. 85b, 88589 Brandenburg an der Havel"
+    },
+    "lines": [
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "20",
+        "unit_net": "573.49",
+        "vat_rate": "19",
+        "net": "11469.80"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "1",
+        "unit_net": "7.45",
+        "vat_rate": "19",
+        "net": "7.45"
+      },
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "12",
+        "unit_net": "604.94",
+        "vat_rate": "19",
+        "net": "7259.28"
+      },
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "15",
+        "unit_net": "102.42",
+        "vat_rate": "19",
+        "net": "1536.30"
+      },
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "1",
+        "unit_net": "534.79",
+        "vat_rate": "19",
+        "net": "534.79"
+      }
+    ],
+    "total_net": "20807.62",
+    "total_vat": "3953.45",
+    "total_gross": "24761.07"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

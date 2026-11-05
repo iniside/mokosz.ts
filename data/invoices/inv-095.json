@@ -1,0 +1,50 @@
+{
+  "invoice": {
+    "number": "FV/2026/08/095",
+    "issue_date": null,
+    "sale_date": "2026-08-22",
+    "currency": "PLN",
+    "seller": {
+      "name": "Niedźwiecki s.c.",
+      "tax_id": "3552680017",
+      "country": "PL",
+      "address": "rynek Szewczyk 202, 14-407 Zalewo"
+    },
+    "buyer": {
+      "name": "Ratajczak-Brzozowski",
+      "tax_id": "3688161400",
+      "country": "PL",
+      "address": "skwer Stefaniak 20a, 26-393 Sieradz"
+    },
+    "lines": [
+      {
+        "description": "Krzesło biurowe obrotowe",
+        "quantity": "4",
+        "unit_net": "1163.72",
+        "vat_rate": "23",
+        "net": "4654.88"
+      },
+      {
+        "description": "Książka specjalistyczna",
+        "quantity": "5",
+        "unit_net": "82.69",
+        "vat_rate": "5",
+        "net": "413.45"
+      },
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "54.5",
+        "unit_net": "184.25",
+        "vat_rate": "23",
+        "net": "10041.63"
+      }
+    ],
+    "total_net": "15109.96",
+    "total_vat": "3400.87",
+    "total_gross": "18510.83"
+  },
+  "defect": 4,
+  "expected_failed_rules": [
+    "required_fields"
+  ]
+}

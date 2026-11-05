@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "RE-2026-0083",
+    "issue_date": "2026-03-11",
+    "sale_date": "2026-03-11",
+    "currency": "EUR",
+    "seller": {
+      "name": "Hildenbrand-Grundmann",
+      "tax_id": "DE196763160",
+      "country": "DE",
+      "address": "In der Schaafsdellen 68b, 69399 Nord Kajastadt"
+    },
+    "buyer": {
+      "name": "Seigel-Grube",
+      "tax_id": "DE831954653",
+      "country": "DE",
+      "address": "Am Kronefeld 18c, 53116 Bad Alicia"
+    },
+    "lines": [
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "12",
+        "unit_net": "1661.87",
+        "vat_rate": "19",
+        "net": "19942.44"
+      },
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "2",
+        "unit_net": "190.40",
+        "vat_rate": "7",
+        "net": "380.80"
+      }
+    ],
+    "total_net": "20323.24",
+    "total_vat": "3815.72",
+    "total_gross": "24138.96"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

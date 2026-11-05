@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "RE-2026-0122",
+    "issue_date": "2026-02-07",
+    "sale_date": "2026-02-02",
+    "currency": "EUR",
+    "seller": {
+      "name": "Scholz GmbH",
+      "tax_id": "DE394432908",
+      "country": "DE",
+      "address": "Kalkstr. 36a, 13805 Corsland"
+    },
+    "buyer": {
+      "name": "Abicht-Floder",
+      "tax_id": "DE444949558",
+      "country": "DE",
+      "address": "Knochenbergsweg 16, 29388 West Ida"
+    },
+    "lines": [
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "11",
+        "unit_net": "191.33",
+        "vat_rate": "19",
+        "net": "2104.63"
+      },
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "1",
+        "unit_net": "92.93",
+        "vat_rate": "7",
+        "net": "92.93"
+      }
+    ],
+    "total_net": "2197.56",
+    "total_vat": "406.39",
+    "total_gross": "2603.95"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "RE-2026-0133",
+    "issue_date": "2026-01-08",
+    "sale_date": "2026-01-08",
+    "currency": "EUR",
+    "seller": {
+      "name": "Kleeberg-Kuhnen",
+      "tax_id": "DE585878903",
+      "country": "DE",
+      "address": "Rheinstr. 46b, 90722 Lukaburg"
+    },
+    "buyer": {
+      "name": "Kalinowski-Siebel",
+      "tax_id": "DE765457291",
+      "country": "DE",
+      "address": "Solinger Str. 62b, 57526 Peerdorf"
+    },
+    "lines": [
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "2",
+        "unit_net": "1507.79",
+        "vat_rate": "19",
+        "net": "3015.58"
+      },
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "1",
+        "unit_net": "119.67",
+        "vat_rate": "7",
+        "net": "119.67"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "3",
+        "unit_net": "53.16",
+        "vat_rate": "19",
+        "net": "159.48"
+      },
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "50",
+        "unit_net": "118.64",
+        "vat_rate": "19",
+        "net": "5932.00"
+      },
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "1",
+        "unit_net": "140.15",
+        "vat_rate": "7",
+        "net": "140.15"
+      }
+    ],
+    "total_net": "9366.88",
+    "total_vat": "1748.53",
+    "total_gross": "11115.41"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

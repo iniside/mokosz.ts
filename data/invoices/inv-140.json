@@ -1,0 +1,36 @@
+{
+  "invoice": {
+    "number": "FV/2026/05/140",
+    "issue_date": "2026-05-29",
+    "sale_date": "2026-05-29",
+    "currency": "PLN",
+    "seller": {
+      "name": "Ruciński s.c.",
+      "tax_id": "8439603481",
+      "country": "PL",
+      "address": "wyspa Karaś 5/5, 84-620 Cedynia"
+    },
+    "buyer": {
+      "name": "Wiśniewski Sp. p.",
+      "tax_id": "7750086854",
+      "country": "PL",
+      "address": "wyspa Więckowski 469, 02-884 Krotoszyn"
+    },
+    "lines": [
+      {
+        "description": "Papier biurowy A4, ryza 500 ark.",
+        "quantity": "20",
+        "unit_net": "23.22",
+        "vat_rate": "23",
+        "net": "464.40"
+      }
+    ],
+    "total_net": "464.40",
+    "total_vat": "106.81",
+    "total_gross": "571.21"
+  },
+  "defect": 3,
+  "expected_failed_rules": [
+    "tax_id"
+  ]
+}

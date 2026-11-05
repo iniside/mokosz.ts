@@ -1,0 +1,55 @@
+{
+  "invoice": {
+    "number": "FV/2026/02/144",
+    "issue_date": "2026-02-01",
+    "sale_date": "2026-02-01",
+    "currency": "PLN",
+    "seller": {
+      "name": "Skrzypek SKA",
+      "tax_id": "9598785749",
+      "country": "PL",
+      "address": "szosa Miklaś 65b, 37-515 Hel"
+    },
+    "buyer": {
+      "name": "Bielski-Kolasa",
+      "tax_id": "7558370372",
+      "country": "PL",
+      "address": "wyb. Jastrzębski 96, 28-225 Tolkmicko"
+    },
+    "lines": [
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "2",
+        "unit_net": "1173.72",
+        "vat_rate": "8",
+        "net": "2347.44"
+      },
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "35",
+        "unit_net": "160.87",
+        "vat_rate": "23",
+        "net": "5630.45"
+      },
+      {
+        "description": "Krzesło biurowe obrotowe",
+        "quantity": "1",
+        "unit_net": "966.90",
+        "vat_rate": "23",
+        "net": "966.90"
+      },
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "12",
+        "unit_net": "2747.76",
+        "vat_rate": "23",
+        "net": "32973.12"
+      }
+    ],
+    "total_net": "41917.91",
+    "total_vat": "9289.01",
+    "total_gross": "51206.92"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

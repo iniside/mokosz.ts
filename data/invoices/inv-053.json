@@ -1,0 +1,36 @@
+{
+  "invoice": {
+    "number": "FV/2026/08/053",
+    "issue_date": "2026-08-23",
+    "sale_date": "2026-08-18",
+    "currency": "PLN",
+    "seller": {
+      "name": "Ratajczak-Janusz",
+      "tax_id": "3728878134",
+      "country": "PL",
+      "address": "wyb. Kucharski 802, 23-089 Więcbork"
+    },
+    "buyer": {
+      "name": "Borowski Sp. j.",
+      "tax_id": "1183453594",
+      "country": "PL",
+      "address": "pl. Filipiak 30b, 44-728 Koźmin Wielkopolski"
+    },
+    "lines": [
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "10",
+        "unit_net": "2146.49",
+        "vat_rate": "8",
+        "net": "21464.90"
+      }
+    ],
+    "total_net": "21464.90",
+    "total_vat": "1756.15",
+    "total_gross": "23221.05"
+  },
+  "defect": 2,
+  "expected_failed_rules": [
+    "vat_total"
+  ]
+}

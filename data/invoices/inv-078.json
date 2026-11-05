@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "FV/2026/10/078",
+    "issue_date": "2026-10-18",
+    "sale_date": "2026-10-18",
+    "currency": "PLN",
+    "seller": {
+      "name": "Stanek-Jaworski",
+      "tax_id": "7584020510",
+      "country": "PL",
+      "address": "wyspa Rzepka 25a, 62-131 Twardogóra"
+    },
+    "buyer": {
+      "name": "Wróblewski Sp. k.",
+      "tax_id": "2995977939",
+      "country": "PL",
+      "address": "szosa Aleksandrowicz 15c, 77-092 Przasnysz"
+    },
+    "lines": [
+      {
+        "description": "Monitor 27 cali",
+        "quantity": "1",
+        "unit_net": "1203.80",
+        "vat_rate": "23",
+        "net": "1203.80"
+      },
+      {
+        "description": "Usługa transportowa krajowa",
+        "quantity": "2",
+        "unit_net": "379.63",
+        "vat_rate": "23",
+        "net": "759.26"
+      },
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "20",
+        "unit_net": "3815.03",
+        "vat_rate": "0",
+        "net": "76300.60"
+      }
+    ],
+    "total_net": "78263.66",
+    "total_vat": "451.50",
+    "total_gross": "78715.16"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

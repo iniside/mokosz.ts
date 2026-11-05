@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "RE-2026-0141",
+    "issue_date": "2026-05-27",
+    "sale_date": "2026-05-27",
+    "currency": "EUR",
+    "seller": {
+      "name": "Stöwer KG",
+      "tax_id": "DE199786865",
+      "country": "DE",
+      "address": "Kump 38b, 45792 Waiblingen"
+    },
+    "buyer": {
+      "name": "Gromisch-Newton",
+      "tax_id": "DE900838910",
+      "country": "DE",
+      "address": "Mülhausener Str. 65b, 51885 Bad Vanessadorf"
+    },
+    "lines": [
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "20",
+        "unit_net": "84.25",
+        "vat_rate": "7",
+        "net": "1685.00"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "10",
+        "unit_net": "135.77",
+        "vat_rate": "19",
+        "net": "1357.70"
+      },
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "1",
+        "unit_net": "343.66",
+        "vat_rate": "19",
+        "net": "343.66"
+      },
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "6",
+        "unit_net": "88.59",
+        "vat_rate": "19",
+        "net": "531.54"
+      },
+      {
+        "description": "Tonerkartusche",
+        "quantity": "1",
+        "unit_net": "181.85",
+        "vat_rate": "19",
+        "net": "181.85"
+      }
+    ],
+    "total_net": "4099.75",
+    "total_vat": "576.75",
+    "total_gross": "4676.50"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

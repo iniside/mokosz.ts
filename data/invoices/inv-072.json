@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "RE-2026-0072",
+    "issue_date": "2026-10-17",
+    "sale_date": "2026-10-07",
+    "currency": "EUR",
+    "seller": {
+      "name": "Loogen-Prediger",
+      "tax_id": "DE529778245",
+      "country": "DE",
+      "address": "Am Küchenhof 13, 91342 Neuss"
+    },
+    "buyer": {
+      "name": "Ruth, Kochan und Hedermann",
+      "tax_id": "DE214004794",
+      "country": "DE",
+      "address": "Am Kiesberg 867, 83325 Nord Frida"
+    },
+    "lines": [
+      {
+        "description": "Fachbuch",
+        "quantity": "1",
+        "unit_net": "88.28",
+        "vat_rate": "7",
+        "net": "88.28"
+      },
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "10",
+        "unit_net": "488.38",
+        "vat_rate": "19",
+        "net": "4883.80"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "1",
+        "unit_net": "6.05",
+        "vat_rate": "19",
+        "net": "6.05"
+      }
+    ],
+    "total_net": "4978.13",
+    "total_vat": "935.25",
+    "total_gross": "5913.38"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

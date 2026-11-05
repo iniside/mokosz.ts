@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "RE-2026-0130",
+    "issue_date": "2026-09-23",
+    "sale_date": "2026-09-23",
+    "currency": "EUR",
+    "seller": {
+      "name": "Pflügner-Haug",
+      "tax_id": "DE875618896",
+      "country": "DE",
+      "address": "Menchendahler Str. 79c, 63542 Lucaburg"
+    },
+    "buyer": {
+      "name": "Obermaier KG",
+      "tax_id": "DE903914638",
+      "country": "DE",
+      "address": "Rudolf-Stracke-Str. 74c, 58163 Lewkedorf"
+    },
+    "lines": [
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "70",
+        "unit_net": "149.93",
+        "vat_rate": "19",
+        "net": "10495.10"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "20",
+        "unit_net": "7.45",
+        "vat_rate": "19",
+        "net": "149.00"
+      }
+    ],
+    "total_net": "10644.10",
+    "total_vat": "2022.38",
+    "total_gross": "12666.48"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

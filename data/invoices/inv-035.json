@@ -1,0 +1,36 @@
+{
+  "invoice": {
+    "number": "RE-2026-0035",
+    "issue_date": "2026-07-30",
+    "sale_date": "2026-07-25",
+    "currency": "EUR",
+    "seller": {
+      "name": "Renz-Wezel",
+      "tax_id": "DE703670347",
+      "country": "DE",
+      "address": "Max-Planck-Str. 629, 49691 Süd Klaas"
+    },
+    "buyer": {
+      "name": "Stern, Vieweg und Kufahl",
+      "tax_id": "DE606476534",
+      "country": "DE",
+      "address": "Weyerweg 99, 99512 Summerscheid"
+    },
+    "lines": [
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "1",
+        "unit_net": "503.62",
+        "vat_rate": "19",
+        "net": "503.62"
+      }
+    ],
+    "total_net": "769.24",
+    "total_vat": "95.69",
+    "total_gross": "864.93"
+  },
+  "defect": 1,
+  "expected_failed_rules": [
+    "lines_total"
+  ]
+}

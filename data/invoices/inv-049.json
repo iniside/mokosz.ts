@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "RE-2026-0049",
+    "issue_date": "2026-02-08",
+    "sale_date": "2026-02-08",
+    "currency": "EUR",
+    "seller": {
+      "name": "Pfeiffer, Heuck und Rangen",
+      "tax_id": "DE414865012",
+      "country": "DE",
+      "address": "Zeppelinstr. 62a, 12905 Leaburg"
+    },
+    "buyer": {
+      "name": "Moser Gruppe",
+      "tax_id": "DE544303005",
+      "country": "DE",
+      "address": "Höhenstr. 29b, 97823 Schöckelland"
+    },
+    "lines": [
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "51",
+        "unit_net": "162.46",
+        "vat_rate": "19",
+        "net": "8285.46"
+      },
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "1",
+        "unit_net": "164.61",
+        "vat_rate": "7",
+        "net": "164.61"
+      }
+    ],
+    "total_net": "8450.07",
+    "total_vat": "1585.76",
+    "total_gross": "10035.83"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

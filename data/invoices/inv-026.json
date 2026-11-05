@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "FV/2026/09/026",
+    "issue_date": "2026-09-04",
+    "sale_date": "2026-09-03",
+    "currency": "PLN",
+    "seller": {
+      "name": "Skrzypek s.c.",
+      "tax_id": "9495457287",
+      "country": "PL",
+      "address": "droga Bogusz 71c, 92-933 Opalenica"
+    },
+    "buyer": {
+      "name": "Bartkowiak, Andrzejewski and Matusiak",
+      "tax_id": "3531191394",
+      "country": "PL",
+      "address": "droga Zwoliński 47, 65-872 Drobin"
+    },
+    "lines": [
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "20",
+        "unit_net": "3358.90",
+        "vat_rate": "zw",
+        "net": "67178.00"
+      },
+      {
+        "description": "Hosting serwera VPS – 1 miesiąc",
+        "quantity": "3",
+        "unit_net": "114.57",
+        "vat_rate": "23",
+        "net": "343.71"
+      },
+      {
+        "description": "Prenumerata czasopisma branżowego",
+        "quantity": "5",
+        "unit_net": "569.94",
+        "vat_rate": "5",
+        "net": "2849.70"
+      }
+    ],
+    "total_net": "70371.41",
+    "total_vat": "221.54",
+    "total_gross": "70592.95"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "FV/2026/01/044",
+    "issue_date": "2026-01-11",
+    "sale_date": "2026-01-06",
+    "currency": "PLN",
+    "seller": {
+      "name": "Michalak Sp. j.",
+      "tax_id": "9461210668",
+      "country": "PL",
+      "address": "al. Szczęsna 47c, 35-384 Ostrowiec Świętokrzyski"
+    },
+    "buyer": {
+      "name": "Czerwiński, Nowacki and Izdebski",
+      "tax_id": "6629334131",
+      "country": "PL",
+      "address": "al. Marek 6/8, 15-461 Żagań"
+    },
+    "lines": [
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "1",
+        "unit_net": "3190.81",
+        "vat_rate": "0",
+        "net": "3190.81"
+      },
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "10.5",
+        "unit_net": "154.56",
+        "vat_rate": "23",
+        "net": "1622.88"
+      }
+    ],
+    "total_net": "4813.69",
+    "total_vat": "373.26",
+    "total_gross": "5186.95"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

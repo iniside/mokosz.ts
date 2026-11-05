@@ -1,0 +1,64 @@
+{
+  "invoice": {
+    "number": "RE-2026-0088",
+    "issue_date": "2026-06-16",
+    "sale_date": "2026-06-11",
+    "currency": "EUR",
+    "seller": {
+      "name": "Hönig-Esenwein",
+      "tax_id": "DE666079529",
+      "country": "DE",
+      "address": "Wolkenburgstr. 84a, 18258 Süd Josef"
+    },
+    "buyer": {
+      "name": "Lauinger-Landmann",
+      "tax_id": "DE879990083",
+      "country": "DE",
+      "address": "Höfer Mühle 85, 71242 Neu Ceydascheid"
+    },
+    "lines": [
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "3",
+        "unit_net": "367.41",
+        "vat_rate": "19",
+        "net": "1102.23"
+      },
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "1",
+        "unit_net": "210.82",
+        "vat_rate": "0",
+        "net": "210.82"
+      },
+      {
+        "description": "Tonerkartusche",
+        "quantity": "1",
+        "unit_net": "69.00",
+        "vat_rate": "19",
+        "net": "69.00"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "4",
+        "unit_net": "6.68",
+        "vat_rate": "19",
+        "net": "26.72"
+      },
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "75.5",
+        "unit_net": "158.56",
+        "vat_rate": "19",
+        "net": "11971.28"
+      }
+    ],
+    "total_net": "13380.05",
+    "total_vat": "2470.94",
+    "total_gross": "15850.99"
+  },
+  "defect": 2,
+  "expected_failed_rules": [
+    "vat_total"
+  ]
+}

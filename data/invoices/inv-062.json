@@ -1,0 +1,69 @@
+{
+  "invoice": {
+    "number": "FV/2026/06/062",
+    "issue_date": "2026-06-08",
+    "sale_date": "2026-06-08",
+    "currency": "PLN",
+    "seller": {
+      "name": "Białek-Bochenek",
+      "tax_id": "4994705453",
+      "country": "PL",
+      "address": "ogród Pietras 713, 04-161 Brodnica"
+    },
+    "buyer": {
+      "name": "Turek, Cieślak and Warchoł",
+      "tax_id": "4919165954",
+      "country": "PL",
+      "address": "rynek Pietruszka 71a, 25-042 Aleksandrów Kujawski"
+    },
+    "lines": [
+      {
+        "description": "Prenumerata czasopisma branżowego",
+        "quantity": "10",
+        "unit_net": "223.31",
+        "vat_rate": "5",
+        "net": "2233.10"
+      },
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "1",
+        "unit_net": "3194.29",
+        "vat_rate": "0",
+        "net": "3194.29"
+      },
+      {
+        "description": "Usługa transportowa krajowa",
+        "quantity": "20",
+        "unit_net": "457.59",
+        "vat_rate": "23",
+        "net": "9151.80"
+      },
+      {
+        "description": "Usługa noclegowa (doba)",
+        "quantity": "1",
+        "unit_net": "380.95",
+        "vat_rate": "8",
+        "net": "380.95"
+      },
+      {
+        "description": "Krzesło biurowe obrotowe",
+        "quantity": "10",
+        "unit_net": "411.43",
+        "vat_rate": "23",
+        "net": "4114.30"
+      },
+      {
+        "description": "Papier biurowy A4, ryza 500 ark.",
+        "quantity": "1",
+        "unit_net": "16.85",
+        "vat_rate": "23",
+        "net": "16.85"
+      }
+    ],
+    "total_net": "19091.29",
+    "total_vat": "3197.22",
+    "total_gross": "22288.51"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

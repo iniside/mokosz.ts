@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "RE-2026-0075",
+    "issue_date": "2026-08-02",
+    "sale_date": "2026-07-31",
+    "currency": "EUR",
+    "seller": {
+      "name": "Sonn OHG",
+      "tax_id": "DE891363822",
+      "country": "DE",
+      "address": "Glücksburger Str. 22, 90883 Arendtdorf"
+    },
+    "buyer": {
+      "name": "Normann-Kock",
+      "tax_id": "DE407794664",
+      "country": "DE",
+      "address": "Am Kettnersbusch 12, 49652 Erwesstadt"
+    },
+    "lines": [
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "12",
+        "unit_net": "165.67",
+        "vat_rate": "7",
+        "net": "1988.04"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "2",
+        "unit_net": "8.53",
+        "vat_rate": "19",
+        "net": "17.06"
+      },
+      {
+        "description": "Fachbuch",
+        "quantity": "3",
+        "unit_net": "55.35",
+        "vat_rate": "7",
+        "net": "166.05"
+      }
+    ],
+    "total_net": "2171.15",
+    "total_vat": "154.03",
+    "total_gross": "2325.18"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

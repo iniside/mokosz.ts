@@ -1,0 +1,57 @@
+{
+  "invoice": {
+    "number": "RE-2026-0101",
+    "issue_date": "2026-02-10",
+    "sale_date": "2026-02-09",
+    "currency": "EUR",
+    "seller": {
+      "name": "Schuri-Goldbeck",
+      "tax_id": "DE174167214",
+      "country": "DE",
+      "address": "Havensteinstr. 154, 07437 Moers"
+    },
+    "buyer": {
+      "name": "Giesa-Steffny",
+      "tax_id": "DE216488324",
+      "country": "DE",
+      "address": "Dünnwalder Grenzweg 804, 90451 Nevioburg"
+    },
+    "lines": [
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "3",
+        "unit_net": "643.24",
+        "vat_rate": "19",
+        "net": "1929.72"
+      },
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "1",
+        "unit_net": "232.54",
+        "vat_rate": "7",
+        "net": "232.54"
+      },
+      {
+        "description": "Fachbuch",
+        "quantity": "10",
+        "unit_net": "67.79",
+        "vat_rate": "7",
+        "net": "677.90"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "20",
+        "unit_net": "92.62",
+        "vat_rate": "19",
+        "net": "1852.40"
+      }
+    ],
+    "total_net": "4856.32",
+    "total_vat": "782.33",
+    "total_gross": "5638.65"
+  },
+  "defect": 1,
+  "expected_failed_rules": [
+    "lines_total"
+  ]
+}

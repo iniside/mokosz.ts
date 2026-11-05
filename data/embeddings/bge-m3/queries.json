@@ -1,0 +1,82 @@
+[
+ {
+  "id": "en-gdpr-breach-deadline",
+  "lang": "en"
+ },
+ {
+  "id": "en-gdpr-max-fine-principles",
+  "lang": "en"
+ },
+ {
+  "id": "en-gdpr-personal-data-definition",
+  "lang": "en"
+ },
+ {
+  "id": "en-aiact-emotion-workplace",
+  "lang": "en"
+ },
+ {
+  "id": "en-aiact-fine-prohibited",
+  "lang": "en"
+ },
+ {
+  "id": "en-aiact-chatbot-disclosure",
+  "lang": "en"
+ },
+ {
+  "id": "en-aiact-deployer-definition",
+  "lang": "en"
+ },
+ {
+  "id": "en-nis2-early-warning",
+  "lang": "en"
+ },
+ {
+  "id": "en-nis2-fine-essential",
+  "lang": "en"
+ },
+ {
+  "id": "en-nis2-transposition-date",
+  "lang": "en"
+ },
+ {
+  "id": "pl-gdpr-child-consent-age",
+  "lang": "pl"
+ },
+ {
+  "id": "pl-gdpr-dpo-required",
+  "lang": "pl"
+ },
+ {
+  "id": "pl-gdpr-request-response-time",
+  "lang": "pl"
+ },
+ {
+  "id": "pl-aiact-staff-ai-literacy",
+  "lang": "pl"
+ },
+ {
+  "id": "pl-aiact-application-date",
+  "lang": "pl"
+ },
+ {
+  "id": "pl-aiact-documentation-retention",
+  "lang": "pl"
+ },
+ {
+  "id": "pl-nis2-significant-incident",
+  "lang": "pl"
+ },
+ {
+  "id": "pl-nis2-management-training",
+  "lang": "pl"
+ },
+ {
+  "id": "pl-nis2-size-scope",
+  "lang": "pl"
+ },
+ {
+  "id": "pl-nis2-encryption-mfa",
+  "lang": "pl"
+ }
+]

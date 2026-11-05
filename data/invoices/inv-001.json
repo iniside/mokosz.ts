@@ -1,0 +1,55 @@
+{
+  "invoice": {
+    "number": "RE-2026-0001",
+    "issue_date": "2026-03-01",
+    "sale_date": "2026-03-01",
+    "currency": "EUR",
+    "seller": {
+      "name": "Dohring-Gesell",
+      "tax_id": "DE102673879",
+      "country": "DE",
+      "address": "Dillinger Str. 62, 81396 Neu Ceciliastadt"
+    },
+    "buyer": {
+      "name": "Teichmann, Kúhnert und Heidler",
+      "tax_id": "DE102824298",
+      "country": "DE",
+      "address": "Rheinallee 25, 66510 West Nia"
+    },
+    "lines": [
+      {
+        "description": "Tonerkartusche",
+        "quantity": "1",
+        "unit_net": "110.50",
+        "vat_rate": "19",
+        "net": "110.50"
+      },
+      {
+        "description": "Fachbuch",
+        "quantity": "4",
+        "unit_net": "89.87",
+        "vat_rate": "7",
+        "net": "359.48"
+      },
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "42.5",
+        "unit_net": "127.21",
+        "vat_rate": "19",
+        "net": "5406.43"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "4",
+        "unit_net": "64.03",
+        "vat_rate": "19",
+        "net": "256.12"
+      }
+    ],
+    "total_net": "6132.53",
+    "total_vat": "1122.04",
+    "total_gross": "7254.57"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

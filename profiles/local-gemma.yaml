@@ -1,0 +1,17 @@
+name: local-gemma
+timeout_s: 180
+retrieval:
+  top_k: 8
+nodes:
+  router:
+    model: ollama_chat/gemma4:26b
+    num_ctx: 8192
+    think: false
+    temperature: 0
+    keep_alive: 30m
+  answerer:
+    model: ollama_chat/gemma4:26b
+    num_ctx: 8192
+    think: false
+    temperature: 0
+    keep_alive: 30m

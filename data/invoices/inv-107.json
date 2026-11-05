@@ -1,0 +1,55 @@
+{
+  "invoice": {
+    "number": "RE-2026-0107",
+    "issue_date": "2026-10-20",
+    "sale_date": "2026-10-20",
+    "currency": "EUR",
+    "seller": {
+      "name": "Hengmith, Pfingsten und Schniedermeier",
+      "tax_id": "DE282554140",
+      "country": "DE",
+      "address": "Theodorstr. 63, 94279 Pulheim"
+    },
+    "buyer": {
+      "name": "Komoll-Reichel",
+      "tax_id": "DE658412272",
+      "country": "DE",
+      "address": "Ludwig-Erhard-Platz 78, 70663 Jansenland"
+    },
+    "lines": [
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "1",
+        "unit_net": "1344.28",
+        "vat_rate": "19",
+        "net": "1344.28"
+      },
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "3",
+        "unit_net": "171.86",
+        "vat_rate": "0",
+        "net": "515.58"
+      },
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "1",
+        "unit_net": "118.55",
+        "vat_rate": "7",
+        "net": "118.55"
+      },
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "5",
+        "unit_net": "551.91",
+        "vat_rate": "19",
+        "net": "2759.55"
+      }
+    ],
+    "total_net": "4737.96",
+    "total_vat": "788.03",
+    "total_gross": "5525.99"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

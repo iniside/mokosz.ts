@@ -1,0 +1,50 @@
+{
+  "invoice": {
+    "number": "RE-2026-0138",
+    "issue_date": "2026-09-10",
+    "sale_date": "2026-09-08",
+    "currency": "EUR",
+    "seller": {
+      "name": "Prange-Ullrich",
+      "tax_id": "DE120378123",
+      "country": "DE",
+      "address": "Kapellenstr. 95c, 40778 Kiel"
+    },
+    "buyer": {
+      "name": "Sprenger AG",
+      "tax_id": "DE923056395",
+      "country": "DE",
+      "address": "Teltower Str. 49c, 11062 Neu Magnus"
+    },
+    "lines": [
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "71",
+        "unit_net": "149.94",
+        "vat_rate": "19",
+        "net": "10645.74"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "10",
+        "unit_net": "4.85",
+        "vat_rate": "19",
+        "net": "48.50"
+      },
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "12",
+        "unit_net": "76.92",
+        "vat_rate": "7",
+        "net": "923.04"
+      }
+    ],
+    "total_net": "11617.28",
+    "total_vat": "2096.52",
+    "total_gross": "13713.80"
+  },
+  "defect": 3,
+  "expected_failed_rules": [
+    "tax_id"
+  ]
+}

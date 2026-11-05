@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "FV/2026/07/030",
+    "issue_date": "2026-07-20",
+    "sale_date": "2026-07-20",
+    "currency": "PLN",
+    "seller": {
+      "name": "Czekaj, Karpiński and Kujawski",
+      "tax_id": "2848528471",
+      "country": "PL",
+      "address": "rynek Banaś 430, 70-385 Cedynia"
+    },
+    "buyer": {
+      "name": "Jagielski, Kogut and Kurek",
+      "tax_id": "2299581231",
+      "country": "PL",
+      "address": "park Twardowski 71c, 91-482 Szczecinek"
+    },
+    "lines": [
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "75.5",
+        "unit_net": "182.36",
+        "vat_rate": "23",
+        "net": "13768.18"
+      },
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "3",
+        "unit_net": "1933.55",
+        "vat_rate": "8",
+        "net": "5800.65"
+      },
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "12",
+        "unit_net": "1011.60",
+        "vat_rate": "23",
+        "net": "12139.20"
+      }
+    ],
+    "total_net": "31708.03",
+    "total_vat": "6422.75",
+    "total_gross": "38130.78"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

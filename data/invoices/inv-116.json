@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "RE-2026-0116",
+    "issue_date": "2026-05-15",
+    "sale_date": "2026-05-15",
+    "currency": "EUR",
+    "seller": {
+      "name": "Schütz KG",
+      "tax_id": "DE430849794",
+      "country": "DE",
+      "address": "Auf dem Forst 23c, 15905 Dormagen"
+    },
+    "buyer": {
+      "name": "Reuss-Görmer",
+      "tax_id": "DE955978244",
+      "country": "DE",
+      "address": "Eschenallee 82b, 66161 Ennoburg"
+    },
+    "lines": [
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "5",
+        "unit_net": "560.87",
+        "vat_rate": "19",
+        "net": "2804.35"
+      },
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "12",
+        "unit_net": "224.04",
+        "vat_rate": "19",
+        "net": "2688.48"
+      },
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "2",
+        "unit_net": "217.22",
+        "vat_rate": "0",
+        "net": "434.44"
+      },
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "4",
+        "unit_net": "221.14",
+        "vat_rate": "19",
+        "net": "884.56"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "12",
+        "unit_net": "143.60",
+        "vat_rate": "19",
+        "net": "1723.20"
+      }
+    ],
+    "total_net": "8535.03",
+    "total_vat": "1539.11",
+    "total_gross": "10074.14"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

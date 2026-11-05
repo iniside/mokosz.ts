@@ -1,0 +1,64 @@
+{
+  "invoice": {
+    "number": "RE-2026-0084",
+    "issue_date": "2026-08-12",
+    "sale_date": "2026-08-12",
+    "currency": "EUR",
+    "seller": {
+      "name": "Diekmann, Böhm und Hajek",
+      "tax_id": "DE585349903",
+      "country": "DE",
+      "address": "Else-Lasker-Schüler-Str. 17c, 93182 Marleenland"
+    },
+    "buyer": {
+      "name": "Gruber KG",
+      "tax_id": "DE295902195",
+      "country": "DE",
+      "address": "Freudenthaler Weg 45b, 49733 Brandenburg an der Havel"
+    },
+    "lines": [
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "1",
+        "unit_net": "572.74",
+        "vat_rate": "19",
+        "net": "572.74"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "10",
+        "unit_net": "5.06",
+        "vat_rate": "19",
+        "net": "50.60"
+      },
+      {
+        "description": "Fachbuch",
+        "quantity": "1",
+        "unit_net": "33.78",
+        "vat_rate": "7",
+        "net": "33.78"
+      },
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "1",
+        "unit_net": "227.97",
+        "vat_rate": "7",
+        "net": "227.97"
+      },
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "10",
+        "unit_net": "1468.48",
+        "vat_rate": "19",
+        "net": "14684.80"
+      }
+    ],
+    "total_net": "15569.89",
+    "total_vat": "2926.87",
+    "total_gross": "18496.76"
+  },
+  "defect": 3,
+  "expected_failed_rules": [
+    "tax_id"
+  ]
+}

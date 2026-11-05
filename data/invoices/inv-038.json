@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "FV/2026/04/038",
+    "issue_date": "2026-04-15",
+    "sale_date": "2026-04-15",
+    "currency": "PLN",
+    "seller": {
+      "name": "Mikołajczak, Trzciński and Guzik",
+      "tax_id": "8192716714",
+      "country": "PL",
+      "address": "park Wawrzyniak 40a, 92-055 Wyrzysk"
+    },
+    "buyer": {
+      "name": "Sowiński, Sołtysiak and Chojnacki",
+      "tax_id": "8820290260",
+      "country": "PL",
+      "address": "pl. Turek 74c, 24-691 Łochów"
+    },
+    "lines": [
+      {
+        "description": "Monitor 27 cali",
+        "quantity": "2",
+        "unit_net": "1883.39",
+        "vat_rate": "23",
+        "net": "3766.78"
+      },
+      {
+        "description": "Hosting serwera VPS – 1 miesiąc",
+        "quantity": "2",
+        "unit_net": "116.77",
+        "vat_rate": "23",
+        "net": "233.54"
+      },
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "1",
+        "unit_net": "266.34",
+        "vat_rate": "23",
+        "net": "266.34"
+      },
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "1",
+        "unit_net": "1381.89",
+        "vat_rate": "23",
+        "net": "1381.89"
+      },
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "10",
+        "unit_net": "1800.12",
+        "vat_rate": "8",
+        "net": "18001.20"
+      }
+    ],
+    "total_net": "23649.75",
+    "total_vat": "2739.27",
+    "total_gross": "26389.02"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "RE-2026-0112",
+    "issue_date": "2026-10-07",
+    "sale_date": "2026-10-07",
+    "currency": "EUR",
+    "seller": {
+      "name": "Balcer KG",
+      "tax_id": "DE748143740",
+      "country": "DE",
+      "address": "Kreuzkamp 3, 98742 Nord Thalea"
+    },
+    "buyer": {
+      "name": "Jacob, Steinmetz und Sinnhuber",
+      "tax_id": "DE748112045",
+      "country": "DE",
+      "address": "Franz-Esser-Str. 97c, 61479 Neu Luka"
+    },
+    "lines": [
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "78.5",
+        "unit_net": "111.73",
+        "vat_rate": "19",
+        "net": "8770.81"
+      },
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "5.5",
+        "unit_net": "114.71",
+        "vat_rate": "19",
+        "net": "630.91"
+      },
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "4",
+        "unit_net": "1314.40",
+        "vat_rate": "19",
+        "net": "5257.60"
+      }
+    ],
+    "total_net": "14659.32",
+    "total_vat": "2785.27",
+    "total_gross": "17444.59"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "RE-2026-0129",
+    "issue_date": "2026-01-31",
+    "sale_date": "2026-01-31",
+    "currency": "EUR",
+    "seller": {
+      "name": "Deerberg GmbH & Co. KG",
+      "tax_id": "DE131105267",
+      "country": "DE",
+      "address": "Loheweg 15, 56132 Bad Luis"
+    },
+    "buyer": {
+      "name": "Scherbarth-Ruckdeschel",
+      "tax_id": "DE778878519",
+      "country": "DE",
+      "address": "Kandinskystr. 2, 01517 Ismaelstadt"
+    },
+    "lines": [
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "4",
+        "unit_net": "6.21",
+        "vat_rate": "19",
+        "net": "24.84"
+      },
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "1",
+        "unit_net": "98.84",
+        "vat_rate": "7",
+        "net": "98.84"
+      }
+    ],
+    "total_net": "123.68",
+    "total_vat": "11.64",
+    "total_gross": "135.32"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

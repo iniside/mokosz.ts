@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "RE-2026-0027",
+    "issue_date": "2026-05-08",
+    "sale_date": "2026-05-08",
+    "currency": "EUR",
+    "seller": {
+      "name": "Weidner-Bos",
+      "tax_id": "DE247825120",
+      "country": "DE",
+      "address": "Rolandstr. 87, 84142 West Henningscheid"
+    },
+    "buyer": {
+      "name": "Steinkamp GmbH",
+      "tax_id": "DE948882817",
+      "country": "DE",
+      "address": "Berliner Str. 12c, 22894 Bamberg"
+    },
+    "lines": [
+      {
+        "description": "Fachbuch",
+        "quantity": "20",
+        "unit_net": "59.34",
+        "vat_rate": "7",
+        "net": "1186.80"
+      },
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "4",
+        "unit_net": "31.33",
+        "vat_rate": "19",
+        "net": "125.32"
+      }
+    ],
+    "total_net": "1312.12",
+    "total_vat": "106.89",
+    "total_gross": "1419.01"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

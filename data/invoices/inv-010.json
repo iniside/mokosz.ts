@@ -1,0 +1,43 @@
+{
+  "invoice": {
+    "number": "RE-2026-0010",
+    "issue_date": "2026-05-04",
+    "sale_date": "2026-05-03",
+    "currency": "EUR",
+    "seller": {
+      "name": "Vokuhl, Weniger und Ringer",
+      "tax_id": "DE809882489",
+      "country": "DE",
+      "address": "Burgplatz 43a, 79571 Barrscheid"
+    },
+    "buyer": {
+      "name": "Leiwesmeier, Ade und Schönberg",
+      "tax_id": "DE858315361",
+      "country": "DE",
+      "address": "Pastorskamp 29, 96885 Tittmanland"
+    },
+    "lines": [
+      {
+        "description": "Webhosting – 1 Monat",
+        "quantity": "10",
+        "unit_net": "120.20",
+        "vat_rate": "19",
+        "net": "1202.00"
+      },
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "1",
+        "unit_net": "1721.04",
+        "vat_rate": "19",
+        "net": "1721.04"
+      }
+    ],
+    "total_net": "2923.04",
+    "total_vat": "531.59",
+    "total_gross": "3454.63"
+  },
+  "defect": 2,
+  "expected_failed_rules": [
+    "vat_total"
+  ]
+}

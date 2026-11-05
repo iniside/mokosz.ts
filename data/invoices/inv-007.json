@@ -1,0 +1,34 @@
+{
+  "invoice": {
+    "number": "FV/2026/05/007",
+    "issue_date": "2026-05-11",
+    "sale_date": "2026-05-06",
+    "currency": "PLN",
+    "seller": {
+      "name": "Trzeciak, Muszyński and Piotrowicz",
+      "tax_id": "8268386508",
+      "country": "PL",
+      "address": "szosa Urban 47, 16-648 Koprzywnica"
+    },
+    "buyer": {
+      "name": "Markowski, Sokołowski and Zawada",
+      "tax_id": "4821649910",
+      "country": "PL",
+      "address": "al. Szczęsna 10, 19-881 Żnin"
+    },
+    "lines": [
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "2",
+        "unit_net": "847.23",
+        "vat_rate": "zw",
+        "net": "1694.46"
+      }
+    ],
+    "total_net": "1694.46",
+    "total_vat": "0.00",
+    "total_gross": "1694.46"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

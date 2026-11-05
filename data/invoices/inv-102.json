@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "RE-2026-0102",
+    "issue_date": "2026-06-20",
+    "sale_date": "2026-06-20",
+    "currency": "EUR",
+    "seller": {
+      "name": "Benzing-Koj",
+      "tax_id": "DE792891102",
+      "country": "DE",
+      "address": "Im Kalkfeld 90c, 02572 Bamberg"
+    },
+    "buyer": {
+      "name": "Geese-Wartenberg",
+      "tax_id": "DE676008937",
+      "country": "DE",
+      "address": "Freudenthal 85, 81099 Schaeferstadt"
+    },
+    "lines": [
+      {
+        "description": "Tonerkartusche",
+        "quantity": "1",
+        "unit_net": "169.82",
+        "vat_rate": "19",
+        "net": "169.82"
+      },
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "74",
+        "unit_net": "104.62",
+        "vat_rate": "19",
+        "net": "7741.88"
+      },
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "5",
+        "unit_net": "935.30",
+        "vat_rate": "19",
+        "net": "4676.50"
+      },
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "1",
+        "unit_net": "88.78",
+        "vat_rate": "7",
+        "net": "88.78"
+      },
+      {
+        "description": "Schulungsveranstaltung",
+        "quantity": "4",
+        "unit_net": "1521.05",
+        "vat_rate": "19",
+        "net": "6084.20"
+      }
+    ],
+    "total_net": "18761.18",
+    "total_vat": "3553.97",
+    "total_gross": "22315.15"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

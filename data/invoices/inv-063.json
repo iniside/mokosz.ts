@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "FV/2026/08/063",
+    "issue_date": "2026-08-03",
+    "sale_date": "2026-08-03",
+    "currency": "PLN",
+    "seller": {
+      "name": "Gołębiewski, Szwed and Grześkowiak",
+      "tax_id": "8446418772",
+      "country": "PL",
+      "address": "rynek Burzyński 973, 25-700 Rawa Mazowiecka"
+    },
+    "buyer": {
+      "name": "Jaworski s.c.",
+      "tax_id": "2462174876",
+      "country": "PL",
+      "address": "rynek Strzelczyk 6/7, 95-722 Ostróda"
+    },
+    "lines": [
+      {
+        "description": "Usługa noclegowa (doba)",
+        "quantity": "2",
+        "unit_net": "374.76",
+        "vat_rate": "8",
+        "net": "749.52"
+      },
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "5",
+        "unit_net": "1658.92",
+        "vat_rate": "23",
+        "net": "8294.60"
+      },
+      {
+        "description": "Monitor 27 cali",
+        "quantity": "12",
+        "unit_net": "930.60",
+        "vat_rate": "23",
+        "net": "11167.20"
+      },
+      {
+        "description": "Prenumerata czasopisma branżowego",
+        "quantity": "1",
+        "unit_net": "318.43",
+        "vat_rate": "5",
+        "net": "318.43"
+      },
+      {
+        "description": "Krzesło biurowe obrotowe",
+        "quantity": "2",
+        "unit_net": "458.56",
+        "vat_rate": "23",
+        "net": "917.12"
+      }
+    ],
+    "total_net": "21446.87",
+    "total_vat": "4763.03",
+    "total_gross": "26209.90"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

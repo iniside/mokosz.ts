@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "FV/2026/05/011",
+    "issue_date": "2026-05-25",
+    "sale_date": "2026-05-24",
+    "currency": "PLN",
+    "seller": {
+      "name": "Noga S.A.",
+      "tax_id": "7692662205",
+      "country": "PL",
+      "address": "bulw. Mróz 72b, 21-669 Węgliniec"
+    },
+    "buyer": {
+      "name": "Sołtysiak, Bednarz and Bednarczyk",
+      "tax_id": "7988841377",
+      "country": "PL",
+      "address": "park Kasperek 12c, 58-354 Jedlina-Zdrój"
+    },
+    "lines": [
+      {
+        "description": "Książka specjalistyczna",
+        "quantity": "1",
+        "unit_net": "171.24",
+        "vat_rate": "5",
+        "net": "171.24"
+      },
+      {
+        "description": "Papier biurowy A4, ryza 500 ark.",
+        "quantity": "5",
+        "unit_net": "16.50",
+        "vat_rate": "23",
+        "net": "82.50"
+      }
+    ],
+    "total_net": "253.74",
+    "total_vat": "27.54",
+    "total_gross": "281.28"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

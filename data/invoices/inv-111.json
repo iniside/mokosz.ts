@@ -1,0 +1,57 @@
+{
+  "invoice": {
+    "number": "FV/2026/07/111",
+    "issue_date": "2026-07-04",
+    "sale_date": "2026-07-04",
+    "currency": "PLN",
+    "seller": {
+      "name": "Michalik, Lenart and Lach",
+      "tax_id": "5119496093",
+      "country": "PL",
+      "address": "rynek Sieradzki 49c, 69-758 Szepietowo"
+    },
+    "buyer": {
+      "name": "Krupiński, Zaborowski and Bielski",
+      "tax_id": "1155445499",
+      "country": "PL",
+      "address": "al. Surma 96, 62-740 Tarnowskie Góry"
+    },
+    "lines": [
+      {
+        "description": "Książka specjalistyczna",
+        "quantity": "2",
+        "unit_net": "77.92",
+        "vat_rate": "5",
+        "net": "155.84"
+      },
+      {
+        "description": "Usługa noclegowa (doba)",
+        "quantity": "2",
+        "unit_net": "294.82",
+        "vat_rate": "8",
+        "net": "589.64"
+      },
+      {
+        "description": "Usługa programistyczna (godz.)",
+        "quantity": "5",
+        "unit_net": "154.48",
+        "vat_rate": "23",
+        "net": "772.40"
+      },
+      {
+        "description": "Prenumerata czasopisma branżowego",
+        "quantity": "3",
+        "unit_net": "140.35",
+        "vat_rate": "19",
+        "net": "421.05"
+      }
+    ],
+    "total_net": "1938.93",
+    "total_vat": "312.61",
+    "total_gross": "2251.54"
+  },
+  "defect": 5,
+  "expected_failed_rules": [
+    "vat_rate_country"
+  ]
+}

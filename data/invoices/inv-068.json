@@ -1,0 +1,36 @@
+{
+  "invoice": {
+    "number": "RE-2026-0068",
+    "issue_date": null,
+    "sale_date": "2026-02-27",
+    "currency": "EUR",
+    "seller": {
+      "name": "Koob-Roba",
+      "tax_id": "DE306435478",
+      "country": "DE",
+      "address": "Bielertstr. 627, 16914 Lennertstadt"
+    },
+    "buyer": {
+      "name": "Koszewski OHG",
+      "tax_id": "DE892788684",
+      "country": "DE",
+      "address": "Geibelstr. 50c, 38014 Bad Ferdinandstadt"
+    },
+    "lines": [
+      {
+        "description": "Brötchen und Gebäck für Besprechung",
+        "quantity": "1",
+        "unit_net": "54.31",
+        "vat_rate": "7",
+        "net": "54.31"
+      }
+    ],
+    "total_net": "54.31",
+    "total_vat": "3.80",
+    "total_gross": "58.11"
+  },
+  "defect": 4,
+  "expected_failed_rules": [
+    "required_fields"
+  ]
+}

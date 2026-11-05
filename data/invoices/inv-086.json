@@ -1,0 +1,50 @@
+{
+  "invoice": {
+    "number": "RE-2026-0086",
+    "issue_date": null,
+    "sale_date": "2026-09-07",
+    "currency": "EUR",
+    "seller": {
+      "name": "Pietsch-Moedl",
+      "tax_id": "DE910812017",
+      "country": "DE",
+      "address": "Am Neuenhof 34, 63208 Braunschweig"
+    },
+    "buyer": {
+      "name": "Venghaus UG",
+      "tax_id": "DE854069186",
+      "country": "DE",
+      "address": "An der Evgl. Kirche 6, 36359 Fabiendorf"
+    },
+    "lines": [
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "1",
+        "unit_net": "2363.22",
+        "vat_rate": "19",
+        "net": "2363.22"
+      },
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "20",
+        "unit_net": "297.72",
+        "vat_rate": "19",
+        "net": "5954.40"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "10",
+        "unit_net": "4.74",
+        "vat_rate": "19",
+        "net": "47.40"
+      }
+    ],
+    "total_net": "8365.02",
+    "total_vat": "1589.35",
+    "total_gross": "9954.37"
+  },
+  "defect": 4,
+  "expected_failed_rules": [
+    "required_fields"
+  ]
+}

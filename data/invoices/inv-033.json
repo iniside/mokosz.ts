@@ -1,0 +1,64 @@
+{
+  "invoice": {
+    "number": "FV/2026/06/033",
+    "issue_date": "2026-06-23",
+    "sale_date": "2026-06-23",
+    "currency": "PLN",
+    "seller": {
+      "name": "Wiśniewski-Rudzki",
+      "tax_id": "1960803148",
+      "country": "PL",
+      "address": "al. Sobolewski 2/6, 00-473 Zawadzkie"
+    },
+    "buyer": {
+      "name": "Kulig z o.o",
+      "tax_id": "6746776753",
+      "country": "PL",
+      "address": "droga Banasik 85b, 65-502 Bychawa"
+    },
+    "lines": [
+      {
+        "description": "Krzesło biurowe obrotowe",
+        "quantity": "1",
+        "unit_net": "793.02",
+        "vat_rate": "23",
+        "net": "793.02"
+      },
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "4",
+        "unit_net": "420.32",
+        "vat_rate": "23",
+        "net": "1681.28"
+      },
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "5",
+        "unit_net": "2851.63",
+        "vat_rate": "23",
+        "net": "14258.15"
+      },
+      {
+        "description": "Prenumerata czasopisma branżowego",
+        "quantity": "5",
+        "unit_net": "149.76",
+        "vat_rate": "5",
+        "net": "748.80"
+      },
+      {
+        "description": "Książka specjalistyczna",
+        "quantity": "1",
+        "unit_net": "120.87",
+        "vat_rate": "5",
+        "net": "120.87"
+      }
+    ],
+    "total_net": "17602.12",
+    "total_vat": "3891.94",
+    "total_gross": "21494.06"
+  },
+  "defect": 3,
+  "expected_failed_rules": [
+    "tax_id"
+  ]
+}

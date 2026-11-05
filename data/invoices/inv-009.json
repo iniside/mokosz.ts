@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "RE-2026-0009",
+    "issue_date": "2026-06-11",
+    "sale_date": "2026-06-09",
+    "currency": "EUR",
+    "seller": {
+      "name": "Bigdeli-Hiebl",
+      "tax_id": "DE851166630",
+      "country": "DE",
+      "address": "Sonderburger Str. 41, 09510 Krefeld"
+    },
+    "buyer": {
+      "name": "Crosskofp AG",
+      "tax_id": "DE352395260",
+      "country": "DE",
+      "address": "Kursiefen 53a, 82085 Denzingerstadt"
+    },
+    "lines": [
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "7.5",
+        "unit_net": "116.17",
+        "vat_rate": "19",
+        "net": "871.28"
+      },
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "12",
+        "unit_net": "268.04",
+        "vat_rate": "19",
+        "net": "3216.48"
+      }
+    ],
+    "total_net": "4087.76",
+    "total_vat": "776.67",
+    "total_gross": "4864.43"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

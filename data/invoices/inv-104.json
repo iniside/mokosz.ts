@@ -1,0 +1,64 @@
+{
+  "invoice": {
+    "number": "FV/2026/09/104",
+    "issue_date": "2026-09-01",
+    "sale_date": "2026-08-27",
+    "currency": "PLN",
+    "seller": {
+      "name": "Kołakowski S.A.",
+      "tax_id": "9246456544",
+      "country": "PL",
+      "address": "wyspa Jagielski 927, 31-369 Kłecko"
+    },
+    "buyer": {
+      "name": "Woliński Sp. p.",
+      "tax_id": "3359333053",
+      "country": "PL",
+      "address": "al. Buczyński 33c, 89-253 Góra Kalwaria"
+    },
+    "lines": [
+      {
+        "description": "Papier biurowy A4, ryza 500 ark.",
+        "quantity": "12",
+        "unit_net": "21.94",
+        "vat_rate": "23",
+        "net": "263.28"
+      },
+      {
+        "description": "Usługa transportowa krajowa",
+        "quantity": "4",
+        "unit_net": "473.87",
+        "vat_rate": "23",
+        "net": "1895.48"
+      },
+      {
+        "description": "Usługa noclegowa (doba)",
+        "quantity": "1",
+        "unit_net": "217.91",
+        "vat_rate": "8",
+        "net": "217.91"
+      },
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "1",
+        "unit_net": "3422.50",
+        "vat_rate": "19",
+        "net": "3422.50"
+      },
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "49.5",
+        "unit_net": "159.37",
+        "vat_rate": "23",
+        "net": "7888.82"
+      }
+    ],
+    "total_net": "13687.99",
+    "total_vat": "2978.65",
+    "total_gross": "16666.64"
+  },
+  "defect": 5,
+  "expected_failed_rules": [
+    "vat_rate_country"
+  ]
+}

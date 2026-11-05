@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "RE-2026-0082",
+    "issue_date": "2026-07-21",
+    "sale_date": "2026-07-16",
+    "currency": "EUR",
+    "seller": {
+      "name": "Beckmann OHG",
+      "tax_id": "DE436345524",
+      "country": "DE",
+      "address": "Neuendriesch 33c, 75385 Alt Tobiasscheid"
+    },
+    "buyer": {
+      "name": "Oeser-Hennes",
+      "tax_id": "DE566561611",
+      "country": "DE",
+      "address": "Am Gesundheitspark 57, 93900 Frankfurt am Main"
+    },
+    "lines": [
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "4",
+        "unit_net": "145.96",
+        "vat_rate": "0",
+        "net": "583.84"
+      },
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "4",
+        "unit_net": "647.19",
+        "vat_rate": "19",
+        "net": "2588.76"
+      }
+    ],
+    "total_net": "3172.60",
+    "total_vat": "491.86",
+    "total_gross": "3664.46"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

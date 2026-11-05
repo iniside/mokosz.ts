@@ -1,0 +1,50 @@
+{
+  "invoice": {
+    "number": "FV/2026/02/114",
+    "issue_date": "2026-02-27",
+    "sale_date": "2026-02-25",
+    "currency": "PLN",
+    "seller": {
+      "name": "Popławski, Gwoździk and Błaszczak",
+      "tax_id": "1962585062",
+      "country": "PL",
+      "address": "os. Bieniek 67a, 58-759 Tarnobrzeg"
+    },
+    "buyer": {
+      "name": "Ossowski, Dudzik and Dziuba",
+      "tax_id": "1272279560",
+      "country": "PL",
+      "address": "wyspa Muszyński 46c, 04-394 Ruda Śląska"
+    },
+    "lines": [
+      {
+        "description": "Usługa doradcza świadczona za granicą",
+        "quantity": "1",
+        "unit_net": "1090.45",
+        "vat_rate": "np",
+        "net": "1090.45"
+      },
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "12",
+        "unit_net": "857.82",
+        "vat_rate": "7",
+        "net": "10293.84"
+      },
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "10",
+        "unit_net": "1236.03",
+        "vat_rate": "zw",
+        "net": "12360.30"
+      }
+    ],
+    "total_net": "23744.59",
+    "total_vat": "720.57",
+    "total_gross": "24465.16"
+  },
+  "defect": 5,
+  "expected_failed_rules": [
+    "vat_rate_country"
+  ]
+}

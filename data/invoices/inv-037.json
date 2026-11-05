@@ -1,0 +1,55 @@
+{
+  "invoice": {
+    "number": "FV/2026/08/037",
+    "issue_date": "2026-08-12",
+    "sale_date": "2026-08-12",
+    "currency": "PLN",
+    "seller": {
+      "name": "Rudziński-Koper",
+      "tax_id": "7327188489",
+      "country": "PL",
+      "address": "droga Golec 10, 97-571 Szczecin"
+    },
+    "buyer": {
+      "name": "Dziuba-Kaźmierczak",
+      "tax_id": "7643580996",
+      "country": "PL",
+      "address": "os. Krukowski 62a, 29-927 Dobrzany"
+    },
+    "lines": [
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "5",
+        "unit_net": "2161.22",
+        "vat_rate": "23",
+        "net": "10806.10"
+      },
+      {
+        "description": "Usługa doradcza świadczona za granicą",
+        "quantity": "5",
+        "unit_net": "2406.72",
+        "vat_rate": "np",
+        "net": "12033.60"
+      },
+      {
+        "description": "Usługa transportowa krajowa",
+        "quantity": "2",
+        "unit_net": "847.28",
+        "vat_rate": "23",
+        "net": "1694.56"
+      },
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "2",
+        "unit_net": "1779.23",
+        "vat_rate": "zw",
+        "net": "3558.46"
+      }
+    ],
+    "total_net": "28092.72",
+    "total_vat": "2875.15",
+    "total_gross": "30967.87"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

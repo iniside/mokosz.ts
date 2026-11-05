@@ -1,0 +1,50 @@
+{
+  "invoice": {
+    "number": "FV/2026/07/135",
+    "issue_date": "2026-07-16",
+    "sale_date": "2026-07-16",
+    "currency": "PLN",
+    "seller": {
+      "name": "Białek-Laskowski",
+      "tax_id": "1227305082",
+      "country": "PL",
+      "address": "droga Wilczek 49c, 79-010 Kowal"
+    },
+    "buyer": {
+      "name": "Kuliński, Zabłocki and Wolny",
+      "tax_id": "6541643534",
+      "country": "PL",
+      "address": "bulw. Szwed 59c, 39-498 Kamienna Góra"
+    },
+    "lines": [
+      {
+        "description": "Konsultacje wdrożeniowe (godz.)",
+        "quantity": "55",
+        "unit_net": "195.88",
+        "vat_rate": "23",
+        "net": "10773.40"
+      },
+      {
+        "description": "Usługa programistyczna (godz.)",
+        "quantity": "57.5",
+        "unit_net": "152.62",
+        "vat_rate": "23",
+        "net": "8775.65"
+      },
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "5",
+        "unit_net": "715.25",
+        "vat_rate": "8",
+        "net": "3576.25"
+      }
+    ],
+    "total_net": "23125.30",
+    "total_vat": "4732.15",
+    "total_gross": "27857.45"
+  },
+  "defect": 2,
+  "expected_failed_rules": [
+    "vat_total"
+  ]
+}

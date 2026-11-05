@@ -1,0 +1,142 @@
+[
+  {
+    "id": "en-gdpr-breach-deadline",
+    "lang": "en",
+    "act": "GDPR",
+    "text": "How quickly does a company have to report a personal data breach to the data protection authority?",
+    "expected": ["32016R0679#033.001", "32016R0679#rct_85"]
+  },
+  {
+    "id": "en-gdpr-max-fine-principles",
+    "lang": "en",
+    "act": "GDPR",
+    "text": "What is the highest fine a company can get for breaking the basic rules on lawful processing and consent, or for ignoring people's data rights?",
+    "expected": ["32016R0679#083.005"]
+  },
+  {
+    "id": "en-gdpr-personal-data-definition",
+    "lang": "en",
+    "act": "GDPR",
+    "text": "What kind of information counts as personal data?",
+    "expected": ["32016R0679#art_4.pt_1", "32016R0679#rct_26"]
+  },
+  {
+    "id": "en-aiact-emotion-workplace",
+    "lang": "en",
+    "act": "AI Act",
+    "text": "Can my company use software that reads employees' emotions at work?",
+    "expected": ["32024R1689#005.001", "32024R1689#rct_44"]
+  },
+  {
+    "id": "en-aiact-fine-prohibited",
+    "lang": "en",
+    "act": "AI Act",
+    "text": "How much can a business be fined for using a banned AI practice?",
+    "expected": ["32024R1689#099.003"]
+  },
+  {
+    "id": "en-aiact-chatbot-disclosure",
+    "lang": "en",
+    "act": "AI Act",
+    "text": "Does a chatbot have to tell users that they are talking to a machine and not a human?",
+    "expected": ["32024R1689#050.001", "32024R1689#rct_132"]
+  },
+  {
+    "id": "en-aiact-deployer-definition",
+    "lang": "en",
+    "act": "AI Act",
+    "text": "Who counts as a deployer of an AI system, and does using one privately at home make me a deployer?",
+    "expected": ["32024R1689#art_3.pt_4", "32024R1689#rct_13"]
+  },
+  {
+    "id": "en-nis2-early-warning",
+    "lang": "en",
+    "act": "NIS2",
+    "text": "Hackers have just broken into our systems and knocked out our services. How many hours do we have to give the national cyber authority a first heads-up?",
+    "expected": ["32022L2555#023.004", "32022L2555#rct_102"]
+  },
+  {
+    "id": "en-nis2-fine-essential",
+    "lang": "en",
+    "act": "NIS2",
+    "text": "How high must the fines be that Member States can impose on essential entities which fail their cybersecurity or incident reporting duties?",
+    "expected": ["32022L2555#034.004"]
+  },
+  {
+    "id": "en-nis2-transposition-date",
+    "lang": "en",
+    "act": "NIS2",
+    "text": "By what date did EU countries have to bring the NIS2 rules into their national law?",
+    "expected": ["32022L2555#041.001"]
+  },
+  {
+    "id": "pl-gdpr-child-consent-age",
+    "lang": "pl",
+    "act": "GDPR",
+    "text": "Ile lat musi mieć dziecko, żeby samo mogło zgodzić się na przetwarzanie swoich danych w aplikacji internetowej?",
+    "expected": ["32016R0679#008.001"]
+  },
+  {
+    "id": "pl-gdpr-dpo-required",
+    "lang": "pl",
+    "act": "GDPR",
+    "text": "Kiedy firma ma obowiązek powołać inspektora ochrony danych?",
+    "expected": ["32016R0679#037.001", "32016R0679#rct_97"]
+  },
+  {
+    "id": "pl-gdpr-request-response-time",
+    "lang": "pl",
+    "act": "GDPR",
+    "text": "Poprosiłem firmę o informację, jakie dane o mnie przechowuje. Ile czasu ma na odpowiedź i czy może ją odwlec?",
+    "expected": ["32016R0679#012.003"]
+  },
+  {
+    "id": "pl-aiact-staff-ai-literacy",
+    "lang": "pl",
+    "act": "AI Act",
+    "text": "Czy firma korzystająca z systemów AI musi zadbać o to, żeby jej pracownicy mieli odpowiednią wiedzę o AI?",
+    "expected": ["32024R1689#art_4.p_1"]
+  },
+  {
+    "id": "pl-aiact-application-date",
+    "lang": "pl",
+    "act": "AI Act",
+    "text": "Od kiedy zaczyna się stosować unijne rozporządzenie o sztucznej inteligencji?",
+    "expected": ["32024R1689#art_113.p_0", "32024R1689#rct_179"]
+  },
+  {
+    "id": "pl-aiact-documentation-retention",
+    "lang": "pl",
+    "act": "AI Act",
+    "text": "Jak długo firma, która wprowadziła na rynek system AI wysokiego ryzyka, musi przechowywać jego opis techniczny na wypadek kontroli?",
+    "expected": ["32024R1689#018.001"]
+  },
+  {
+    "id": "pl-nis2-significant-incident",
+    "lang": "pl",
+    "act": "NIS2",
+    "text": "Po czym poznać, że incydent w cyberbezpieczeństwie jest na tyle poważny, że trzeba go zgłosić?",
+    "expected": ["32022L2555#023.003"]
+  },
+  {
+    "id": "pl-nis2-management-training",
+    "lang": "pl",
+    "act": "NIS2",
+    "text": "Czy prezes i pozostali członkowie kierownictwa firmy objętej NIS2 muszą się regularnie dokształcać z zagrożeń w sieci?",
+    "expected": ["32022L2555#020.002"]
+  },
+  {
+    "id": "pl-nis2-size-scope",
+    "lang": "pl",
+    "act": "NIS2",
+    "text": "Jakiej wielkości przedsiębiorstwa są objęte dyrektywą NIS2?",
+    "expected": ["32022L2555#002.001", "32022L2555#rct_7"]
+  },
+  {
+    "id": "pl-nis2-encryption-mfa",
+    "lang": "pl",
+    "act": "NIS2",
+    "text": "Czy firma objęta NIS2 musi chronić dane tak, żeby nie dało się ich odczytać bez klucza, i wymagać przy logowaniu czegoś więcej niż samego hasła?",
+    "expected": ["32022L2555#021.002"]
+  }
+]

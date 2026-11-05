@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "RE-2026-0132",
+    "issue_date": "2026-04-13",
+    "sale_date": "2026-04-13",
+    "currency": "EUR",
+    "seller": {
+      "name": "Büngener AG",
+      "tax_id": "DE126190417",
+      "country": "DE",
+      "address": "Pützdelle 8, 71468 Leannscheid"
+    },
+    "buyer": {
+      "name": "Gombert OHG",
+      "tax_id": "DE750865075",
+      "country": "DE",
+      "address": "Tönges Feld 316, 96050 Augsburg"
+    },
+    "lines": [
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "2",
+        "unit_net": "7.99",
+        "vat_rate": "19",
+        "net": "15.98"
+      },
+      {
+        "description": "Softwareentwicklung (Std.)",
+        "quantity": "19.5",
+        "unit_net": "139.74",
+        "vat_rate": "19",
+        "net": "2724.93"
+      }
+    ],
+    "total_net": "2740.91",
+    "total_vat": "520.77",
+    "total_gross": "3261.68"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

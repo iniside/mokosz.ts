@@ -1,0 +1,55 @@
+{
+  "invoice": {
+    "number": "RE-2026-0060",
+    "issue_date": "2026-10-15",
+    "sale_date": "2026-10-15",
+    "currency": "EUR",
+    "seller": {
+      "name": "Bienasch GmbH",
+      "tax_id": "DE651823567",
+      "country": "DE",
+      "address": "Alte Garten 3, 22901 Neubertburg"
+    },
+    "buyer": {
+      "name": "Brosch GmbH",
+      "tax_id": "DE764151277",
+      "country": "DE",
+      "address": "Halfenleimbach 70, 34688 Eberhardstadt"
+    },
+    "lines": [
+      {
+        "description": "Softwarelizenz – 12 Monate",
+        "quantity": "10",
+        "unit_net": "669.34",
+        "vat_rate": "19",
+        "net": "6693.40"
+      },
+      {
+        "description": "Monitor 27 Zoll",
+        "quantity": "2",
+        "unit_net": "531.50",
+        "vat_rate": "19",
+        "net": "1063.00"
+      },
+      {
+        "description": "Photovoltaikmodul 430 W",
+        "quantity": "1",
+        "unit_net": "178.41",
+        "vat_rate": "0",
+        "net": "178.41"
+      },
+      {
+        "description": "Bürostuhl, ergonomisch",
+        "quantity": "10",
+        "unit_net": "240.23",
+        "vat_rate": "19",
+        "net": "2402.30"
+      }
+    ],
+    "total_net": "10337.11",
+    "total_vat": "1930.15",
+    "total_gross": "12267.26"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

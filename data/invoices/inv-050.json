@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "FV/2026/04/050",
+    "issue_date": "2026-04-13",
+    "sale_date": "2026-04-13",
+    "currency": "PLN",
+    "seller": {
+      "name": "Komorowski SKA",
+      "tax_id": "5255298516",
+      "country": "PL",
+      "address": "park Pietras 9/7, 44-084 Rawicz"
+    },
+    "buyer": {
+      "name": "Filipiak s.c.",
+      "tax_id": "8129271842",
+      "country": "PL",
+      "address": "skwer Majka 2/6, 23-319 Bisztynek"
+    },
+    "lines": [
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "1",
+        "unit_net": "2049.55",
+        "vat_rate": "0",
+        "net": "2049.55"
+      },
+      {
+        "description": "Catering na spotkanie zespołu",
+        "quantity": "1",
+        "unit_net": "576.64",
+        "vat_rate": "8",
+        "net": "576.64"
+      }
+    ],
+    "total_net": "2626.19",
+    "total_vat": "46.13",
+    "total_gross": "2672.32"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

@@ -1,0 +1,69 @@
+{
+  "invoice": {
+    "number": "FV/2026/08/137",
+    "issue_date": "2026-08-21",
+    "sale_date": "2026-08-20",
+    "currency": "PLN",
+    "seller": {
+      "name": "Majchrzak Sp. p.",
+      "tax_id": "1756882454",
+      "country": "PL",
+      "address": "al. Gawroński 6/8, 65-551 Olkusz"
+    },
+    "buyer": {
+      "name": "Kalinowski Sp. k.",
+      "tax_id": "5888230466",
+      "country": "PL",
+      "address": "droga Dominiak 342, 42-996 Biały Bór"
+    },
+    "lines": [
+      {
+        "description": "Hosting serwera VPS – 1 miesiąc",
+        "quantity": "12",
+        "unit_net": "279.32",
+        "vat_rate": "23",
+        "net": "3351.84"
+      },
+      {
+        "description": "Usługa programistyczna (godz.)",
+        "quantity": "5",
+        "unit_net": "235.56",
+        "vat_rate": "23",
+        "net": "1177.80"
+      },
+      {
+        "description": "Toner do drukarki laserowej",
+        "quantity": "1",
+        "unit_net": "154.39",
+        "vat_rate": "23",
+        "net": "154.39"
+      },
+      {
+        "description": "Książka specjalistyczna",
+        "quantity": "3",
+        "unit_net": "123.66",
+        "vat_rate": "5",
+        "net": "370.98"
+      },
+      {
+        "description": "Usługa doradcza świadczona za granicą",
+        "quantity": "12",
+        "unit_net": "2429.89",
+        "vat_rate": "np",
+        "net": "29158.68"
+      },
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "12",
+        "unit_net": "1539.10",
+        "vat_rate": "0",
+        "net": "18469.20"
+      }
+    ],
+    "total_net": "52682.89",
+    "total_vat": "1095.88",
+    "total_gross": "53778.77"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

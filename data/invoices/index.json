@@ -1,0 +1,752 @@
+[
+  {
+    "id": "inv-001",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-002",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-003",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-004",
+    "country": "PL",
+    "defect": 1
+  },
+  {
+    "id": "inv-005",
+    "country": "PL",
+    "defect": 4
+  },
+  {
+    "id": "inv-006",
+    "country": "PL",
+    "defect": 3
+  },
+  {
+    "id": "inv-007",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-008",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-009",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-010",
+    "country": "DE",
+    "defect": 2
+  },
+  {
+    "id": "inv-011",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-012",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-013",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-014",
+    "country": "DE",
+    "defect": 1
+  },
+  {
+    "id": "inv-015",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-016",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-017",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-018",
+    "country": "PL",
+    "defect": 5
+  },
+  {
+    "id": "inv-019",
+    "country": "PL",
+    "defect": 4
+  },
+  {
+    "id": "inv-020",
+    "country": "PL",
+    "defect": 3
+  },
+  {
+    "id": "inv-021",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-022",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-023",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-024",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-025",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-026",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-027",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-028",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-029",
+    "country": "DE",
+    "defect": 5
+  },
+  {
+    "id": "inv-030",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-031",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-032",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-033",
+    "country": "PL",
+    "defect": 3
+  },
+  {
+    "id": "inv-034",
+    "country": "DE",
+    "defect": 5
+  },
+  {
+    "id": "inv-035",
+    "country": "DE",
+    "defect": 1
+  },
+  {
+    "id": "inv-036",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-037",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-038",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-039",
+    "country": "PL",
+    "defect": 4
+  },
+  {
+    "id": "inv-040",
+    "country": "DE",
+    "defect": 1
+  },
+  {
+    "id": "inv-041",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-042",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-043",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-044",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-045",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-046",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-047",
+    "country": "PL",
+    "defect": 2
+  },
+  {
+    "id": "inv-048",
+    "country": "PL",
+    "defect": 1
+  },
+  {
+    "id": "inv-049",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-050",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-051",
+    "country": "DE",
+    "defect": 2
+  },
+  {
+    "id": "inv-052",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-053",
+    "country": "PL",
+    "defect": 2
+  },
+  {
+    "id": "inv-054",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-055",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-056",
+    "country": "PL",
+    "defect": 2
+  },
+  {
+    "id": "inv-057",
+    "country": "DE",
+    "defect": 2
+  },
+  {
+    "id": "inv-058",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-059",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-060",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-061",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-062",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-063",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-064",
+    "country": "PL",
+    "defect": 5
+  },
+  {
+    "id": "inv-065",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-066",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-067",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-068",
+    "country": "DE",
+    "defect": 4
+  },
+  {
+    "id": "inv-069",
+    "country": "PL",
+    "defect": 4
+  },
+  {
+    "id": "inv-070",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-071",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-072",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-073",
+    "country": "DE",
+    "defect": 2
+  },
+  {
+    "id": "inv-074",
+    "country": "PL",
+    "defect": 1
+  },
+  {
+    "id": "inv-075",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-076",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-077",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-078",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-079",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-080",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-081",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-082",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-083",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-084",
+    "country": "DE",
+    "defect": 3
+  },
+  {
+    "id": "inv-085",
+    "country": "DE",
+    "defect": 3
+  },
+  {
+    "id": "inv-086",
+    "country": "DE",
+    "defect": 4
+  },
+  {
+    "id": "inv-087",
+    "country": "DE",
+    "defect": 4
+  },
+  {
+    "id": "inv-088",
+    "country": "DE",
+    "defect": 2
+  },
+  {
+    "id": "inv-089",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-090",
+    "country": "PL",
+    "defect": 2
+  },
+  {
+    "id": "inv-091",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-092",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-093",
+    "country": "DE",
+    "defect": 1
+  },
+  {
+    "id": "inv-094",
+    "country": "DE",
+    "defect": 3
+  },
+  {
+    "id": "inv-095",
+    "country": "PL",
+    "defect": 4
+  },
+  {
+    "id": "inv-096",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-097",
+    "country": "DE",
+    "defect": 5
+  },
+  {
+    "id": "inv-098",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-099",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-100",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-101",
+    "country": "DE",
+    "defect": 1
+  },
+  {
+    "id": "inv-102",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-103",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-104",
+    "country": "PL",
+    "defect": 5
+  },
+  {
+    "id": "inv-105",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-106",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-107",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-108",
+    "country": "PL",
+    "defect": 1
+  },
+  {
+    "id": "inv-109",
+    "country": "PL",
+    "defect": 3
+  },
+  {
+    "id": "inv-110",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-111",
+    "country": "PL",
+    "defect": 5
+  },
+  {
+    "id": "inv-112",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-113",
+    "country": "DE",
+    "defect": 5
+  },
+  {
+    "id": "inv-114",
+    "country": "PL",
+    "defect": 5
+  },
+  {
+    "id": "inv-115",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-116",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-117",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-118",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-119",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-120",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-121",
+    "country": "DE",
+    "defect": 4
+  },
+  {
+    "id": "inv-122",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-123",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-124",
+    "country": "DE",
+    "defect": 4
+  },
+  {
+    "id": "inv-125",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-126",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-127",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-128",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-129",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-130",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-131",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-132",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-133",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-134",
+    "country": "PL",
+    "defect": 1
+  },
+  {
+    "id": "inv-135",
+    "country": "PL",
+    "defect": 2
+  },
+  {
+    "id": "inv-136",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-137",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-138",
+    "country": "DE",
+    "defect": 3
+  },
+  {
+    "id": "inv-139",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-140",
+    "country": "PL",
+    "defect": 3
+  },
+  {
+    "id": "inv-141",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-142",
+    "country": "DE",
+    "defect": 5
+  },
+  {
+    "id": "inv-143",
+    "country": "DE",
+    "defect": 3
+  },
+  {
+    "id": "inv-144",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-145",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-146",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-147",
+    "country": "DE",
+    "defect": null
+  },
+  {
+    "id": "inv-148",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-149",
+    "country": "PL",
+    "defect": null
+  },
+  {
+    "id": "inv-150",
+    "country": "PL",
+    "defect": null
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "invoice": {
+    "number": "FV/2026/08/064",
+    "issue_date": "2026-08-28",
+    "sale_date": "2026-08-28",
+    "currency": "PLN",
+    "seller": {
+      "name": "Król-Majewski",
+      "tax_id": "5453314055",
+      "country": "PL",
+      "address": "wyspa Kosiński 63b, 83-006 Świeradów-Zdrój"
+    },
+    "buyer": {
+      "name": "Borek, Marszałek and Janowski",
+      "tax_id": "8533003761",
+      "country": "PL",
+      "address": "rondo Kulig 5/3, 92-729 Toruń"
+    },
+    "lines": [
+      {
+        "description": "Monitor 27 cali",
+        "quantity": "1",
+        "unit_net": "1529.36",
+        "vat_rate": "7",
+        "net": "1529.36"
+      },
+      {
+        "description": "Transport międzynarodowy towarów",
+        "quantity": "12",
+        "unit_net": "2880.90",
+        "vat_rate": "0",
+        "net": "34570.80"
+      }
+    ],
+    "total_net": "36100.16",
+    "total_vat": "107.06",
+    "total_gross": "36207.22"
+  },
+  "defect": 5,
+  "expected_failed_rules": [
+    "vat_rate_country"
+  ]
+}

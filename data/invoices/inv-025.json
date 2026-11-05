@@ -1,0 +1,62 @@
+{
+  "invoice": {
+    "number": "FV/2026/07/025",
+    "issue_date": "2026-07-16",
+    "sale_date": "2026-07-16",
+    "currency": "PLN",
+    "seller": {
+      "name": "Sobczyk, Sienkiewicz and Wojciechowski",
+      "tax_id": "6718257774",
+      "country": "PL",
+      "address": "skwer Grochowski 41b, 07-534 Toruń"
+    },
+    "buyer": {
+      "name": "Żurek, Filipowicz and Janus",
+      "tax_id": "2547371402",
+      "country": "PL",
+      "address": "bulw. Antczak 3/8, 19-715 Pelplin"
+    },
+    "lines": [
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "1",
+        "unit_net": "2896.14",
+        "vat_rate": "zw",
+        "net": "2896.14"
+      },
+      {
+        "description": "Krzesło biurowe obrotowe",
+        "quantity": "1",
+        "unit_net": "1180.32",
+        "vat_rate": "23",
+        "net": "1180.32"
+      },
+      {
+        "description": "Prenumerata czasopisma branżowego",
+        "quantity": "5",
+        "unit_net": "403.84",
+        "vat_rate": "5",
+        "net": "2019.20"
+      },
+      {
+        "description": "Papier biurowy A4, ryza 500 ark.",
+        "quantity": "20",
+        "unit_net": "15.14",
+        "vat_rate": "23",
+        "net": "302.80"
+      },
+      {
+        "description": "Usługa programistyczna (godz.)",
+        "quantity": "44",
+        "unit_net": "129.41",
+        "vat_rate": "23",
+        "net": "5694.04"
+      }
+    ],
+    "total_net": "12092.50",
+    "total_vat": "1751.71",
+    "total_gross": "13844.21"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

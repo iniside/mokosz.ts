@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "RE-2026-0126",
+    "issue_date": "2026-02-07",
+    "sale_date": "2026-01-28",
+    "currency": "EUR",
+    "seller": {
+      "name": "Schult Gruppe",
+      "tax_id": "DE544642086",
+      "country": "DE",
+      "address": "Weinhäuser Str. 69a, 34847 Stuttgart"
+    },
+    "buyer": {
+      "name": "Klimczak, Bräutigam und Koderisch",
+      "tax_id": "DE182009325",
+      "country": "DE",
+      "address": "Erlenweg 66, 91493 Nord Sophia"
+    },
+    "lines": [
+      {
+        "description": "Tonerkartusche",
+        "quantity": "2",
+        "unit_net": "160.59",
+        "vat_rate": "19",
+        "net": "321.18"
+      },
+      {
+        "description": "Fachbuch",
+        "quantity": "2",
+        "unit_net": "54.27",
+        "vat_rate": "7",
+        "net": "108.54"
+      }
+    ],
+    "total_net": "429.72",
+    "total_vat": "68.62",
+    "total_gross": "498.34"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

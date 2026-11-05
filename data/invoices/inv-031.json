@@ -1,0 +1,48 @@
+{
+  "invoice": {
+    "number": "RE-2026-0031",
+    "issue_date": "2026-01-11",
+    "sale_date": "2026-01-11",
+    "currency": "EUR",
+    "seller": {
+      "name": "Leyckes GmbH",
+      "tax_id": "DE856472305",
+      "country": "DE",
+      "address": "Thomas-Dehler-Str. 26, 85139 Rominadorf"
+    },
+    "buyer": {
+      "name": "Schnürer GmbH",
+      "tax_id": "DE762897948",
+      "country": "DE",
+      "address": "Am Kreispark 6, 57233 Neu Amaliadorf"
+    },
+    "lines": [
+      {
+        "description": "Beratungsleistung (Std.)",
+        "quantity": "53.5",
+        "unit_net": "180.90",
+        "vat_rate": "19",
+        "net": "9678.15"
+      },
+      {
+        "description": "Zeitschriftenabonnement",
+        "quantity": "3",
+        "unit_net": "201.72",
+        "vat_rate": "7",
+        "net": "605.16"
+      },
+      {
+        "description": "Druckerpapier A4, 500 Blatt",
+        "quantity": "10",
+        "unit_net": "8.99",
+        "vat_rate": "19",
+        "net": "89.90"
+      }
+    ],
+    "total_net": "10373.21",
+    "total_vat": "1898.29",
+    "total_gross": "12271.50"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}

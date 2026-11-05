@@ -1,0 +1,41 @@
+{
+  "invoice": {
+    "number": "FV/2026/06/058",
+    "issue_date": "2026-06-23",
+    "sale_date": "2026-06-22",
+    "currency": "PLN",
+    "seller": {
+      "name": "Komorowski Sp. j.",
+      "tax_id": "2220544387",
+      "country": "PL",
+      "address": "droga Karpiński 97a, 94-961 Milanówek"
+    },
+    "buyer": {
+      "name": "Grześkowiak-Niedźwiecki",
+      "tax_id": "1378800684",
+      "country": "PL",
+      "address": "ogród Przybyła 99c, 53-230 Kolno"
+    },
+    "lines": [
+      {
+        "description": "Licencja oprogramowania – 12 miesięcy",
+        "quantity": "20",
+        "unit_net": "2396.16",
+        "vat_rate": "23",
+        "net": "47923.20"
+      },
+      {
+        "description": "Szkolenie zawodowe dofinansowane",
+        "quantity": "1",
+        "unit_net": "2698.00",
+        "vat_rate": "zw",
+        "net": "2698.00"
+      }
+    ],
+    "total_net": "50621.20",
+    "total_vat": "11022.34",
+    "total_gross": "61643.54"
+  },
+  "defect": null,
+  "expected_failed_rules": []
+}
