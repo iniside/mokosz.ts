@@ -1,11 +1,8 @@
 # Mokosz
 
-An agent harness that runs fully on local models and answers questions about the GDPR, the
-AI Act and NIS2 with exact, verified citations. Every run is stored with its steps, tokens,
-cost and latency.
-
-> Mokosz is a research project, not legal advice. Answers can be wrong or incomplete even
-> when every citation checks out; read the cited article before relying on it.
+An agent harness that runs on local models (Ollama) or Claude and answers questions about the
+GDPR, the AI Act and NIS2 with exact, verified citations. Every run is stored with its steps,
+tokens, cost and latency.
 
 ![Asking a question in the chat](docs/img/chat.gif)
 
@@ -19,10 +16,6 @@ Python implementation of the same app. It was built with coding agents under the
 [`docs/decisions/`](docs/decisions/). [`SPEC.md`](SPEC.md) describes what is built and what is
 not.
 
-Invoice extraction with human review is the unfinished part of v1. The invoice schema, the
-validator, the database table and its store, and a generated set of fictional invoices exist;
-there is no extraction workflow, API or screen yet.
-
 ## Requirements
 
 - Node.js 24
@@ -30,9 +23,9 @@ there is no extraction workflow, API or screen yet.
 - [Ollama](https://ollama.com)
 
 The default profile, `local-qwen`, runs `qwen3.6:27b` (see [`profiles/`](profiles/)) and needs
-a GPU with roughly 24 GB of memory. `local-gemma` runs `gemma4:26b` instead. The other alternative is the `cloud-claude` profile
-(`claude-haiku-5-5` and `claude-sonnet-5-5`), which needs `ANTHROPIC_API_KEY`. Copy
-`.env.example` to `.env` and set `DEFAULT_PROFILE=cloud-claude` and the key there. Ollama is
+a GPU with roughly 24 GB of memory; `local-gemma` runs `gemma4:26b` instead. The
+`cloud-claude` profile (`claude-haiku-5-5` and `claude-sonnet-5-5`) needs `ANTHROPIC_API_KEY`:
+copy `.env.example` to `.env` and set `DEFAULT_PROFILE=cloud-claude` and the key there. Ollama is
 needed with either profile: questions are embedded locally with `bge-m3`.
 
 ## Quickstart
@@ -55,10 +48,6 @@ npm run dev
 ```
 
 The UI runs at <http://localhost:5173> and talks to the API on `127.0.0.1:8000`.
-
-The API has no authentication. It listens on loopback by default and then accepts only
-loopback `Host` headers; `npx mokosz serve --host 0.0.0.0` exposes it to the whole network
-and turns that check off.
 
 ## Development
 
@@ -159,17 +148,32 @@ repeat:
 
 Source: [`evals/results/2026-11-04-2141-local-qwen.md`](evals/results/2026-11-04-2141-local-qwen.md).
 
-The questions, expected chunks and reference answers were written by a model from the
-regulation texts. A test checks that every expected chunk exists and contains the quoted
-evidence; whether that evidence supports the answer is the model's judgement. No lawyer has
-reviewed the set. It is small and some of its expected chunks also appear in the retrieval
-eval, so treat the numbers as a smoke test rather than a benchmark.
+## Limitations
+
+- Mokosz is a research project, not legal advice. A verified citation means the quoted text
+  is in the cited article, not that the answer is right or complete.
+- The eval set is small (30 questions), and its questions, expected chunks and reference
+  answers were written by a model from the regulation texts. A test checks that every expected
+  chunk exists and contains the quoted evidence; whether that evidence supports the answer is
+  the model's judgement, and no lawyer has reviewed it. Some expected chunks also appear in the
+  retrieval eval, so the numbers above are indicative, not a benchmark.
+- The API has no authentication. It listens on loopback and accepts only loopback `Host`
+  headers; `npx mokosz serve --host 0.0.0.0` exposes it to the network and turns that check
+  off.
 
 ## Data
 
 The regulation texts come from [EUR-Lex](https://eur-lex.europa.eu) via the Publications
 Office Cellar service. They are the original texts published in the Official Journal, not the
 consolidated versions.
+
+## Roadmap
+
+- Invoice extraction with human review: a PDF uploaded in the UI is extracted by a workflow and
+  checked by a deterministic validator; an invoice that fails waits for a reviewer to approve,
+  edit or reject it. The schema, the validator, the database table and its store, and a
+  generated set of 150 fictional invoices are in place; the extraction workflow, its API and
+  the review screen come next.
 
 ## Licence
 
