@@ -1,6 +1,7 @@
 import { access, mkdir, rename, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
-import { Agent, fetch as undiciFetch, type Dispatcher } from 'undici'
+import { fetch as undiciFetch, type Dispatcher } from 'undici'
+import { timeoutAgent } from '../llm/http.ts'
 import { ACTS, LANGUAGES, type Lang } from './acts.ts'
 
 export const CELLAR_URL = 'https://publications.europa.eu/resource/celex/'
@@ -103,11 +104,7 @@ export async function fetchActs(rawDir: string, options: FetchOptions = {}): Pro
     report = () => {},
   } = options
   await mkdir(rawDir, { recursive: true })
-  const dispatcher = new Agent({
-    connectTimeout: timeoutMs,
-    headersTimeout: timeoutMs,
-    bodyTimeout: timeoutMs,
-  })
+  const dispatcher = timeoutAgent(timeoutMs)
   try {
     for (const [celex, act] of ACTS) {
       for (const lang of LANGUAGES) {

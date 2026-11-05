@@ -1,4 +1,5 @@
 import type { QueryResult, QueryResultRow } from 'pg'
+import { abortable } from '../abort.ts'
 import { ACTS, LANGUAGES, type Lang } from '../ingest/acts.ts'
 import { ChunkSchema, type Chunk } from '../ingest/chunker.ts'
 import { EMBEDDING_DIM } from './index.ts'
@@ -83,19 +84,8 @@ async function fetchRows(
   params: unknown[],
   signal: AbortSignal | undefined,
 ): Promise<Row[]> {
-  signal?.throwIfAborted()
-  const pending = conn.query<Row>(sql, params)
-  if (signal === undefined) return (await pending).rows
   // An abandoned query leaves its connection busy; the owner of the connection discards it.
-  pending.catch(() => {})
-  const aborted = Promise.withResolvers<never>()
-  const onAbort = (): void => aborted.reject(signal.reason)
-  signal.addEventListener('abort', onAbort, { once: true })
-  try {
-    return (await Promise.race([pending, aborted.promise])).rows
-  } finally {
-    signal.removeEventListener('abort', onAbort)
-  }
+  return (await abortable(() => conn.query<Row>(sql, params), signal)).rows
 }
 
 export async function search(

@@ -3,8 +3,8 @@
 // `generate` builds 150 invoices from a fixed seed: 75 PL (PLN) and 75 DE (EUR), each country with
 // 50 clean invoices and 5 per defect class. The ground truth is the `Invoice`; every one is checked
 // against `validate` before it is kept, so a clean invoice passes every rule and a defective one
-// fails exactly the rule of its class (`DEFECT_RULES`). Tax ids come from Faker's NIP and USt-IdNr
-// algorithms and are drawn again until they pass the checksum.
+// fails exactly the rule of its class (`DEFECT_RULES`). Tax ids are random digits with a computed
+// check digit and are drawn again until they pass the checksum.
 //
 // `writeSet` writes `{id}.pdf`, `{id}.json` (`invoice`, `defect`, `expected_failed_rules`) and
 // `index.json` (`id`, `country`, `defect` per invoice). The same seed gives byte-identical files.
@@ -15,7 +15,7 @@ import { CommandError } from '../command.ts'
 import { Decimal } from '../decimal.ts'
 import { renderPdf, type VatGroup } from './render.ts'
 import { ExtractedInvoice, type Invoice, type Line, type Party, type Rule } from './schema.ts'
-import { nipValid, ustIdnrValid } from './taxid.ts'
+import { nipCheckDigit, nipValid, ustIdnrCheckDigit, ustIdnrValid } from './taxid.ts'
 import { validate } from './validator.ts'
 
 export type Country = 'PL' | 'DE'
@@ -182,8 +182,6 @@ function vatGroups(lines: readonly Line[]): VatGroup[] {
   })
 }
 
-const NIP_WEIGHTS = [6, 5, 7, 2, 3, 4, 5, 6, 7]
-
 // A NIP: three non-zero digits, six digits and the check digit.
 function companyVat(faker: Faker): string {
   for (;;) {
@@ -191,7 +189,7 @@ function companyVat(faker: Faker): string {
       ...Array.from({ length: 3 }, () => faker.number.int({ min: 1, max: 9 })),
       ...Array.from({ length: 6 }, () => faker.number.int({ min: 0, max: 9 })),
     ]
-    const check = NIP_WEIGHTS.reduce((sum, weight, i) => sum + weight * digits[i]!, 0) % 11
+    const check = nipCheckDigit(digits.join(''))
     if (check !== 10) return [...digits, check].join('')
   }
 }
@@ -199,12 +197,7 @@ function companyVat(faker: Faker): string {
 // A USt-IdNr: a non-zero digit, seven digits and the ISO 7064 Mod 11,10 check digit.
 function vatId(faker: Faker): string {
   const digits = `${faker.number.int({ min: 1, max: 9 })}${faker.string.numeric(7)}`
-  let product = 10
-  for (const digit of digits) {
-    const sum = (Number(digit) + product) % 10 || 10
-    product = (2 * sum) % 11
-  }
-  return `DE${digits}${(11 - product) % 10}`
+  return `DE${digits}${ustIdnrCheckDigit(digits)}`
 }
 
 function drawTaxId(draw: () => string, valid: (value: string) => boolean): string {

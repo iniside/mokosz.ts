@@ -1,4 +1,5 @@
 import { Agent, fetch } from 'undici'
+import { timeoutAgent } from './http.ts'
 
 const VERSION_TIMEOUT_MS = 2000
 
@@ -7,11 +8,7 @@ export class PullError extends Error {
 }
 
 export async function ollamaReachable(baseUrl: string): Promise<boolean> {
-  const dispatcher = new Agent({
-    connectTimeout: VERSION_TIMEOUT_MS,
-    headersTimeout: VERSION_TIMEOUT_MS,
-    bodyTimeout: VERSION_TIMEOUT_MS,
-  })
+  const dispatcher = timeoutAgent(VERSION_TIMEOUT_MS)
   try {
     const response = await fetch(`${baseUrl}/api/version`, { dispatcher, redirect: 'manual' })
     await response.arrayBuffer()

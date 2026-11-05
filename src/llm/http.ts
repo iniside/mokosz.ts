@@ -7,14 +7,18 @@ export type JsonBody = Record<string, unknown>
 // One dispatcher per timeout; the timeout applies to the connect, the headers and the body.
 const agents = new Map<number, Agent>()
 
+export function timeoutAgent(timeoutMs: number): Agent {
+  return new Agent({
+    connectTimeout: timeoutMs,
+    headersTimeout: timeoutMs,
+    bodyTimeout: timeoutMs,
+  })
+}
+
 function agent(timeoutMs: number): Agent {
   let found = agents.get(timeoutMs)
   if (found === undefined) {
-    found = new Agent({
-      connectTimeout: timeoutMs,
-      headersTimeout: timeoutMs,
-      bodyTimeout: timeoutMs,
-    })
+    found = timeoutAgent(timeoutMs)
     agents.set(timeoutMs, found)
   }
   return found

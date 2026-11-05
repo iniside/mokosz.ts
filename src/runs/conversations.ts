@@ -1,11 +1,11 @@
 import { randomUUID } from 'node:crypto'
 import type { MastraMemory } from '@mastra/core/memory'
 import { DatabaseError } from 'pg'
+import { abortable } from '../abort.ts'
 import type { Decimal } from '../decimal.ts'
 import { ConversationNotFound, RESOURCE_ID } from '../mastra/memory.ts'
 import type { StepEventType } from '../mastra/workflows/wrap.ts'
 import {
-  abortable,
   conversationExists,
   transaction,
   type Database,

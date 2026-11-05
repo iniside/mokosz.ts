@@ -1,5 +1,6 @@
 import type { MastraMemory } from '@mastra/core/memory'
 import type { PoolClient, QueryResultRow } from 'pg'
+import { abortable } from '../abort.ts'
 
 export interface Database {
   connect(): Promise<PoolClient>
@@ -13,24 +14,6 @@ export type Query = <R extends QueryResultRow>(sql: string, params?: unknown[]) 
 
 export const isoUtc = (column: string): string =>
   `to_char(${column} AT TIME ZONE 'UTC', 'YYYY-MM-DD"T"HH24:MI:SS.MS"Z"')`
-
-export async function abortable<T>(
-  start: () => Promise<T>,
-  signal: AbortSignal | undefined,
-): Promise<T> {
-  signal?.throwIfAborted()
-  const pending = start()
-  if (signal === undefined) return pending
-  pending.catch(() => {})
-  const aborted = Promise.withResolvers<never>()
-  const onAbort = (): void => aborted.reject(signal.reason)
-  signal.addEventListener('abort', onAbort, { once: true })
-  try {
-    return await Promise.race([pending, aborted.promise])
-  } finally {
-    signal.removeEventListener('abort', onAbort)
-  }
-}
 
 export async function transaction<T>(
   db: Database,
