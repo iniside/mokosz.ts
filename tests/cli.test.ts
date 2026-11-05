@@ -115,6 +115,7 @@ describe('usage errors are commander errors with exit code 1', () => {
     [['serv'], 'Did you mean serve?'],
     [['fetch', '--forse'], 'Did you mean --force?'],
     [['fetch', '--force=yes'], "unknown option '--force=yes'"],
+    [['serve', '--no-reload'], "unknown option '--no-reload'"],
     [['serve', '--port', 'x'], "'--port <port>' argument 'x' is invalid"],
     [['serve', '--port', '80.5'], "'--port <port>' argument '80.5' is invalid"],
     [['serve', 'extra'], "too many arguments for 'serve'"],

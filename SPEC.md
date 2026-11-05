@@ -182,7 +182,7 @@ In JSON, money and quantities are strings ("3000.00").
 #### Models
 - Each node calls its Mastra Agent through one module, `src/llm/models.ts`, which builds the AI SDK model from the profile, records tokens, cost and latency per call (also on failures), and validates the output. **Answer tokens are not streamed**: the answer is structured JSON and the verifier may reject the first draft. The UI shows step progress and reveals the answer only after the verifier passes.
 - **v1 is local-first, via Ollama** on the host GPU. Profile model names carry a provider prefix: `ollama_chat/<model>` or `anthropic/<model>`.
-- **Profiles** (`profiles/*.yaml`) set `timeout_s`, retrieval `top_k`, and per node (`router`, `answerer`): the model, and optionally `num_ctx`, `think`, `temperature` and `keep_alive` (`num_ctx` and `keep_alive` apply to Ollama models only).
+- **Profiles** (`profiles/*.yaml`) set `timeout_s`, retrieval `top_k`, and per node (`router`, `answerer`): the model, and optionally `num_ctx`, `think`, `temperature` and `keep_alive` (`num_ctx`, `think` and `keep_alive` apply to Ollama models only; a cloud node that sets one fails to load).
 
   | Profile | Router | Answerer | Needs |
   |---|---|---|---|
@@ -191,7 +191,7 @@ In JSON, money and quantities are strings ("3000.00").
   | `cloud-claude` (optional; no eval row in v1) | `claude-haiku-5-5` | `claude-sonnet-5-5` | `ANTHROPIC_API_KEY` |
 
   - **One local LLM per profile, for every node.** Measured on an RTX 4090: `qwen3.6:27b` (17 GB) plus the embedder fills the card; a separate small router gets evicted and every turn reloads both models. The router's output is a few dozen tokens, so the big model routes in about a second.
-  - The cloud profile sets neither `temperature` nor `think`: these models accept only the default temperature, and a request with another value is refused before it is sent.
+  - The cloud profile does not set `temperature`: these models accept only the default temperature, and a request with another value is refused before it is sent.
   - Every profile still needs Ollama for the `bge-m3` query embedding.
 - Cost: the cloud models are priced from the table in `src/llm/prices.ts`; local models cost 0.
 - A **cold start** (model load) takes 10 to 15 s from the disk cache.

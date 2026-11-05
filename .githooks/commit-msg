@@ -1,6 +1,6 @@
 #!/bin/sh
 # Checks the commit message against .claude/hooks/commit-format.ts.
-# Installed with: git config core.hooksPath .githooks (mokosz setup does this).
+# Installed with: git config core.hooksPath .githooks.
 # Without a working node the check is skipped with a warning rather than blocking commits.
 root=$(git rev-parse --show-toplevel)
 if ! node -e "" >/dev/null 2>&1; then

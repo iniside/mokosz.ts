@@ -130,6 +130,7 @@ describe('settings', () => {
     ['FOO=1\nBar=2\n', 'unknown settings Bar, FOO (known: '],
     ['database_url=q\n', 'unknown setting database_url (known: '],
     ['ANTHROPIC_BASE_URL=http://x\n', 'unknown setting ANTHROPIC_BASE_URL (known: '],
+    ['UPLOADS_DIR=data/uploads\n', 'unknown setting UPLOADS_DIR (known: '],
   ])('.env: a non-empty key that is not a setting is an error: %j', ([text, message]) => {
     const envFile = envFileWith(text)
 
