@@ -3,7 +3,7 @@
 License: EUPL-1.2. Language: TypeScript on Node.js 24, for the server, the CLI and the UI.
 
 ## One-sentence pitch
-A small, production-shaped agent harness that runs fully on local models: a Mastra workflow answers questions about EU regulations with exact, verified citations, and every run is stored with its steps, tokens, cost and latency. Invoice extraction with human review is the second half of v1; its data, validator and storage exist, its workflow, API and screen do not yet.
+A small, production-shaped agent harness that runs on local models (Ollama) or Claude: a Mastra workflow answers questions about EU regulations with exact, verified citations, and every run is stored with its steps, tokens, cost and latency. Invoice extraction with human review is planned next; its data, validator and storage exist, its workflow, API and screen do not yet.
 
 ## Goal and scope rule
 A small reference implementation of production AI engineering for regulated domains.
