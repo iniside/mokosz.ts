@@ -1,7 +1,7 @@
 # 0013 — One decimal type: `src/decimal.ts` replaces decimal.js
 
 **Date:** 2026-11-04
-**Decision (owner):** one `src/decimal.ts` (the recommended option), the answer to: keep one decimal
+**Decision (maintainer):** one `src/decimal.ts` (the recommended option), the answer to: keep one decimal
 implementation, the bigint `Decimal` of `src/decimal.ts`, everywhere, and drop decimal.js.
 
 Amends decision 0010 ("the validator with `decimal.js` (half-up)") and plan step 14(c) ("a parsed

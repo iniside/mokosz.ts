@@ -38,7 +38,7 @@ relying on a signature.
 The commit sha plus a note naming: **(a)** the authority you changed (which
 file/symbol now decides the behaviour), **(b)** what else had to move and why,
 **(c)** the checklist classes at risk and how the tests cover them, **(d)** gate
-results. Anything the step does not name goes under **Leftovers for owner**
+results. Anything the step does not name goes under **Leftovers for maintainer**
 (what, user-visible effect, why not done, cost, recommendation), never into the
 code and never into a TODO file. If you cannot name (a) to (d), say so instead
 of shipping.

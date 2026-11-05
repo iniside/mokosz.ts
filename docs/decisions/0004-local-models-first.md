@@ -1,7 +1,7 @@
 # 0004 — Local models first; Claude optional; OpenAI later
 
 **Date:** 2026-11-02
-**Decision (owner):**
+**Decision (maintainer):**
 - use small local models (Qwen, Gemma) in v1;
 - there is no API key, so v1 must run fully locally, with the cloud API optional;
 - the eval judge is a third local model;

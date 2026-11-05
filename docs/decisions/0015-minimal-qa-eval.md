@@ -1,12 +1,12 @@
 # 0015 — A minimal Q&A eval, beyond the Python app
 
 **Date:** 2026-11-04
-**Decision (owner):** OK, do it; approving the minimal variant, proposed after the owner said
+**Decision (maintainer):** OK, do it; approving the minimal variant, proposed after the maintainer said
 that this is a demo project for a CV, not an app for users, and that they cannot afford a lawyer
 to check it.
 
 Adds to decisions 0010 and 0014: the Python app never implemented SPEC §6, so this is new
-functionality, approved by the owner.
+functionality, approved by the maintainer.
 
 ## Context
 The port proves the TypeScript app behaves like the Python one, not that either answers well.

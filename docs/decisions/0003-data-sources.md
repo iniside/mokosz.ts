@@ -1,7 +1,7 @@
 # 0003 — Data sources: Cellar for regulations, generated invoices
 
 **Date:** 2026-11-02
-**Decision (owner):** regulations come from Cellar; invoices are generated; approved as `SPEC.md` § 1 Data.
+**Decision (maintainer):** regulations come from Cellar; invoices are generated; approved as `SPEC.md` § 1 Data.
 
 ## Context
 Checked on 2026-11-02: the EUR-Lex website answers automated requests with
@@ -17,8 +17,8 @@ Polish AI Act has the same 113 articles and 509 paragraph ids as the English one
   chunking rules for articles without paragraph ids are in `SPEC.md` § 1.
   Citation scoring compares keys.
 - Invoices are generated from JSON (the JSON is the ground truth): 150, of which
-  50 are defective, 10 per defect class (owner, 2026-11-02). No real or
-  third-party invoice datasets in the repo; the owner's own invoices may only
+  50 are defective, 10 per defect class (maintainer, 2026-11-02). No real or
+  third-party invoice datasets in the repo; the maintainer's own invoices may only
   be used as a private, gitignored local eval set.
 
 ## Rejected alternatives

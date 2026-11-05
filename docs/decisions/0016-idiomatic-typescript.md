@@ -1,7 +1,7 @@
 # 0016 — Idiomatic TypeScript, no emulation of Python's APIs
 
 **Date:** 2026-11-05
-**Decision (owner):** this was meant to be a port from Python to idiomatic TypeScript, not an
+**Decision (maintainer):** this was meant to be a port from Python to idiomatic TypeScript, not an
 imitation of its API; and 1500 lines is not that much, so we will certainly do it.
 
 Extends decision 0014 from the list of known differences to the code and its tests.

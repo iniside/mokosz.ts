@@ -1,7 +1,7 @@
 # 0009 — Invoices enter only through the upload; `mokosz seed` does not load them
 
 **Date:** 2026-11-03
-**Decision (owner):** no, upload only; the answer to whether `mokosz seed` should load invoices.
+**Decision (maintainer):** no, upload only; the answer to whether `mokosz seed` should load invoices.
 
 ## Context
 SPEC § 9 said `mokosz seed` "loads chunks, embeddings and invoices", while SPEC § 3 says

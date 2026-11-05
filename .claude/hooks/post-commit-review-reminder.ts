@@ -108,7 +108,7 @@ function main(): void {
         'commit(s) just made and the cumulative task diff; add ' +
         '`proof-auditor` if tests, fixtures or evals changed. Inline-size ' +
         'fixes and commits after round 2 get no review: report leftovers ' +
-        'to the owner instead.',
+        'to the maintainer instead.',
     },
   })
 }

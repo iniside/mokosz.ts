@@ -8,23 +8,23 @@ TypeScript, Node.js and Mastra (decision 0010).
 
 ## Always
 
-- **Keep the owner's shape.** Build what `SPEC.md`, the decisions in
+- **Keep the maintainer's shape.** Build what `SPEC.md`, the decisions in
   `docs/decisions/` and the approved plan say, with their exclusions. Nothing
   they do not ask for is added. v2 items are not started until v1 is done. A new
   mechanism, dependency, service or abstraction that no requirement needs is
   out of scope; if you think one is required, ask one question instead of
   adding it.
-- **Decisions are final.** Owner decisions are recorded in `docs/decisions/`.
+- **Decisions are final.** Maintainer decisions are recorded in `docs/decisions/`.
   Research supplies facts, never permission to reverse a decision. If a step
   needs a rejected design, stop and ask.
 - **No second source of truth.** Greenfield project: when something is
   replaced, the step that adds the new path deletes the old one. No
   compatibility shims, toggles, fallbacks or "remove later".
-- **Leftovers go to the owner, not into the code.** Anything not done, done
-  wrong or undecided is listed in the report under **Leftovers for owner**
+- **Leftovers go to the maintainer, not into the code.** Anything not done, done
+  wrong or undecided is listed in the report under **Leftovers for maintainer**
   (what it is, its user-visible effect, why it is not done, the cost to fix, a
   recommendation). It is fixed, or written to `docs/todo/`, only when the
-  owner says so.
+  maintainer says so.
 - **Tests ship with the code.** Every step that changes behaviour adds or
   updates its tests in the same step, written by whoever implements the step
   (inline or `implementer`). A separate `[test-author]` step only adds eval
@@ -53,7 +53,7 @@ TypeScript, Node.js and Mastra (decision 0010).
 | Implement a plan step or named fix | the approved plan; `SPEC.md`; `docs/decisions/` (0010 with its amendments 0011, 0013, 0014 and 0016); `docs/reference/review-checklist.md` (the classes you must not add) |
 | Review a diff, commit or plan | `docs/reference/review-checklist.md`; the approved plan; `SPEC.md`; `docs/decisions/` (0010 with its amendments 0011, 0013, 0014 and 0016) |
 | Write or change tests, fixtures, eval sets or eval scoring | `docs/reference/review-checklist.md` **Proof soundness** |
-| Record or apply an owner decision | `docs/decisions/` |
+| Record or apply a maintainer decision | `docs/decisions/` |
 
 ## Git Safety
 
@@ -78,6 +78,6 @@ trailer. Details and examples: `docs/reference/commit-format.md`. Enforced by
 Every above-threshold commit gets one fresh, adversarial review in a separate
 context (`hostile-reviewer`), and changes to tests, fixtures or evals also get
 a `proof-auditor` pass. Inline-threshold changes get no review. At most two
-review rounds per task (unless the owner asks for another); what is left after
-round 2 is a leftover for the owner. The post-commit hook only reminds; this
+review rounds per task (unless the maintainer asks for another); what is left after
+round 2 is a leftover for the maintainer. The post-commit hook only reminds; this
 rule decides. Method: `docs/reference/review-checklist.md`.

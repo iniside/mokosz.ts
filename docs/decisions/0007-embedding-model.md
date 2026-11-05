@@ -1,7 +1,7 @@
 # 0007 — Embedding model: bge-m3
 
 **Date:** 2026-11-03
-**Decision (owner):** pick the more accurate one; a difference of a few minutes in run time
+**Decision (maintainer):** pick the more accurate one; a difference of a few minutes in run time
 does not really matter. Applied to the measurement below: `bge-m3`.
 
 ## Context
@@ -36,4 +36,4 @@ puts a space after `Query:`).
 
 ## Rejected alternatives
 - `qwen3-embedding:0.6b`: lower recall@5 overall, in EN and in PL; its speed advantage was
-  not a criterion (owner).
+  not a criterion (maintainer).

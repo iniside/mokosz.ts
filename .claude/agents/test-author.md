@@ -1,6 +1,6 @@
 ---
 name: test-author
-description: Writes eval sets, fixtures and extra test suites as a dedicated step for code that already exists - the Q&A and invoice eval sets, recorded LLM fixtures, additional integration suites against real Postgres. It never replaces the tests each implementation step writes for itself. Expected behaviour comes from SPEC.md and the owner's requirements, never from what the code currently does. NOT for production code or for auditing an existing proof.
+description: Writes eval sets, fixtures and extra test suites as a dedicated step for code that already exists - the Q&A and invoice eval sets, recorded LLM fixtures, additional integration suites against real Postgres. It never replaces the tests each implementation step writes for itself. Expected behaviour comes from SPEC.md and the maintainer's requirements, never from what the code currently does. NOT for production code or for auditing an existing proof.
 tools: Read, Edit, Write, Grep, Glob, Bash
 ---
 

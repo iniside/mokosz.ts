@@ -1,7 +1,7 @@
 # 0010 — Port to TypeScript, Node.js and Mastra, without reinterpretation
 
 **Date:** 2026-11-03
-**Decision (owner):**
+**Decision (maintainer):**
 - we need a port of the same application, but in TypeScript, Node.js and Mastra instead; no
   reinterpretation and no new functionality, only a port of the workflow and the functionality
   implemented there;

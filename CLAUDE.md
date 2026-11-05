@@ -5,7 +5,7 @@ maps those rules onto Claude Code (agents, models, artifacts, trailers).
 
 ## Plans
 
-In plan mode, edit only the harness plan file. After the owner approves it,
+In plan mode, edit only the harness plan file. After the maintainer approves it,
 copy the plan to `docs/plans/YYYY-MM-DD-HHMM-<topic>-plan.md` (UTC from
 `date -u "+%Y-%m-%d-%H%M"`) and commit it on its own before any code.
 

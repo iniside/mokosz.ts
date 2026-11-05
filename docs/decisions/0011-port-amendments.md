@@ -1,7 +1,7 @@
 # 0011 — Amendments to the port mapping (formatter, HTTP server, step events, question timing)
 
 **Date:** 2026-11-04
-**Decision (owner):** answers to the four questions of the port plan (in git history), each the
+**Decision (maintainer):** answers to the four questions of the port plan (in git history), each the
 recommended option:
 - formatter: oxfmt plus `.oxlintrc`;
 - HTTP server: plain Hono, only our routes;

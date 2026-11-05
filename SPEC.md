@@ -8,7 +8,7 @@ A small, production-shaped agent harness that runs fully on local models: a Mast
 ## Goal and scope rule
 A small reference implementation of production AI engineering for regulated domains.
 **v1 is the whole job.** Do not start anything from "v2" until every v1 item is done, tested and in the README.
-Prefer fewer features done well over many features half-done. Owner decisions are in `docs/decisions/` and are binding.
+Prefer fewer features done well over many features half-done. Maintainer decisions are in `docs/decisions/` and are binding.
 
 This code base is a TypeScript and Mastra port of the author's earlier Python implementation (decision 0010). It keeps the same routes, JSON shapes, commands and data, with the deliberate changes recorded in decision 0016 and listed in §4.
 
@@ -297,7 +297,7 @@ Not built yet: the **approval queue** (upload, invoices by status, PDF next to t
 In development, Vite proxies `/api` to `127.0.0.1:8000`.
 
 **Screenshots:**
-- The demo data is **real usage** of the local profiles: the owner's own conversations.
+- The demo data is **real usage** of the local profiles: the maintainer's own conversations.
 - `mokosz screenshots` (Playwright) opens the built UI served by `vite preview`, writes `docs/img/chat.png` from a conversation with an answer, and records `docs/img/chat.gif` by asking a question through the UI, assembled from frame screenshots with `sharp`.
 - README images are always produced this way, never by hand.
 

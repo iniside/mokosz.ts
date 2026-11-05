@@ -2,10 +2,10 @@
 
 Every plan, however small, follows these steps in order.
 
-## 0. Keep the owner's shape
+## 0. Keep the maintainer's shape
 
 Open the plan's **Context** with the requested outcome and the explicit
-exclusions, in the owner's words. For every new module, service, dependency,
+exclusions, in the maintainer's words. For every new module, service, dependency,
 storage, abstraction or public contract the request does not name, state which
 requirement cannot be met without it. If none, it is out of scope. If you
 believe it is needed anyway, ask one blocking question.
@@ -37,9 +37,9 @@ Steps are numbered `1, 2, 3…` (a split renumbers; no `2a`). Each step states:
 
 A step that encodes a formula or rule (VAT, a tax id checksum, a metric) carries a
 small case table: inputs → expected value. Cases the spec does not decide are
-owner questions before approval.
+maintainer questions before approval.
 
-## 4. Hostile review before the owner sees it
+## 4. Hostile review before the maintainer sees it
 
 Dispatch `hostile-reviewer` on the plan. It checks scope against the request
 first, then gaps, ambiguity and rule conflicts, and returns a punch list.

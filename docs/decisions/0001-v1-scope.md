@@ -1,7 +1,7 @@
 # 0001 — Keep v1 small; no cloud infrastructure in v1
 
 **Date:** 2026-11-02
-**Decision (owner):** no overscoping. v1 stays small, and cloud infrastructure (Azure) is out of v1.
+**Decision (maintainer):** no overscoping. v1 stays small, and cloud infrastructure (Azure) is out of v1.
 
 ## Context
 The goal is a complete, working system that shows production practice end to

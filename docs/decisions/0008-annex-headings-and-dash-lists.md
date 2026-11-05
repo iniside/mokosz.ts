@@ -1,7 +1,7 @@
 # 0008 — Annex section headings and dash lists are not separate chunks
 
 **Date:** 2026-11-03
-**Decision (owner):** agreed, we can do it this way; searching by headings most likely fits
+**Decision (maintainer):** agreed, we can do it this way; searching by headings most likely fits
 full-text search better than semantic search anyway.
 
 ## Context

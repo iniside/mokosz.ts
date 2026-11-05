@@ -15,7 +15,7 @@ cost and latency.
 
 Mokosz is a TypeScript and [Mastra](https://mastra.ai) port of the author's earlier, unpublished
 Python implementation of the same app. It was built with coding agents under the process in
-[`AGENTS.md`](AGENTS.md) and [`.claude/`](.claude/); the owner's decisions are recorded in
+[`AGENTS.md`](AGENTS.md) and [`.claude/`](.claude/); the maintainer's decisions are recorded in
 [`docs/decisions/`](docs/decisions/). [`SPEC.md`](SPEC.md) describes what is built and what is
 not.
 

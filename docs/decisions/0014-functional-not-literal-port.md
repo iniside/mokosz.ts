@@ -1,7 +1,7 @@
 # 0014 — The port matches functionality, not library-level details
 
 **Date:** 2026-11-04
-**Decision (owner):** it was never meant to be a literal port, only a port of the functionality;
+**Decision (maintainer):** it was never meant to be a literal port, only a port of the functionality;
 the same applies to point 2. The answer to the list of known differences in the project's TODO
 list (in git history).
 

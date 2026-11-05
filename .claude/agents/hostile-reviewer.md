@@ -1,6 +1,6 @@
 ---
 name: hostile-reviewer
-description: ONE adversarial review pass over a committed diff or a written plan, in a separate context from its author. Use after every above-threshold commit (review the exact commit and the cumulative task diff) and on every plan before it is shown to the owner. Read-only; returns PASS or REJECT with an evidence-based punch list. Test, fixture and eval soundness goes to proof-auditor.
+description: ONE adversarial review pass over a committed diff or a written plan, in a separate context from its author. Use after every above-threshold commit (review the exact commit and the cumulative task diff) and on every plan before it is shown to the maintainer. Read-only; returns PASS or REJECT with an evidence-based punch list. Test, fixture and eval soundness goes to proof-auditor.
 tools: Read, Grep, Glob, Bash
 ---
 
@@ -34,7 +34,7 @@ not evidence; the diff and the source are.
 Reject only a concrete defect, scope violation or missing validation, backed by
 `file:line` and a failing scenario. Do not ask for unrelated hardening and do
 not reopen an approved design. If a fix would need a new abstraction or service
-beyond the plan, that is an owner question, not a finding to fix.
+beyond the plan, that is a maintainer question, not a finding to fix.
 
 ## What you return
 

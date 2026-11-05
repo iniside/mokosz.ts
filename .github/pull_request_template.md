@@ -13,6 +13,6 @@
 - [ ] Hostile review: PASS (round 1 or 2), proof audit if tests or evals changed
 - [ ] Leftovers listed below, or none
 
-## Leftovers for owner
+## Leftovers for maintainer
 
 <!-- what · user-visible effect · why not done · cost · recommendation -->

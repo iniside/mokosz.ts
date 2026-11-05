@@ -1,10 +1,10 @@
 # 0006 — Vector search only in v1; full-text search later
 
 **Date:** 2026-11-02
-**Decision (owner):** no full-text search for now.
+**Decision (maintainer):** no full-text search for now.
 
 ## Context
-The owner's earlier semantic code search (arcsem, over a large C++ repo) was
+The maintainer's earlier semantic code search (arcsem, over a large C++ repo) was
 dropped because full-text search usually worked better there and full indexing
 took very long. This corpus is far smaller: 1,567 EN paragraphs and recitals
 embed in 36 s (`qwen3-embedding:0.6b`) or 67 s (`bge-m3`) on the RTX 4090, so

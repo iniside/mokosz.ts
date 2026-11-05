@@ -1,13 +1,13 @@
 # 0012 — Mutation testing with StrykerJS, at the end of the port
 
 **Date:** 2026-11-04
-**Decision (owner):** you can add it, but somewhere at the end; for now we want what is being
+**Decision (maintainer):** you can add it, but somewhere at the end; for now we want what is being
 built to work.
 
 Adds to decision 0010; the Python app had no mutation-testing tool.
 
 ## Context
-Reviews check claimed proofs with hand-made, targeted mutants (`proof-auditor`). The owner asked
+Reviews check claimed proofs with hand-made, targeted mutants (`proof-auditor`). The maintainer asked
 why no ready-made tool is used. StrykerJS with its Vitest runner is the TypeScript one. It does
 not replace the targeted mutants: it measures generic mutants, it cannot activate mutants inside
 child processes (the hooks tests), and the Postgres suites make every mutant slow.
