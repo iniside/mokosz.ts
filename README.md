@@ -1,6 +1,6 @@
 # Mokosz
 
-An agent harness that runs on local models (Ollama) or Claude and answers questions about the
+An agent RAG pipeline that runs on local models (Ollama) or Claude and answers questions about the
 GDPR, the AI Act and NIS2 with exact, verified citations. Every run is stored with its steps,
 tokens, cost and latency.
 
